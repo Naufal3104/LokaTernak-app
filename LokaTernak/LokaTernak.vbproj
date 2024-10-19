@@ -130,6 +130,31 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dashboard Admin.Designer.vb">
+      <DependentUpon>Dashboard Admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard Admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard Peternak.Designer.vb">
+      <DependentUpon>Dashboard Peternak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard Peternak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard User.Designer.vb">
+      <DependentUpon>Dashboard User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard User.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.vb">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module_Koneksi.vb" />
     <Compile Include="Main Form.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +177,30 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Pilih Register.Designer.vb">
+      <DependentUpon>Pilih Register.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pilih Register.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register Peternak.Designer.vb">
+      <DependentUpon>Register Peternak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Register Peternak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register User.Designer.vb">
+      <DependentUpon>Register User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Register User.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sign In.Designer.vb">
+      <DependentUpon>Sign In.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sign In.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Main Form.resx">
@@ -162,6 +211,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sign In.resx">
+      <DependentUpon>Sign In.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
