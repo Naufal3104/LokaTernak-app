@@ -142,6 +142,12 @@
     <Compile Include="Dashboard Peternak.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Dashboard User 1.Designer.vb">
+      <DependentUpon>Dashboard User 1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard User 1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Dashboard User.Designer.vb">
       <DependentUpon>Dashboard User.vb</DependentUpon>
     </Compile>
@@ -152,6 +158,12 @@
       <DependentUpon>Dashboard.vb</DependentUpon>
     </Compile>
     <Compile Include="Dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Database User 2.Designer.vb">
+      <DependentUpon>Database User 2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Database User 2.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Module_Koneksi.vb" />
@@ -166,6 +178,7 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -203,6 +216,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Dashboard User 1.resx">
+      <DependentUpon>Dashboard User 1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard User.resx">
+      <DependentUpon>Dashboard User.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database User 2.resx">
+      <DependentUpon>Database User 2.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main Form.resx">
       <DependentUpon>Main Form.vb</DependentUpon>
     </EmbeddedResource>
@@ -228,6 +250,21 @@
     </None>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\letter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\products.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tim-mossholder-07uiqD9LS6U-unsplash.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
