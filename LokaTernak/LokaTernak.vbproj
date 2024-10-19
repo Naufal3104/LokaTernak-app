@@ -203,6 +203,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Dashboard Peternak.resx">
+      <DependentUpon>Dashboard Peternak.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main Form.resx">
       <DependentUpon>Main Form.vb</DependentUpon>
     </EmbeddedResource>
@@ -228,6 +231,15 @@
     </None>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catalog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\farm.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
