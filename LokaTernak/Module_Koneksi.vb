@@ -2,7 +2,7 @@
 
 Module Module_Koneksi
     'Deklarasi variabel koneksi string untuk digunakan dalam seluruh aplikasi
-    Private connectionString As String = "server=localhost;user id=root;" & "password=;database=dbdesktop;"
+    Private connectionString As String = "server=localhost;user id=root;" & "password=;database=peternakan;"
     ' Fungsi untuk mendapatkan objek MySqlConnection
     Public Function GetConnection() As MySqlConnection
         Dim conn As New MySqlConnection(connectionString)
