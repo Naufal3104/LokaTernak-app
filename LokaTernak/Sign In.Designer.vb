@@ -22,111 +22,168 @@ Partial Class Sign_In
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Sign_In))
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.text_username = New System.Windows.Forms.TextBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.text_username = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.text_password = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.btn_login = New Guna.UI2.WinForms.Guna2Button()
-        Me.btn_reset = New Guna.UI2.WinForms.Guna2Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.text_password = New System.Windows.Forms.TextBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.button_cancel = New System.Windows.Forms.Button()
+        Me.button_login = New System.Windows.Forms.Button()
+        Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.White
+        Me.Panel1.Controls.Add(Me.text_username)
+        Me.Panel1.Controls.Add(Me.PictureBox2)
+        Me.Panel1.Location = New System.Drawing.Point(79, 296)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(323, 58)
+        Me.Panel1.TabIndex = 9
+        '
+        'text_username
+        '
+        Me.text_username.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.text_username.Font = New System.Drawing.Font("Segoe UI", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.text_username.ForeColor = System.Drawing.Color.Black
+        Me.text_username.Location = New System.Drawing.Point(65, 11)
+        Me.text_username.Name = "text_username"
+        Me.text_username.Size = New System.Drawing.Size(240, 36)
+        Me.text_username.TabIndex = 3
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(7, 9)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(40, 40)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 3
+        Me.PictureBox2.TabStop = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(142, 79)
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI Black", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Black
+        Me.Label1.Location = New System.Drawing.Point(178, 211)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(60, 20)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Sign-In"
+        Me.Label1.Size = New System.Drawing.Size(129, 45)
+        Me.Label1.TabIndex = 8
+        Me.Label1.Text = "Sign In"
         '
-        'text_username
+        'PictureBox1
         '
-        Me.text_username.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.text_username.DefaultText = ""
-        Me.text_username.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.text_username.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.text_username.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.text_username.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.text_username.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.text_username.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.text_username.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.text_username.Location = New System.Drawing.Point(47, 172)
-        Me.text_username.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.text_username.Name = "text_username"
-        Me.text_username.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.text_username.PlaceholderText = ""
-        Me.text_username.SelectedText = ""
-        Me.text_username.Size = New System.Drawing.Size(254, 48)
-        Me.text_username.TabIndex = 1
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(166, 35)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(156, 156)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 7
+        Me.PictureBox1.TabStop = False
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.White
+        Me.Panel2.Controls.Add(Me.text_password)
+        Me.Panel2.Controls.Add(Me.PictureBox3)
+        Me.Panel2.Location = New System.Drawing.Point(79, 370)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(323, 58)
+        Me.Panel2.TabIndex = 10
         '
         'text_password
         '
-        Me.text_password.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.text_password.DefaultText = ""
-        Me.text_password.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.text_password.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.text_password.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.text_password.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.text_password.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.text_password.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.text_password.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.text_password.Location = New System.Drawing.Point(47, 244)
-        Me.text_password.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.text_password.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.text_password.Font = New System.Drawing.Font("Segoe UI", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.text_password.ForeColor = System.Drawing.Color.Black
+        Me.text_password.Location = New System.Drawing.Point(65, 11)
         Me.text_password.Name = "text_password"
-        Me.text_password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.text_password.PlaceholderText = ""
-        Me.text_password.SelectedText = ""
-        Me.text_password.Size = New System.Drawing.Size(254, 48)
-        Me.text_password.TabIndex = 2
+        Me.text_password.Size = New System.Drawing.Size(240, 36)
+        Me.text_password.TabIndex = 3
         '
-        'btn_login
+        'PictureBox3
         '
-        Me.btn_login.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.btn_login.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.btn_login.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btn_login.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btn_login.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.btn_login.ForeColor = System.Drawing.Color.White
-        Me.btn_login.Location = New System.Drawing.Point(84, 323)
-        Me.btn_login.Name = "btn_login"
-        Me.btn_login.Size = New System.Drawing.Size(180, 45)
-        Me.btn_login.TabIndex = 3
-        Me.btn_login.Text = "Sign In"
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(7, 9)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(40, 40)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 3
+        Me.PictureBox3.TabStop = False
         '
-        'btn_reset
+        'button_cancel
         '
-        Me.btn_reset.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.btn_reset.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.btn_reset.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btn_reset.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btn_reset.FillColor = System.Drawing.Color.White
-        Me.btn_reset.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.btn_reset.ForeColor = System.Drawing.Color.Black
-        Me.btn_reset.Location = New System.Drawing.Point(84, 374)
-        Me.btn_reset.Name = "btn_reset"
-        Me.btn_reset.Size = New System.Drawing.Size(180, 45)
-        Me.btn_reset.TabIndex = 4
-        Me.btn_reset.Text = "Reset"
+        Me.button_cancel.FlatAppearance.BorderSize = 0
+        Me.button_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.button_cancel.Font = New System.Drawing.Font("Segoe UI", 7.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.button_cancel.Location = New System.Drawing.Point(79, 532)
+        Me.button_cancel.Name = "button_cancel"
+        Me.button_cancel.Size = New System.Drawing.Size(323, 57)
+        Me.button_cancel.TabIndex = 12
+        Me.button_cancel.Text = "Cancel"
+        Me.button_cancel.UseVisualStyleBackColor = True
+        '
+        'button_login
+        '
+        Me.button_login.BackColor = System.Drawing.Color.Green
+        Me.button_login.FlatAppearance.BorderSize = 0
+        Me.button_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.button_login.Font = New System.Drawing.Font("Segoe UI", 7.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.button_login.ForeColor = System.Drawing.Color.White
+        Me.button_login.Location = New System.Drawing.Point(79, 469)
+        Me.button_login.Name = "button_login"
+        Me.button_login.Size = New System.Drawing.Size(323, 57)
+        Me.button_login.TabIndex = 11
+        Me.button_login.Text = "Login"
+        Me.button_login.UseVisualStyleBackColor = False
         '
         'Sign_In
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(333, 450)
-        Me.Controls.Add(Me.btn_reset)
-        Me.Controls.Add(Me.btn_login)
-        Me.Controls.Add(Me.text_password)
-        Me.Controls.Add(Me.text_username)
+        Me.ClientSize = New System.Drawing.Size(481, 624)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.button_cancel)
+        Me.Controls.Add(Me.button_login)
+        Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "Sign_In"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Sign_In"
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents text_username As TextBox
+    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents text_username As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents text_password As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents btn_login As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents btn_reset As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents text_password As TextBox
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents button_cancel As Button
+    Friend WithEvents button_login As Button
 End Class
