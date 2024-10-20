@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.LokaTernak.Dashboard_Admin
+            Me.MainForm = Global.LokaTernak.Dashboard_Admin2
         End Sub
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
