@@ -173,13 +173,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Module_Koneksi.vb" />
-    <Compile Include="Main Form.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Main Form.Designer.vb">
-      <DependentUpon>Main Form.vb</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -214,10 +207,10 @@
     <Compile Include="Register User.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sign In.Designer.vb">
-      <DependentUpon>Sign In.vb</DependentUpon>
+    <Compile Include="SignIn.Designer.vb">
+      <DependentUpon>SignIn.vb</DependentUpon>
     </Compile>
-    <Compile Include="Sign In.vb">
+    <Compile Include="SignIn.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ubah Peternakan.Designer.vb">
@@ -243,9 +236,6 @@
     <EmbeddedResource Include="Data Katalog.resx">
       <DependentUpon>Data Katalog.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main Form.resx">
-      <DependentUpon>Main Form.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -261,8 +251,8 @@
     <EmbeddedResource Include="Register User.resx">
       <DependentUpon>Register User.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sign In.resx">
-      <DependentUpon>Sign In.vb</DependentUpon>
+    <EmbeddedResource Include="SignIn.resx">
+      <DependentUpon>SignIn.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ubah Peternakan.resx">
       <DependentUpon>Ubah Peternakan.vb</DependentUpon>
