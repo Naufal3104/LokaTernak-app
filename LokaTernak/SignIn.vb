@@ -48,7 +48,7 @@ Public Class Sign_In
             If connection IsNot Nothing Then
                 Try
                     ' Memperbarui query untuk mengambil role
-                    Dim query As String = "SELECT role FROM users WHERE username=@username AND password=@password"
+                    Dim query As String = "SELECT id_role FROM user WHERE username=@username AND password=@password"
                     Using command As New MySqlCommand(query, connection)
                         command.Parameters.AddWithValue("@username", username)
                         command.Parameters.AddWithValue("@password", password)
