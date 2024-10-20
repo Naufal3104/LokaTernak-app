@@ -166,6 +166,12 @@
     <Compile Include="Dashboard.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Data Katalog.Designer.vb">
+      <DependentUpon>Data Katalog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Data Katalog.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Module_Koneksi.vb" />
     <Compile Include="Main Form.vb">
       <SubType>Form</SubType>
@@ -214,6 +220,12 @@
     <Compile Include="Sign In.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Ubah Peternakan.Designer.vb">
+      <DependentUpon>Ubah Peternakan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ubah Peternakan.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Dashboard Admin.resx">
@@ -227,6 +239,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard Peternak.resx">
       <DependentUpon>Dashboard Peternak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data Katalog.resx">
+      <DependentUpon>Data Katalog.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main Form.resx">
       <DependentUpon>Main Form.vb</DependentUpon>
@@ -248,6 +263,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Sign In.resx">
       <DependentUpon>Sign In.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ubah Peternakan.resx">
+      <DependentUpon>Ubah Peternakan.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
