@@ -23,11 +23,6 @@ Partial Class Database_User_2
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel9 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel8 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel7 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
@@ -35,6 +30,9 @@ Partial Class Database_User_2
         Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Guna2Panel2.SuspendLayout()
         Me.Guna2Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -42,56 +40,12 @@ Partial Class Database_User_2
         'Guna2Panel2
         '
         Me.Guna2Panel2.BackColor = System.Drawing.Color.White
-        Me.Guna2Panel2.Controls.Add(Me.Guna2Panel9)
-        Me.Guna2Panel2.Controls.Add(Me.Guna2Panel8)
-        Me.Guna2Panel2.Controls.Add(Me.Guna2Panel7)
-        Me.Guna2Panel2.Controls.Add(Me.Guna2Panel6)
-        Me.Guna2Panel2.Controls.Add(Me.Guna2Panel5)
+        Me.Guna2Panel2.Controls.Add(Me.ListView1)
         Me.Guna2Panel2.Controls.Add(Me.Guna2Panel3)
         Me.Guna2Panel2.Location = New System.Drawing.Point(419, -3)
         Me.Guna2Panel2.Name = "Guna2Panel2"
         Me.Guna2Panel2.Size = New System.Drawing.Size(1480, 1030)
         Me.Guna2Panel2.TabIndex = 7
-        '
-        'Guna2Panel9
-        '
-        Me.Guna2Panel9.BackColor = System.Drawing.Color.Yellow
-        Me.Guna2Panel9.Location = New System.Drawing.Point(1189, 217)
-        Me.Guna2Panel9.Name = "Guna2Panel9"
-        Me.Guna2Panel9.Size = New System.Drawing.Size(270, 515)
-        Me.Guna2Panel9.TabIndex = 4
-        '
-        'Guna2Panel8
-        '
-        Me.Guna2Panel8.BackColor = System.Drawing.Color.Yellow
-        Me.Guna2Panel8.Location = New System.Drawing.Point(900, 217)
-        Me.Guna2Panel8.Name = "Guna2Panel8"
-        Me.Guna2Panel8.Size = New System.Drawing.Size(270, 515)
-        Me.Guna2Panel8.TabIndex = 2
-        '
-        'Guna2Panel7
-        '
-        Me.Guna2Panel7.BackColor = System.Drawing.Color.Yellow
-        Me.Guna2Panel7.Location = New System.Drawing.Point(611, 217)
-        Me.Guna2Panel7.Name = "Guna2Panel7"
-        Me.Guna2Panel7.Size = New System.Drawing.Size(270, 515)
-        Me.Guna2Panel7.TabIndex = 3
-        '
-        'Guna2Panel6
-        '
-        Me.Guna2Panel6.BackColor = System.Drawing.Color.Yellow
-        Me.Guna2Panel6.Location = New System.Drawing.Point(320, 217)
-        Me.Guna2Panel6.Name = "Guna2Panel6"
-        Me.Guna2Panel6.Size = New System.Drawing.Size(270, 515)
-        Me.Guna2Panel6.TabIndex = 2
-        '
-        'Guna2Panel5
-        '
-        Me.Guna2Panel5.BackColor = System.Drawing.Color.Yellow
-        Me.Guna2Panel5.Location = New System.Drawing.Point(29, 217)
-        Me.Guna2Panel5.Name = "Guna2Panel5"
-        Me.Guna2Panel5.Size = New System.Drawing.Size(270, 515)
-        Me.Guna2Panel5.TabIndex = 1
         '
         'Guna2Panel3
         '
@@ -173,6 +127,27 @@ Partial Class Database_User_2
         Me.Guna2HtmlLabel3.TabIndex = 8
         Me.Guna2HtmlLabel3.Text = "Guna2HtmlLabel3"
         '
+        'ListView1
+        '
+        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2})
+        Me.ListView1.HideSelection = False
+        Me.ListView1.Location = New System.Drawing.Point(111, 227)
+        Me.ListView1.Name = "ListView1"
+        Me.ListView1.Size = New System.Drawing.Size(1258, 577)
+        Me.ListView1.TabIndex = 9
+        Me.ListView1.UseCompatibleStateImageBehavior = False
+        Me.ListView1.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader1
+        '
+        Me.ColumnHeader1.Text = "Judul"
+        Me.ColumnHeader1.Width = 600
+        '
+        'ColumnHeader2
+        '
+        Me.ColumnHeader2.Text = "Tanggal Terbit"
+        Me.ColumnHeader2.Width = 600
+        '
         'Database_User_2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -191,11 +166,6 @@ Partial Class Database_User_2
     End Sub
 
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Panel9 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Panel8 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Panel7 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Panel6 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Panel5 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2CustomGradientPanel1 As Guna.UI2.WinForms.Guna2CustomGradientPanel
@@ -203,4 +173,7 @@ Partial Class Database_User_2
     Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2HtmlLabel3 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents ListView1 As ListView
+    Friend WithEvents ColumnHeader1 As ColumnHeader
+    Friend WithEvents ColumnHeader2 As ColumnHeader
 End Class

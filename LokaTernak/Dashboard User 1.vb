@@ -3,7 +3,7 @@
 
     End Sub
 
-    Private Sub Guna2Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel2.Paint
+    Private Sub Guna2Panel2_Paint(sender As Object, e As PaintEventArgs)
 
     End Sub
 
@@ -14,6 +14,14 @@
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
 
 
+
+    End Sub
+
+    Private Sub ListView1_SelectedIndexChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Guna2Panel2_Paint_1(sender As Object, e As PaintEventArgs) Handles Guna2Panel2.Paint
 
     End Sub
 End Class

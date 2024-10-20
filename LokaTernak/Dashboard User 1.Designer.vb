@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Dashboard_User_1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,47 +20,26 @@ Partial Class Dashboard_User_1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
+        Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
-        Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel7 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel8 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel9 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Panel2.SuspendLayout()
+        Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Guna2Panel1.SuspendLayout()
+        Me.Guna2Panel2.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'Guna2Panel2
-        '
-        Me.Guna2Panel2.BackColor = System.Drawing.Color.White
-        Me.Guna2Panel2.Controls.Add(Me.Guna2Panel9)
-        Me.Guna2Panel2.Controls.Add(Me.Guna2Panel8)
-        Me.Guna2Panel2.Controls.Add(Me.Guna2Panel7)
-        Me.Guna2Panel2.Controls.Add(Me.Guna2Panel6)
-        Me.Guna2Panel2.Controls.Add(Me.Guna2Panel5)
-        Me.Guna2Panel2.Controls.Add(Me.Guna2Panel3)
-        Me.Guna2Panel2.Location = New System.Drawing.Point(418, -2)
-        Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.Size = New System.Drawing.Size(1480, 1030)
-        Me.Guna2Panel2.TabIndex = 4
-        '
-        'Guna2Panel3
-        '
-        Me.Guna2Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2Panel3.Location = New System.Drawing.Point(0, 1)
-        Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.Size = New System.Drawing.Size(1483, 73)
-        Me.Guna2Panel3.TabIndex = 0
         '
         'Guna2Panel1
         '
@@ -72,36 +51,8 @@ Partial Class Dashboard_User_1
         Me.Guna2Panel1.Controls.Add(Me.Guna2Button1)
         Me.Guna2Panel1.Location = New System.Drawing.Point(-2, -2)
         Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.Size = New System.Drawing.Size(420, 1025)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(420, 1038)
         Me.Guna2Panel1.TabIndex = 3
-        '
-        'Guna2HtmlLabel1
-        '
-        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Modern No. 20", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(79, 78)
-        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(268, 52)
-        Me.Guna2HtmlLabel1.TabIndex = 0
-        Me.Guna2HtmlLabel1.Text = "Loka Ternak"
-        '
-        'Guna2HtmlLabel3
-        '
-        Me.Guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(-2, -2)
-        Me.Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
-        Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(133, 22)
-        Me.Guna2HtmlLabel3.TabIndex = 5
-        Me.Guna2HtmlLabel3.Text = "Guna2HtmlLabel3"
-        '
-        'Guna2Panel4
-        '
-        Me.Guna2Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2Panel4.Location = New System.Drawing.Point(68, 176)
-        Me.Guna2Panel4.Name = "Guna2Panel4"
-        Me.Guna2Panel4.Size = New System.Drawing.Size(30, 50)
-        Me.Guna2Panel4.TabIndex = 1
         '
         'Guna2CustomGradientPanel1
         '
@@ -110,45 +61,13 @@ Partial Class Dashboard_User_1
         Me.Guna2CustomGradientPanel1.Size = New System.Drawing.Size(200, 200)
         Me.Guna2CustomGradientPanel1.TabIndex = 1
         '
-        'Guna2Panel5
+        'Guna2Panel4
         '
-        Me.Guna2Panel5.BackColor = System.Drawing.Color.Yellow
-        Me.Guna2Panel5.Location = New System.Drawing.Point(29, 217)
-        Me.Guna2Panel5.Name = "Guna2Panel5"
-        Me.Guna2Panel5.Size = New System.Drawing.Size(270, 515)
-        Me.Guna2Panel5.TabIndex = 1
-        '
-        'Guna2Panel6
-        '
-        Me.Guna2Panel6.BackColor = System.Drawing.Color.Yellow
-        Me.Guna2Panel6.Location = New System.Drawing.Point(320, 217)
-        Me.Guna2Panel6.Name = "Guna2Panel6"
-        Me.Guna2Panel6.Size = New System.Drawing.Size(270, 515)
-        Me.Guna2Panel6.TabIndex = 2
-        '
-        'Guna2Panel7
-        '
-        Me.Guna2Panel7.BackColor = System.Drawing.Color.Yellow
-        Me.Guna2Panel7.Location = New System.Drawing.Point(611, 217)
-        Me.Guna2Panel7.Name = "Guna2Panel7"
-        Me.Guna2Panel7.Size = New System.Drawing.Size(270, 515)
-        Me.Guna2Panel7.TabIndex = 3
-        '
-        'Guna2Panel8
-        '
-        Me.Guna2Panel8.BackColor = System.Drawing.Color.Yellow
-        Me.Guna2Panel8.Location = New System.Drawing.Point(900, 217)
-        Me.Guna2Panel8.Name = "Guna2Panel8"
-        Me.Guna2Panel8.Size = New System.Drawing.Size(270, 515)
-        Me.Guna2Panel8.TabIndex = 2
-        '
-        'Guna2Panel9
-        '
-        Me.Guna2Panel9.BackColor = System.Drawing.Color.Yellow
-        Me.Guna2Panel9.Location = New System.Drawing.Point(1189, 217)
-        Me.Guna2Panel9.Name = "Guna2Panel9"
-        Me.Guna2Panel9.Size = New System.Drawing.Size(270, 515)
-        Me.Guna2Panel9.TabIndex = 4
+        Me.Guna2Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2Panel4.Location = New System.Drawing.Point(68, 176)
+        Me.Guna2Panel4.Name = "Guna2Panel4"
+        Me.Guna2Panel4.Size = New System.Drawing.Size(30, 50)
+        Me.Guna2Panel4.TabIndex = 1
         '
         'Guna2Button2
         '
@@ -168,6 +87,17 @@ Partial Class Dashboard_User_1
         Me.Guna2Button2.TabIndex = 1
         Me.Guna2Button2.Text = "Artikel"
         '
+        'Guna2HtmlLabel1
+        '
+        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Modern No. 20", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.White
+        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(79, 78)
+        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
+        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(268, 52)
+        Me.Guna2HtmlLabel1.TabIndex = 0
+        Me.Guna2HtmlLabel1.Text = "Loka Ternak"
+        '
         'Guna2Button1
         '
         Me.Guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
@@ -186,6 +116,74 @@ Partial Class Dashboard_User_1
         Me.Guna2Button1.TabIndex = 0
         Me.Guna2Button1.Text = "Katalog"
         '
+        'Guna2HtmlLabel3
+        '
+        Me.Guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(-2, -2)
+        Me.Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
+        Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(133, 22)
+        Me.Guna2HtmlLabel3.TabIndex = 5
+        Me.Guna2HtmlLabel3.Text = "Guna2HtmlLabel3"
+        '
+        'Guna2Panel2
+        '
+        Me.Guna2Panel2.BackColor = System.Drawing.Color.White
+        Me.Guna2Panel2.Controls.Add(Me.ListView1)
+        Me.Guna2Panel2.Controls.Add(Me.Guna2Panel3)
+        Me.Guna2Panel2.Location = New System.Drawing.Point(418, 1)
+        Me.Guna2Panel2.Name = "Guna2Panel2"
+        Me.Guna2Panel2.Size = New System.Drawing.Size(1483, 1028)
+        Me.Guna2Panel2.TabIndex = 6
+        '
+        'Guna2Panel3
+        '
+        Me.Guna2Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2Panel3.Name = "Guna2Panel3"
+        Me.Guna2Panel3.Size = New System.Drawing.Size(1483, 73)
+        Me.Guna2Panel3.TabIndex = 7
+        '
+        'ListView1
+        '
+        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5})
+        Me.ListView1.HideSelection = False
+        Me.ListView1.Location = New System.Drawing.Point(136, 283)
+        Me.ListView1.Name = "ListView1"
+        Me.ListView1.Size = New System.Drawing.Size(1258, 577)
+        Me.ListView1.TabIndex = 8
+        Me.ListView1.UseCompatibleStateImageBehavior = False
+        Me.ListView1.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader1
+        '
+        Me.ColumnHeader1.DisplayIndex = 1
+        Me.ColumnHeader1.Text = "Nama Produk"
+        Me.ColumnHeader1.Width = 250
+        '
+        'ColumnHeader2
+        '
+        Me.ColumnHeader2.DisplayIndex = 2
+        Me.ColumnHeader2.Text = "Jenis Produk"
+        Me.ColumnHeader2.Width = 250
+        '
+        'ColumnHeader3
+        '
+        Me.ColumnHeader3.DisplayIndex = 3
+        Me.ColumnHeader3.Text = "Peternakan Tersedia"
+        Me.ColumnHeader3.Width = 250
+        '
+        'ColumnHeader4
+        '
+        Me.ColumnHeader4.DisplayIndex = 4
+        Me.ColumnHeader4.Text = "Deskripsi"
+        Me.ColumnHeader4.Width = 250
+        '
+        'ColumnHeader5
+        '
+        Me.ColumnHeader5.DisplayIndex = 0
+        Me.ColumnHeader5.Text = "Kode Produk"
+        Me.ColumnHeader5.Width = 250
+        '
         'Dashboard_User_1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -196,16 +194,13 @@ Partial Class Dashboard_User_1
         Me.Controls.Add(Me.Guna2HtmlLabel3)
         Me.Name = "Dashboard_User_1"
         Me.Text = "Dashboard_User_1"
-        Me.Guna2Panel2.ResumeLayout(False)
         Me.Guna2Panel1.ResumeLayout(False)
         Me.Guna2Panel1.PerformLayout()
+        Me.Guna2Panel2.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
@@ -213,9 +208,12 @@ Partial Class Dashboard_User_1
     Friend WithEvents Guna2HtmlLabel3 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Panel4 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2CustomGradientPanel1 As Guna.UI2.WinForms.Guna2CustomGradientPanel
-    Friend WithEvents Guna2Panel5 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Panel9 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Panel8 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Panel7 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Panel6 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents ListView1 As ListView
+    Friend WithEvents ColumnHeader1 As ColumnHeader
+    Friend WithEvents ColumnHeader2 As ColumnHeader
+    Friend WithEvents ColumnHeader3 As ColumnHeader
+    Friend WithEvents ColumnHeader4 As ColumnHeader
+    Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents ColumnHeader5 As ColumnHeader
 End Class
