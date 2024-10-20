@@ -166,14 +166,19 @@
     <Compile Include="Dashboard.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Module_Koneksi.vb" />
-    <Compile Include="Main Form.vb">
+    <Compile Include="Data Katalog.Designer.vb">
+      <DependentUpon>Data Katalog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Data Katalog.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Main Form.Designer.vb">
       <DependentUpon>Main Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main Form.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Module_Koneksi.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -208,10 +213,16 @@
     <Compile Include="Register User.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sign In.Designer.vb">
-      <DependentUpon>Sign In.vb</DependentUpon>
+    <Compile Include="SignIn.Designer.vb">
+      <DependentUpon>SignIn.vb</DependentUpon>
     </Compile>
-    <Compile Include="Sign In.vb">
+    <Compile Include="SignIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ubah Peternakan.Designer.vb">
+      <DependentUpon>Ubah Peternakan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ubah Peternakan.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -227,6 +238,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard Peternak.resx">
       <DependentUpon>Dashboard Peternak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data Katalog.resx">
+      <DependentUpon>Data Katalog.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main Form.resx">
       <DependentUpon>Main Form.vb</DependentUpon>
@@ -246,8 +260,11 @@
     <EmbeddedResource Include="Register User.resx">
       <DependentUpon>Register User.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sign In.resx">
-      <DependentUpon>Sign In.vb</DependentUpon>
+    <EmbeddedResource Include="SignIn.resx">
+      <DependentUpon>SignIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ubah Peternakan.resx">
+      <DependentUpon>Ubah Peternakan.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
