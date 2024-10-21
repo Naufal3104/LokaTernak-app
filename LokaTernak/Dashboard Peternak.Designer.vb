@@ -31,6 +31,10 @@ Partial Class Dashboard_Peternak
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.kode_produk = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.nama_produk = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.jenis_produk = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.deskripsi = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -75,9 +79,9 @@ Partial Class Dashboard_Peternak
         Me.Guna2Button3.ForeColor = System.Drawing.Color.White
         Me.Guna2Button3.Image = Global.LokaTernak.My.Resources.Resources.farm
         Me.Guna2Button3.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Guna2Button3.Location = New System.Drawing.Point(76, 18)
+        Me.Guna2Button3.Location = New System.Drawing.Point(0, 0)
         Me.Guna2Button3.Name = "Guna2Button3"
-        Me.Guna2Button3.Size = New System.Drawing.Size(302, 45)
+        Me.Guna2Button3.Size = New System.Drawing.Size(420, 75)
         Me.Guna2Button3.TabIndex = 2
         Me.Guna2Button3.Text = "Ubah Data Peternakan"
         '
@@ -101,9 +105,9 @@ Partial Class Dashboard_Peternak
         Me.Guna2Button2.ForeColor = System.Drawing.Color.White
         Me.Guna2Button2.Image = Global.LokaTernak.My.Resources.Resources.catalog
         Me.Guna2Button2.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Guna2Button2.Location = New System.Drawing.Point(76, 14)
+        Me.Guna2Button2.Location = New System.Drawing.Point(-1, 0)
         Me.Guna2Button2.Name = "Guna2Button2"
-        Me.Guna2Button2.Size = New System.Drawing.Size(257, 45)
+        Me.Guna2Button2.Size = New System.Drawing.Size(419, 75)
         Me.Guna2Button2.TabIndex = 1
         Me.Guna2Button2.Text = "Ubah Data Katalog"
         '
@@ -128,9 +132,9 @@ Partial Class Dashboard_Peternak
         Me.Guna2Button1.ForeColor = System.Drawing.Color.White
         Me.Guna2Button1.Image = Global.LokaTernak.My.Resources.Resources.house
         Me.Guna2Button1.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Guna2Button1.Location = New System.Drawing.Point(71, 14)
+        Me.Guna2Button1.Location = New System.Drawing.Point(-1, 0)
         Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.Size = New System.Drawing.Size(180, 45)
+        Me.Guna2Button1.Size = New System.Drawing.Size(421, 72)
         Me.Guna2Button1.TabIndex = 0
         Me.Guna2Button1.Text = "Dashboard"
         '
@@ -145,12 +149,34 @@ Partial Class Dashboard_Peternak
         '
         'ListView1
         '
+        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.kode_produk, Me.nama_produk, Me.jenis_produk, Me.deskripsi})
         Me.ListView1.HideSelection = False
         Me.ListView1.Location = New System.Drawing.Point(75, 91)
         Me.ListView1.Name = "ListView1"
         Me.ListView1.Size = New System.Drawing.Size(1359, 312)
         Me.ListView1.TabIndex = 3
         Me.ListView1.UseCompatibleStateImageBehavior = False
+        Me.ListView1.View = System.Windows.Forms.View.Details
+        '
+        'kode_produk
+        '
+        Me.kode_produk.Text = "Kode Produk"
+        Me.kode_produk.Width = 150
+        '
+        'nama_produk
+        '
+        Me.nama_produk.Text = "Nama Produk"
+        Me.nama_produk.Width = 200
+        '
+        'jenis_produk
+        '
+        Me.jenis_produk.Text = "Jenis Produk"
+        Me.jenis_produk.Width = 150
+        '
+        'deskripsi
+        '
+        Me.deskripsi.Text = "Deskripsi"
+        Me.deskripsi.Width = 615
         '
         'Label3
         '
@@ -211,6 +237,7 @@ Partial Class Dashboard_Peternak
         Me.Controls.Add(Me.Guna2Panel1)
         Me.Name = "Dashboard_Peternak"
         Me.Text = "Dashboard_Peternak"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Guna2Panel1.ResumeLayout(False)
         Me.Guna2Panel7.ResumeLayout(False)
         Me.Guna2Panel6.ResumeLayout(False)
@@ -237,4 +264,8 @@ Partial Class Dashboard_Peternak
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents kode_produk As ColumnHeader
+    Friend WithEvents nama_produk As ColumnHeader
+    Friend WithEvents jenis_produk As ColumnHeader
+    Friend WithEvents deskripsi As ColumnHeader
 End Class
