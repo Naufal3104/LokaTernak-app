@@ -69,6 +69,28 @@ Public Class Dashboard_Admin_3
     End Sub
 
     Private Sub button_addArticle_Click(sender As Object, e As EventArgs) Handles button_addArticle.Click
+        'Try
+        '    ' Siapkan command dengan parameter
+        '    Dim query As String = "INSERT INTO data_artikel (kode_artikel, judul_artikel, deskripsi_artikel, tanggal) VALUES (@kode, @judul, @deskripsi, @tanggal)"
+
+        '    ' Membuat command dan menambahkan parameter
+        '    Using cmd As New MySqlCommand(query, conn)
+        '        ' Menambahkan parameter
+        '        cmd.Parameters.AddWithValue("@kode", kodeArtikel.Text)
+        '        cmd.Parameters.AddWithValue("@judul", judulArtikel.Text)
+        '        cmd.Parameters.AddWithValue("@deskripsi", deskripsiArtikel.Text)
+        '        cmd.Parameters.AddWithValue("@tanggal", tanggalArtikel.Text)
+
+        '        ' Eksekusi perintah
+        '        cmd.ExecuteNonQuery()
+        '    End Using
+
+
+        '    MessageBox.Show("Data berhasil ditambahkan")
+        'Catch ex As Exception
+        '    MessageBox.Show("Error: " & ex.Message)
+        'End Try
+
         InsertOrder()
 
 
@@ -87,10 +109,7 @@ Public Class Dashboard_Admin_3
         dr.Close()
         cmd.Dispose()
     End Sub
-
-
     Public Function GenerateKodeArtikel() As String
-
         Dim newKodeArtikel As String = ""
         Dim lastKodeArtikel As String = ""
 
@@ -113,15 +132,14 @@ Public Class Dashboard_Admin_3
         End Using
         If lastKodeArtikel = "" Then
             ' If no records found, start with a base ID
-            newKodeArtikel = "ART001"
+            newKodeArtikel = "ART1001"
 
         Else
             ' Extract the numeric part and increment it
             Dim numericPart As Integer = Integer.Parse(lastKodeArtikel.Substring(3)) ' Extracts the number after "ORD"
             numericPart += 1
-            newKodeArtikel = "ART" & numericPart.ToString("D3") ' Formats to ensure 4 digits, e.g., ORD1002
+            newKodeArtikel = "ART" & numericPart.ToString("D4") ' Formats to ensure 4 digits, e.g., ORD1002
         End If
-
         Return newKodeArtikel
     End Function
 
@@ -135,10 +153,10 @@ Public Class Dashboard_Admin_3
         'Panggil koneksi dari modul modKoneksi
         Dim conn As MySqlConnection = GetConnection()
         Using command As New MySqlCommand(query, conn)
-            command.Parameters.AddWithValue("@kode_artikel", kode_artikel)
-            command.Parameters.AddWithValue("@judul", judul_artikel)
-            command.Parameters.AddWithValue("@deskripsi", deskripsi)
-            command.Parameters.AddWithValue("@tanggal_terbit", tanggal_artikel)
+            command.Parameters.AddWithValue("@kode_artikel", kodeArtikel)
+            command.Parameters.AddWithValue("@judul", judulArtikel)
+            command.Parameters.AddWithValue("@deskripsi", deskripsiArtikel)
+            command.Parameters.AddWithValue("@tanggal_terbit", tanggalArtikel)
 
             Try
 
@@ -161,7 +179,10 @@ Public Class Dashboard_Admin_3
         tanggalArtikel.Clear()
         tanggalArtikel.Focus()
         kodeArtikel.Text = GenerateKodeArtikel()
+    End Sub
 
+    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        kodeArtikel.Text = GenerateKodeArtikel()
     End Sub
 
 

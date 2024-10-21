@@ -1,8 +1,12 @@
-﻿Imports Org.BouncyCastle.Asn1.Ess
+﻿Public Class Main_Form
 
-Public Class Form1
-    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
-        Me.Hide()
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
         Sign_In.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+        Pilih_Register.Show()
+        Me.Hide()
     End Sub
 End Class
