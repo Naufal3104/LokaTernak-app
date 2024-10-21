@@ -30,7 +30,7 @@ Public Class Dashboard_Admin2
         koneksi()
 
         ListView1.Items.Clear()
-        cmd = New MySqlCommand("select * from data_peternak", conn)
+        cmd = New MySqlCommand("select * from peternakan", conn)
         dr = cmd.ExecuteReader
         If dr.HasRows Then
             While dr.Read()
@@ -47,7 +47,7 @@ Public Class Dashboard_Admin2
 
 
     Private Sub button_edit_Click(sender As Object, e As EventArgs) Handles button_edit.Click
-        cmd = New MySqlCommand("UPDATE data_peternak SET " &
+        cmd = New MySqlCommand("UPDATE peternakan SET " &
             "nama_peternakan='" & namaPeternakan.Text & "', " &
             "deskripsi='" & deskripsiPeternakan.Text & "', " &
             "alamat='" & alamatPeternakan.Text & "' " &
@@ -55,7 +55,7 @@ Public Class Dashboard_Admin2
         cmd.ExecuteNonQuery()
 
         ListView1.Items.Clear()
-        cmd = New MySqlCommand("select * from data_peternak", conn)
+        cmd = New MySqlCommand("select * from peternakan", conn)
         dr = cmd.ExecuteReader
         If dr.HasRows Then
             While dr.Read()
@@ -72,14 +72,14 @@ Public Class Dashboard_Admin2
     End Sub
 
     Private Sub button_delete_Click(sender As Object, e As EventArgs) Handles button_delete.Click
-        cmd = New MySqlCommand("DELETE FROM data_peternak WHERE kode_peternakan=@kode_peternakan", conn)
+        cmd = New MySqlCommand("DELETE FROM peternakan WHERE kode_peternakan=@kode_peternakan", conn)
         cmd.Parameters.AddWithValue("@kode_peternakan", kodePeternakan.Text)
         cmd.ExecuteNonQuery()
 
 
 
         ListView1.Items.Clear()
-        cmd = New MySqlCommand("SELECT * from data_peternak", conn)
+        cmd = New MySqlCommand("SELECT * from peternakan", conn)
         dr = cmd.ExecuteReader()
         If dr.HasRows Then
             While dr.Read()
