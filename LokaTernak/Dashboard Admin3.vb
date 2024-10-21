@@ -110,7 +110,6 @@ Public Class Dashboard_Admin_3
         cmd.Dispose()
     End Sub
 
-
     Public Function GenerateKodeArtikel() As String
 
         Dim newKodeArtikel As String = ""

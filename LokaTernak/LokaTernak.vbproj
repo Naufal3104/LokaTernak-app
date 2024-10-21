@@ -130,10 +130,22 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dashboard Admin3.Designer.vb">
+      <DependentUpon>Dashboard Admin3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard Admin3.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Dashboard Admin.Designer.vb">
       <DependentUpon>Dashboard Admin.vb</DependentUpon>
     </Compile>
     <Compile Include="Dashboard Admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard Admin2.Designer.vb">
+      <DependentUpon>Dashboard Admin2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard Admin2.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Dashboard Peternak.Designer.vb">
@@ -172,8 +184,11 @@
     </Compile>
     <Compile Include="Main Form.Designer.vb">
       <DependentUpon>Main Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main Form.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Module_Koneksi.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -208,10 +223,16 @@
     <Compile Include="Register User.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sign In.Designer.vb">
-      <DependentUpon>Sign In.vb</DependentUpon>
+    <Compile Include="SignIn.Designer.vb">
+      <DependentUpon>SignIn.vb</DependentUpon>
     </Compile>
-    <Compile Include="Sign In.vb">
+    <Compile Include="SignIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ubah Peternakan.Designer.vb">
+      <DependentUpon>Ubah Peternakan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ubah Peternakan.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -234,8 +255,20 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sign In.resx">
-      <DependentUpon>Sign In.vb</DependentUpon>
+    <EmbeddedResource Include="Pilih Register.resx">
+      <DependentUpon>Pilih Register.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register Peternak.resx">
+      <DependentUpon>Register Peternak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register User.resx">
+      <DependentUpon>Register User.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignIn.resx">
+      <DependentUpon>SignIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ubah Peternakan.resx">
+      <DependentUpon>Ubah Peternakan.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

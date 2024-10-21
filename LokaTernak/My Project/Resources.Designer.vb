@@ -76,10 +76,10 @@ Namespace My.Resources
         Friend ReadOnly Property letter() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("letter", resourceCulture)
+
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
-        
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
@@ -106,6 +106,7 @@ Namespace My.Resources
         Friend ReadOnly Property tim_mossholder_07uiqD9LS6U_unsplash() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("tim-mossholder-07uiqD9LS6U-unsplash", resourceCulture)
+
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
