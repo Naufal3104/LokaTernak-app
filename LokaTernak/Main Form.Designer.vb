@@ -128,10 +128,10 @@ Partial Class Main_Form
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Gold
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(1619, 4)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(1624, 4)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(73, 25)
+        Me.Label2.Size = New System.Drawing.Size(65, 22)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Sign In"
         '
@@ -139,10 +139,10 @@ Partial Class Main_Form
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Gold
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(1530, 4)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(1535, 4)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(83, 25)
+        Me.Label3.Size = New System.Drawing.Size(77, 22)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Register"
         '
