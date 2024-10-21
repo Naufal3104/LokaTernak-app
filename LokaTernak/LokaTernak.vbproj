@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{05E853EB-A8C3-49D6-B1AD-16C472DFBF56}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>LokaTernak.My.MyApplication</StartupObject>
+    <StartupObject>LokaTernak.Database_User_2</StartupObject>
     <RootNamespace>LokaTernak</RootNamespace>
     <AssemblyName>LokaTernak</AssemblyName>
     <FileAlignment>512</FileAlignment>

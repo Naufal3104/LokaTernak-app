@@ -30,13 +30,13 @@ Partial Class Dashboard_User_1
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
         Me.ListView1 = New System.Windows.Forms.ListView()
         Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -135,17 +135,9 @@ Partial Class Dashboard_User_1
         Me.Guna2Panel2.Size = New System.Drawing.Size(1483, 1028)
         Me.Guna2Panel2.TabIndex = 6
         '
-        'Guna2Panel3
-        '
-        Me.Guna2Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2Panel3.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.Size = New System.Drawing.Size(1483, 73)
-        Me.Guna2Panel3.TabIndex = 7
-        '
         'ListView1
         '
-        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5})
+        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader5, Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4})
         Me.ListView1.HideSelection = False
         Me.ListView1.Location = New System.Drawing.Point(136, 283)
         Me.ListView1.Name = "ListView1"
@@ -156,33 +148,36 @@ Partial Class Dashboard_User_1
         '
         'ColumnHeader1
         '
-        Me.ColumnHeader1.DisplayIndex = 1
         Me.ColumnHeader1.Text = "Nama Produk"
         Me.ColumnHeader1.Width = 250
         '
         'ColumnHeader2
         '
-        Me.ColumnHeader2.DisplayIndex = 2
         Me.ColumnHeader2.Text = "Jenis Produk"
         Me.ColumnHeader2.Width = 250
         '
         'ColumnHeader3
         '
-        Me.ColumnHeader3.DisplayIndex = 3
         Me.ColumnHeader3.Text = "Peternakan Tersedia"
         Me.ColumnHeader3.Width = 250
         '
         'ColumnHeader4
         '
-        Me.ColumnHeader4.DisplayIndex = 4
         Me.ColumnHeader4.Text = "Deskripsi"
         Me.ColumnHeader4.Width = 250
         '
         'ColumnHeader5
         '
-        Me.ColumnHeader5.DisplayIndex = 0
         Me.ColumnHeader5.Text = "Kode Produk"
         Me.ColumnHeader5.Width = 250
+        '
+        'Guna2Panel3
+        '
+        Me.Guna2Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2Panel3.Name = "Guna2Panel3"
+        Me.Guna2Panel3.Size = New System.Drawing.Size(1483, 73)
+        Me.Guna2Panel3.TabIndex = 7
         '
         'Dashboard_User_1
         '
