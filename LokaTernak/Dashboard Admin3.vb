@@ -29,7 +29,7 @@ Public Class Dashboard_Admin_3
         koneksi()
 
         ListView1.Items.Clear()
-        cmd = New MySqlCommand("select * from data_artikel", conn)
+        cmd = New MySqlCommand("select * from artikel", conn)
         dr = cmd.ExecuteReader
         If dr.HasRows Then
             While dr.Read()
@@ -45,7 +45,7 @@ Public Class Dashboard_Admin_3
     End Sub
 
     Private Sub button_edit_Click(sender As Object, e As EventArgs) Handles button_edit.Click
-        cmd = New MySqlCommand("UPDATE data_artikel SET " &
+        cmd = New MySqlCommand("UPDATE artikel SET " &
             "judul_artikel='" & judulArtikel.Text & "', " &
             "deskripsi_artikel='" & deskripsiArtikel.Text & "', " &
             "tanggal='" & tanggalArtikel.Text & "' " &
@@ -53,7 +53,7 @@ Public Class Dashboard_Admin_3
         cmd.ExecuteNonQuery()
 
         ListView1.Items.Clear()
-        cmd = New MySqlCommand("select * from data_artikel", conn)
+        cmd = New MySqlCommand("select * from artikel", conn)
         dr = cmd.ExecuteReader
         If dr.HasRows Then
             While dr.Read()
@@ -71,7 +71,7 @@ Public Class Dashboard_Admin_3
     Private Sub button_addArticle_Click(sender As Object, e As EventArgs) Handles button_addArticle.Click
         Try
             ' Siapkan command dengan parameter
-            Dim query As String = "INSERT INTO data_artikel (kode_artikel, judul_artikel, deskripsi_artikel, tanggal) VALUES (@kode, @judul, @deskripsi, @tanggal)"
+            Dim query As String = "INSERT INTO artikel (kode_artikel, judul_artikel, deskripsi_artikel, tanggal) VALUES (@kode, @judul, @deskripsi, @tanggal)"
 
             ' Membuat command dan menambahkan parameter
             Using cmd As New MySqlCommand(query, conn)
@@ -91,7 +91,7 @@ Public Class Dashboard_Admin_3
         End Try
 
         ListView1.Items.Clear()
-        cmd = New MySqlCommand("select * from data_artikel", conn)
+        cmd = New MySqlCommand("select * from artikel", conn)
         dr = cmd.ExecuteReader()
         If dr.HasRows Then
             While dr.Read()
@@ -107,13 +107,13 @@ Public Class Dashboard_Admin_3
     End Sub
 
     Private Sub button_delete_Click(sender As Object, e As EventArgs) Handles button_delete.Click
-        cmd = New MySqlCommand("DELETE FROM data_artikel WHERE kode_artikel=@kode_artikel", conn)
+        cmd = New MySqlCommand("DELETE FROM artikel WHERE kode_artikel=@kode_artikel", conn)
         cmd.Parameters.AddWithValue("@kode_artikel", kodeArtikel.Text)
         cmd.ExecuteNonQuery()
 
 
         ListView1.Items.Clear()
-        cmd = New MySqlCommand("SELECT * from data_artikel", conn)
+        cmd = New MySqlCommand("SELECT * from artikel", conn)
         dr = cmd.ExecuteReader()
         If dr.HasRows Then
             While dr.Read()
