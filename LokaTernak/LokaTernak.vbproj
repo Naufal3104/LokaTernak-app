@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{05E853EB-A8C3-49D6-B1AD-16C472DFBF56}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>LokaTernak.My.MyApplication</StartupObject>
+    <StartupObject>LokaTernak.Database_User_2</StartupObject>
     <RootNamespace>LokaTernak</RootNamespace>
     <AssemblyName>LokaTernak</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -154,6 +154,12 @@
     <Compile Include="Dashboard Peternak.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Dashboard User 1.Designer.vb">
+      <DependentUpon>Dashboard User 1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard User 1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Dashboard User.Designer.vb">
       <DependentUpon>Dashboard User.vb</DependentUpon>
     </Compile>
@@ -166,10 +172,14 @@
     <Compile Include="Dashboard.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Data Katalog.Designer.vb">
-      <DependentUpon>Data Katalog.vb</DependentUpon>
+    <Compile Include="Dashboard User 2.Designer.vb">
+      <DependentUpon>Dashboard User 2.vb</DependentUpon>
     </Compile>
-    <Compile Include="Data Katalog.vb">
+    <Compile Include="Dashboard User 2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module_Koneksi.vb" />
+    <Compile Include="Main Form.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Main Form.Designer.vb">
@@ -227,20 +237,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Dashboard Admin.resx">
-      <DependentUpon>Dashboard Admin.vb</DependentUpon>
+    <EmbeddedResource Include="Dashboard User 1.resx">
+      <DependentUpon>Dashboard User 1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dashboard Admin2.resx">
-      <DependentUpon>Dashboard Admin2.vb</DependentUpon>
+    <EmbeddedResource Include="Dashboard User.resx">
+      <DependentUpon>Dashboard User.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dashboard Admin3.resx">
-      <DependentUpon>Dashboard Admin3.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dashboard Peternak.resx">
-      <DependentUpon>Dashboard Peternak.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Data Katalog.resx">
-      <DependentUpon>Data Katalog.vb</DependentUpon>
+    <EmbeddedResource Include="Dashboard User 2.resx">
+      <DependentUpon>Dashboard User 2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main Form.resx">
       <DependentUpon>Main Form.vb</DependentUpon>
@@ -281,16 +285,19 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\house.png" />
+    <None Include="Resources\menu.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\catalog.png" />
+    <None Include="Resources\letter.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\farm.png" />
+    <None Include="Resources\blog.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\farmer.png" />
+    <None Include="Resources\products.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tim-mossholder-07uiqD9LS6U-unsplash.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
