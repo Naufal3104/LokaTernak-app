@@ -30,15 +30,32 @@ Partial Class Data_Katalog
         Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.ListView1 = New System.Windows.Forms.ListView()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.btnReset = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnHapus = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnEdit = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnSimpan = New Guna.UI2.WinForms.Guna2Button()
+        Me.text_deskripsi = New System.Windows.Forms.RichTextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.combo_jenisProduk = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.text_namaProduk = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.text_kodeProduk = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.kode_produk = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.nama_produk = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.jenis_produk = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.deskripsi = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel7.SuspendLayout()
         Me.Guna2Panel6.SuspendLayout()
         Me.Guna2Panel5.SuspendLayout()
         Me.Guna2Panel3.SuspendLayout()
+        Me.Guna2Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Guna2Panel1
@@ -140,15 +157,6 @@ Partial Class Data_Katalog
         Me.Guna2Panel3.Size = New System.Drawing.Size(1479, 425)
         Me.Guna2Panel3.TabIndex = 6
         '
-        'ListView1
-        '
-        Me.ListView1.HideSelection = False
-        Me.ListView1.Location = New System.Drawing.Point(75, 74)
-        Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(1359, 312)
-        Me.ListView1.TabIndex = 3
-        Me.ListView1.UseCompatibleStateImageBehavior = False
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -169,10 +177,218 @@ Partial Class Data_Katalog
         '
         'Guna2Panel2
         '
+        Me.Guna2Panel2.Controls.Add(Me.btnReset)
+        Me.Guna2Panel2.Controls.Add(Me.btnHapus)
+        Me.Guna2Panel2.Controls.Add(Me.btnEdit)
+        Me.Guna2Panel2.Controls.Add(Me.btnSimpan)
+        Me.Guna2Panel2.Controls.Add(Me.text_deskripsi)
+        Me.Guna2Panel2.Controls.Add(Me.Label5)
+        Me.Guna2Panel2.Controls.Add(Me.combo_jenisProduk)
+        Me.Guna2Panel2.Controls.Add(Me.Label4)
+        Me.Guna2Panel2.Controls.Add(Me.text_namaProduk)
+        Me.Guna2Panel2.Controls.Add(Me.Label3)
+        Me.Guna2Panel2.Controls.Add(Me.text_kodeProduk)
+        Me.Guna2Panel2.Controls.Add(Me.Label2)
         Me.Guna2Panel2.Location = New System.Drawing.Point(420, 490)
         Me.Guna2Panel2.Name = "Guna2Panel2"
         Me.Guna2Panel2.Size = New System.Drawing.Size(1479, 540)
         Me.Guna2Panel2.TabIndex = 5
+        '
+        'btnReset
+        '
+        Me.btnReset.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnReset.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnReset.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnReset.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnReset.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btnReset.ForeColor = System.Drawing.Color.White
+        Me.btnReset.Location = New System.Drawing.Point(1254, 255)
+        Me.btnReset.Name = "btnReset"
+        Me.btnReset.Size = New System.Drawing.Size(180, 36)
+        Me.btnReset.TabIndex = 11
+        Me.btnReset.Text = "Reset"
+        '
+        'btnHapus
+        '
+        Me.btnHapus.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnHapus.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnHapus.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnHapus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnHapus.FillColor = System.Drawing.Color.DarkRed
+        Me.btnHapus.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btnHapus.ForeColor = System.Drawing.Color.White
+        Me.btnHapus.Location = New System.Drawing.Point(1254, 466)
+        Me.btnHapus.Name = "btnHapus"
+        Me.btnHapus.Size = New System.Drawing.Size(180, 45)
+        Me.btnHapus.TabIndex = 10
+        Me.btnHapus.Text = "Hapus"
+        '
+        'btnEdit
+        '
+        Me.btnEdit.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnEdit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnEdit.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnEdit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnEdit.FillColor = System.Drawing.Color.Gold
+        Me.btnEdit.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btnEdit.ForeColor = System.Drawing.Color.White
+        Me.btnEdit.Location = New System.Drawing.Point(1068, 466)
+        Me.btnEdit.Name = "btnEdit"
+        Me.btnEdit.Size = New System.Drawing.Size(180, 45)
+        Me.btnEdit.TabIndex = 9
+        Me.btnEdit.Text = "Ubah"
+        '
+        'btnSimpan
+        '
+        Me.btnSimpan.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnSimpan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnSimpan.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnSimpan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnSimpan.FillColor = System.Drawing.Color.Green
+        Me.btnSimpan.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btnSimpan.ForeColor = System.Drawing.Color.White
+        Me.btnSimpan.Location = New System.Drawing.Point(882, 466)
+        Me.btnSimpan.Name = "btnSimpan"
+        Me.btnSimpan.Size = New System.Drawing.Size(180, 45)
+        Me.btnSimpan.TabIndex = 8
+        Me.btnSimpan.Text = "Simpan"
+        '
+        'text_deskripsi
+        '
+        Me.text_deskripsi.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.text_deskripsi.Location = New System.Drawing.Point(836, 33)
+        Me.text_deskripsi.Name = "text_deskripsi"
+        Me.text_deskripsi.Size = New System.Drawing.Size(598, 202)
+        Me.text_deskripsi.TabIndex = 7
+        Me.text_deskripsi.Text = ""
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(720, 36)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(74, 20)
+        Me.Label5.TabIndex = 6
+        Me.Label5.Text = "Deskripsi"
+        '
+        'combo_jenisProduk
+        '
+        Me.combo_jenisProduk.BackColor = System.Drawing.Color.Transparent
+        Me.combo_jenisProduk.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.combo_jenisProduk.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.combo_jenisProduk.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.combo_jenisProduk.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.combo_jenisProduk.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.combo_jenisProduk.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.combo_jenisProduk.ItemHeight = 30
+        Me.combo_jenisProduk.Items.AddRange(New Object() {"Hewan", "Hasil Ternak"})
+        Me.combo_jenisProduk.Location = New System.Drawing.Point(187, 255)
+        Me.combo_jenisProduk.Name = "combo_jenisProduk"
+        Me.combo_jenisProduk.Size = New System.Drawing.Size(489, 36)
+        Me.combo_jenisProduk.TabIndex = 5
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(71, 262)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(100, 20)
+        Me.Label4.TabIndex = 4
+        Me.Label4.Text = "Jenis Produk"
+        '
+        'text_namaProduk
+        '
+        Me.text_namaProduk.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.text_namaProduk.DefaultText = ""
+        Me.text_namaProduk.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.text_namaProduk.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.text_namaProduk.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.text_namaProduk.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.text_namaProduk.FillColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.text_namaProduk.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.text_namaProduk.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.text_namaProduk.ForeColor = System.Drawing.Color.Black
+        Me.text_namaProduk.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.text_namaProduk.Location = New System.Drawing.Point(187, 138)
+        Me.text_namaProduk.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.text_namaProduk.Name = "text_namaProduk"
+        Me.text_namaProduk.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.text_namaProduk.PlaceholderForeColor = System.Drawing.Color.Black
+        Me.text_namaProduk.PlaceholderText = ""
+        Me.text_namaProduk.SelectedText = ""
+        Me.text_namaProduk.Size = New System.Drawing.Size(489, 60)
+        Me.text_namaProduk.TabIndex = 3
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(71, 159)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(105, 20)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "Nama Produk"
+        '
+        'text_kodeProduk
+        '
+        Me.text_kodeProduk.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.text_kodeProduk.DefaultText = ""
+        Me.text_kodeProduk.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.text_kodeProduk.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.text_kodeProduk.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.text_kodeProduk.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.text_kodeProduk.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.text_kodeProduk.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.text_kodeProduk.ForeColor = System.Drawing.Color.Black
+        Me.text_kodeProduk.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.text_kodeProduk.Location = New System.Drawing.Point(187, 33)
+        Me.text_kodeProduk.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.text_kodeProduk.Name = "text_kodeProduk"
+        Me.text_kodeProduk.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.text_kodeProduk.PlaceholderForeColor = System.Drawing.Color.Black
+        Me.text_kodeProduk.PlaceholderText = ""
+        Me.text_kodeProduk.SelectedText = ""
+        Me.text_kodeProduk.Size = New System.Drawing.Size(489, 60)
+        Me.text_kodeProduk.TabIndex = 1
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(71, 54)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(100, 20)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Kode Produk"
+        '
+        'ListView1
+        '
+        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.kode_produk, Me.nama_produk, Me.jenis_produk, Me.deskripsi})
+        Me.ListView1.HideSelection = False
+        Me.ListView1.Location = New System.Drawing.Point(75, 74)
+        Me.ListView1.Name = "ListView1"
+        Me.ListView1.Size = New System.Drawing.Size(1359, 312)
+        Me.ListView1.TabIndex = 4
+        Me.ListView1.UseCompatibleStateImageBehavior = False
+        Me.ListView1.View = System.Windows.Forms.View.Details
+        '
+        'kode_produk
+        '
+        Me.kode_produk.Text = "Kode Produk"
+        Me.kode_produk.Width = 150
+        '
+        'nama_produk
+        '
+        Me.nama_produk.Text = "Nama Produk"
+        Me.nama_produk.Width = 200
+        '
+        'jenis_produk
+        '
+        Me.jenis_produk.Text = "Jenis Produk"
+        Me.jenis_produk.Width = 150
+        '
+        'deskripsi
+        '
+        Me.deskripsi.Text = "Deskripsi"
+        Me.deskripsi.Width = 615
         '
         'Data_Katalog
         '
@@ -192,6 +408,8 @@ Partial Class Data_Katalog
         Me.Guna2Panel5.ResumeLayout(False)
         Me.Guna2Panel3.ResumeLayout(False)
         Me.Guna2Panel3.PerformLayout()
+        Me.Guna2Panel2.ResumeLayout(False)
+        Me.Guna2Panel2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -206,6 +424,22 @@ Partial Class Data_Katalog
     Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Panel5 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents ListView1 As ListView
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Label4 As Label
+    Friend WithEvents text_namaProduk As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents text_kodeProduk As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents btnReset As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnHapus As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnEdit As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnSimpan As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents text_deskripsi As RichTextBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents combo_jenisProduk As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents ListView1 As ListView
+    Friend WithEvents kode_produk As ColumnHeader
+    Friend WithEvents nama_produk As ColumnHeader
+    Friend WithEvents jenis_produk As ColumnHeader
+    Friend WithEvents deskripsi As ColumnHeader
 End Class

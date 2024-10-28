@@ -11,4 +11,8 @@
         Dashboard_Admin_3.Show()
 
     End Sub
+
+    Private Sub Dashboard_Admin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
