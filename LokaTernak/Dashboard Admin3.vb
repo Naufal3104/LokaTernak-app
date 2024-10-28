@@ -69,30 +69,26 @@ Public Class Dashboard_Admin_3
     End Sub
 
     Private Sub button_addArticle_Click(sender As Object, e As EventArgs) Handles button_addArticle.Click
-        'Try
-        '    ' Siapkan command dengan parameter
-        '    Dim query As String = "INSERT INTO data_artikel (kode_artikel, judul_artikel, deskripsi_artikel, tanggal) VALUES (@kode, @judul, @deskripsi, @tanggal)"
+        Try
+            ' Siapkan command dengan parameter
+            Dim query As String = "INSERT INTO artikel (kode_artikel, judul_artikel, deskripsi_artikel, tanggal) VALUES (@kode, @judul, @deskripsi, @tanggal)"
 
-        '    ' Membuat command dan menambahkan parameter
-        '    Using cmd As New MySqlCommand(query, conn)
-        '        ' Menambahkan parameter
-        '        cmd.Parameters.AddWithValue("@kode", kodeArtikel.Text)
-        '        cmd.Parameters.AddWithValue("@judul", judulArtikel.Text)
-        '        cmd.Parameters.AddWithValue("@deskripsi", deskripsiArtikel.Text)
-        '        cmd.Parameters.AddWithValue("@tanggal", tanggalArtikel.Text)
+            ' Membuat command dan menambahkan parameter
+            Using cmd As New MySqlCommand(query, conn)
+                ' Menambahkan parameter
+                cmd.Parameters.AddWithValue("@kode", kodeArtikel.Text)
+                cmd.Parameters.AddWithValue("@judul", judulArtikel.Text)
+                cmd.Parameters.AddWithValue("@deskripsi", deskripsiArtikel.Text)
+                cmd.Parameters.AddWithValue("@tanggal", tanggalArtikel.Text)
 
-        '        ' Eksekusi perintah
-        '        cmd.ExecuteNonQuery()
-        '    End Using
+                ' Eksekusi perintah
+                cmd.ExecuteNonQuery()
+            End Using
 
-
-        '    MessageBox.Show("Data berhasil ditambahkan")
-        'Catch ex As Exception
-        '    MessageBox.Show("Error: " & ex.Message)
-        'End Try
-
-        InsertOrder()
-
+            MessageBox.Show("Data berhasil ditambahkan")
+        Catch ex As Exception
+            MessageBox.Show("Error: " & ex.Message)
+        End Try
 
         ListView1.Items.Clear()
         cmd = New MySqlCommand("select * from artikel", conn)
