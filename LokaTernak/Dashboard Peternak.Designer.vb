@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Dashboard_Peternak
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Dashboard_Peternak
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel7 = New Guna.UI2.WinForms.Guna2Panel()
@@ -54,7 +54,7 @@ Partial Class Dashboard_Peternak
         Me.Guna2Panel1.Controls.Add(Me.Guna2Panel7)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Panel6)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Panel5)
-        Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2Panel1.Location = New System.Drawing.Point(-1, 0)
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.Size = New System.Drawing.Size(420, 1024)
         Me.Guna2Panel1.TabIndex = 0
@@ -62,10 +62,10 @@ Partial Class Dashboard_Peternak
         'Guna2Panel7
         '
         Me.Guna2Panel7.Controls.Add(Me.Guna2Button3)
-        Me.Guna2Panel7.Location = New System.Drawing.Point(0, 309)
+        Me.Guna2Panel7.Location = New System.Drawing.Point(0, 220)
         Me.Guna2Panel7.Name = "Guna2Panel7"
         Me.Guna2Panel7.Size = New System.Drawing.Size(419, 75)
-        Me.Guna2Panel7.TabIndex = 2
+        Me.Guna2Panel7.TabIndex = 8
         '
         'Guna2Button3
         '
@@ -75,7 +75,7 @@ Partial Class Dashboard_Peternak
         Me.Guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.Guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.Guna2Button3.FillColor = System.Drawing.Color.YellowGreen
-        Me.Guna2Button3.Font = New System.Drawing.Font("Arial Rounded MT Bold", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button3.ForeColor = System.Drawing.Color.White
         Me.Guna2Button3.Image = Global.LokaTernak.My.Resources.Resources.farm
         Me.Guna2Button3.ImageSize = New System.Drawing.Size(40, 40)
@@ -88,10 +88,10 @@ Partial Class Dashboard_Peternak
         'Guna2Panel6
         '
         Me.Guna2Panel6.Controls.Add(Me.Guna2Button2)
-        Me.Guna2Panel6.Location = New System.Drawing.Point(1, 235)
+        Me.Guna2Panel6.Location = New System.Drawing.Point(1, 146)
         Me.Guna2Panel6.Name = "Guna2Panel6"
         Me.Guna2Panel6.Size = New System.Drawing.Size(419, 75)
-        Me.Guna2Panel6.TabIndex = 1
+        Me.Guna2Panel6.TabIndex = 7
         '
         'Guna2Button2
         '
@@ -101,7 +101,7 @@ Partial Class Dashboard_Peternak
         Me.Guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.Guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.Guna2Button2.FillColor = System.Drawing.Color.YellowGreen
-        Me.Guna2Button2.Font = New System.Drawing.Font("Arial Rounded MT Bold", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button2.ForeColor = System.Drawing.Color.White
         Me.Guna2Button2.Image = Global.LokaTernak.My.Resources.Resources.catalog
         Me.Guna2Button2.ImageSize = New System.Drawing.Size(40, 40)
@@ -115,10 +115,10 @@ Partial Class Dashboard_Peternak
         '
         Me.Guna2Panel5.BackColor = System.Drawing.Color.OliveDrab
         Me.Guna2Panel5.Controls.Add(Me.Guna2Button1)
-        Me.Guna2Panel5.Location = New System.Drawing.Point(1, 161)
+        Me.Guna2Panel5.Location = New System.Drawing.Point(1, 72)
         Me.Guna2Panel5.Name = "Guna2Panel5"
         Me.Guna2Panel5.Size = New System.Drawing.Size(419, 75)
-        Me.Guna2Panel5.TabIndex = 0
+        Me.Guna2Panel5.TabIndex = 6
         '
         'Guna2Button1
         '
@@ -128,13 +128,13 @@ Partial Class Dashboard_Peternak
         Me.Guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.Guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.Guna2Button1.FillColor = System.Drawing.Color.OliveDrab
-        Me.Guna2Button1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button1.ForeColor = System.Drawing.Color.White
         Me.Guna2Button1.Image = Global.LokaTernak.My.Resources.Resources.house
         Me.Guna2Button1.ImageSize = New System.Drawing.Size(40, 40)
         Me.Guna2Button1.Location = New System.Drawing.Point(-1, 0)
         Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.Size = New System.Drawing.Size(421, 72)
+        Me.Guna2Button1.Size = New System.Drawing.Size(421, 74)
         Me.Guna2Button1.TabIndex = 0
         Me.Guna2Button1.Text = "Dashboard"
         '
@@ -181,10 +181,10 @@ Partial Class Dashboard_Peternak
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Arial Rounded MT Bold", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(69, 32)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(122, 32)
+        Me.Label3.Size = New System.Drawing.Size(112, 32)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Katalog"
         '
@@ -211,17 +211,17 @@ Partial Class Dashboard_Peternak
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(69, 318)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(313, 32)
+        Me.Label1.Size = New System.Drawing.Size(292, 32)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Sagara Seafood Farm"
         '
         'Guna2Panel4
         '
         Me.Guna2Panel4.BackColor = System.Drawing.Color.Khaki
-        Me.Guna2Panel4.Location = New System.Drawing.Point(420, 0)
+        Me.Guna2Panel4.Location = New System.Drawing.Point(419, 0)
         Me.Guna2Panel4.Name = "Guna2Panel4"
         Me.Guna2Panel4.Size = New System.Drawing.Size(1479, 73)
         Me.Guna2Panel4.TabIndex = 3
@@ -253,13 +253,7 @@ Partial Class Dashboard_Peternak
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Panel6 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Panel5 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel4 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Panel7 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents ListView1 As ListView
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
@@ -268,4 +262,10 @@ Partial Class Dashboard_Peternak
     Friend WithEvents nama_produk As ColumnHeader
     Friend WithEvents jenis_produk As ColumnHeader
     Friend WithEvents deskripsi As ColumnHeader
+    Friend WithEvents Guna2Panel7 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Panel6 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Panel5 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
 End Class
