@@ -55,4 +55,9 @@ Public Class Dashboard_Peternak
         Data_Katalog.Show()
         Me.Hide()
     End Sub
+
+    Private Sub Dashboard_Peternak_VisibleChanged(sender As Object, e As EventArgs) Handles MyBase.VisibleChanged
+        loadPeternakan()
+        LoadKatalog()
+    End Sub
 End Class

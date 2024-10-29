@@ -32,19 +32,19 @@ Partial Class Ubah_Peternakan
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.btnSimpan = New Guna.UI2.WinForms.Guna2Button()
+        Me.text_password = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.text_username = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.text_email = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.text_deskripsi = New System.Windows.Forms.RichTextBox()
+        Me.text_alamat = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.text_namaPeternakan = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.text_namaPeternakan = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.text_alamat = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.text_deskripsi = New System.Windows.Forms.RichTextBox()
-        Me.text_username = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.text_email = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.text_password = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.btnSimpan = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel6.SuspendLayout()
         Me.Guna2Panel5.SuspendLayout()
         Me.Guna2Panel7.SuspendLayout()
@@ -181,120 +181,42 @@ Partial Class Ubah_Peternakan
         Me.Guna2Panel3.Size = New System.Drawing.Size(1479, 962)
         Me.Guna2Panel3.TabIndex = 14
         '
-        'Label5
+        'btnSimpan
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(710, 178)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(60, 25)
-        Me.Label5.TabIndex = 9
-        Me.Label5.Text = "Email"
+        Me.btnSimpan.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnSimpan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnSimpan.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnSimpan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnSimpan.FillColor = System.Drawing.Color.LightSeaGreen
+        Me.btnSimpan.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSimpan.ForeColor = System.Drawing.Color.White
+        Me.btnSimpan.Location = New System.Drawing.Point(1201, 860)
+        Me.btnSimpan.Name = "btnSimpan"
+        Me.btnSimpan.Size = New System.Drawing.Size(250, 74)
+        Me.btnSimpan.TabIndex = 22
+        Me.btnSimpan.Text = "Simpan"
         '
-        'Label4
+        'text_password
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(25, 284)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(73, 25)
-        Me.Label4.TabIndex = 8
-        Me.Label4.Text = "Alamat"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(26, 377)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(92, 25)
-        Me.Label3.TabIndex = 7
-        Me.Label3.Text = "Deskripsi"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(25, 178)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(169, 25)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "Nama Peternakan"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(710, 284)
-        Me.Label6.Name = "Label6"
-        Me.Label6.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label6.Size = New System.Drawing.Size(102, 25)
-        Me.Label6.TabIndex = 10
-        Me.Label6.Text = "Username"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(710, 392)
-        Me.Label7.Name = "Label7"
-        Me.Label7.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label7.Size = New System.Drawing.Size(98, 25)
-        Me.Label7.TabIndex = 11
-        Me.Label7.Text = "Password"
-        '
-        'text_namaPeternakan
-        '
-        Me.text_namaPeternakan.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.text_namaPeternakan.DefaultText = ""
-        Me.text_namaPeternakan.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.text_namaPeternakan.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.text_namaPeternakan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.text_namaPeternakan.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.text_namaPeternakan.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.text_namaPeternakan.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.text_namaPeternakan.ForeColor = System.Drawing.Color.Black
-        Me.text_namaPeternakan.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.text_namaPeternakan.Location = New System.Drawing.Point(202, 158)
-        Me.text_namaPeternakan.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
-        Me.text_namaPeternakan.Name = "text_namaPeternakan"
-        Me.text_namaPeternakan.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.text_namaPeternakan.PlaceholderForeColor = System.Drawing.Color.Black
-        Me.text_namaPeternakan.PlaceholderText = ""
-        Me.text_namaPeternakan.SelectedText = ""
-        Me.text_namaPeternakan.Size = New System.Drawing.Size(427, 77)
-        Me.text_namaPeternakan.TabIndex = 12
-        '
-        'text_alamat
-        '
-        Me.text_alamat.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.text_alamat.DefaultText = ""
-        Me.text_alamat.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.text_alamat.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.text_alamat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.text_alamat.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.text_alamat.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.text_alamat.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.text_alamat.ForeColor = System.Drawing.Color.Black
-        Me.text_alamat.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.text_alamat.Location = New System.Drawing.Point(201, 259)
-        Me.text_alamat.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
-        Me.text_alamat.Name = "text_alamat"
-        Me.text_alamat.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.text_alamat.PlaceholderForeColor = System.Drawing.Color.Black
-        Me.text_alamat.PlaceholderText = ""
-        Me.text_alamat.SelectedText = ""
-        Me.text_alamat.Size = New System.Drawing.Size(428, 77)
-        Me.text_alamat.TabIndex = 14
-        '
-        'text_deskripsi
-        '
-        Me.text_deskripsi.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.text_deskripsi.Location = New System.Drawing.Point(201, 376)
-        Me.text_deskripsi.Name = "text_deskripsi"
-        Me.text_deskripsi.Size = New System.Drawing.Size(428, 321)
-        Me.text_deskripsi.TabIndex = 18
-        Me.text_deskripsi.Text = ""
+        Me.text_password.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.text_password.DefaultText = ""
+        Me.text_password.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.text_password.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.text_password.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.text_password.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.text_password.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.text_password.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.text_password.ForeColor = System.Drawing.Color.Black
+        Me.text_password.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.text_password.Location = New System.Drawing.Point(834, 362)
+        Me.text_password.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
+        Me.text_password.Name = "text_password"
+        Me.text_password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.text_password.PlaceholderForeColor = System.Drawing.Color.Black
+        Me.text_password.PlaceholderText = ""
+        Me.text_password.SelectedText = ""
+        Me.text_password.Size = New System.Drawing.Size(428, 77)
+        Me.text_password.TabIndex = 21
         '
         'text_username
         '
@@ -340,42 +262,120 @@ Partial Class Ubah_Peternakan
         Me.text_email.Size = New System.Drawing.Size(427, 77)
         Me.text_email.TabIndex = 19
         '
-        'text_password
+        'text_deskripsi
         '
-        Me.text_password.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.text_password.DefaultText = ""
-        Me.text_password.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.text_password.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.text_password.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.text_password.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.text_password.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.text_password.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.text_password.ForeColor = System.Drawing.Color.Black
-        Me.text_password.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.text_password.Location = New System.Drawing.Point(834, 362)
-        Me.text_password.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
-        Me.text_password.Name = "text_password"
-        Me.text_password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.text_password.PlaceholderForeColor = System.Drawing.Color.Black
-        Me.text_password.PlaceholderText = ""
-        Me.text_password.SelectedText = ""
-        Me.text_password.Size = New System.Drawing.Size(428, 77)
-        Me.text_password.TabIndex = 21
+        Me.text_deskripsi.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.text_deskripsi.Location = New System.Drawing.Point(201, 376)
+        Me.text_deskripsi.Name = "text_deskripsi"
+        Me.text_deskripsi.Size = New System.Drawing.Size(428, 321)
+        Me.text_deskripsi.TabIndex = 18
+        Me.text_deskripsi.Text = ""
         '
-        'btnSimpan
+        'text_alamat
         '
-        Me.btnSimpan.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.btnSimpan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.btnSimpan.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btnSimpan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnSimpan.FillColor = System.Drawing.Color.LightSeaGreen
-        Me.btnSimpan.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSimpan.ForeColor = System.Drawing.Color.White
-        Me.btnSimpan.Location = New System.Drawing.Point(1201, 860)
-        Me.btnSimpan.Name = "btnSimpan"
-        Me.btnSimpan.Size = New System.Drawing.Size(250, 74)
-        Me.btnSimpan.TabIndex = 22
-        Me.btnSimpan.Text = "Simpan"
+        Me.text_alamat.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.text_alamat.DefaultText = ""
+        Me.text_alamat.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.text_alamat.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.text_alamat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.text_alamat.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.text_alamat.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.text_alamat.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.text_alamat.ForeColor = System.Drawing.Color.Black
+        Me.text_alamat.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.text_alamat.Location = New System.Drawing.Point(201, 259)
+        Me.text_alamat.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
+        Me.text_alamat.Name = "text_alamat"
+        Me.text_alamat.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.text_alamat.PlaceholderForeColor = System.Drawing.Color.Black
+        Me.text_alamat.PlaceholderText = ""
+        Me.text_alamat.SelectedText = ""
+        Me.text_alamat.Size = New System.Drawing.Size(428, 77)
+        Me.text_alamat.TabIndex = 14
+        '
+        'text_namaPeternakan
+        '
+        Me.text_namaPeternakan.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.text_namaPeternakan.DefaultText = ""
+        Me.text_namaPeternakan.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.text_namaPeternakan.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.text_namaPeternakan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.text_namaPeternakan.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.text_namaPeternakan.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.text_namaPeternakan.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.text_namaPeternakan.ForeColor = System.Drawing.Color.Black
+        Me.text_namaPeternakan.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.text_namaPeternakan.Location = New System.Drawing.Point(202, 158)
+        Me.text_namaPeternakan.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
+        Me.text_namaPeternakan.Name = "text_namaPeternakan"
+        Me.text_namaPeternakan.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.text_namaPeternakan.PlaceholderForeColor = System.Drawing.Color.Black
+        Me.text_namaPeternakan.PlaceholderText = ""
+        Me.text_namaPeternakan.SelectedText = ""
+        Me.text_namaPeternakan.Size = New System.Drawing.Size(427, 77)
+        Me.text_namaPeternakan.TabIndex = 12
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(710, 392)
+        Me.Label7.Name = "Label7"
+        Me.Label7.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label7.Size = New System.Drawing.Size(98, 25)
+        Me.Label7.TabIndex = 11
+        Me.Label7.Text = "Password"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(710, 284)
+        Me.Label6.Name = "Label6"
+        Me.Label6.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label6.Size = New System.Drawing.Size(102, 25)
+        Me.Label6.TabIndex = 10
+        Me.Label6.Text = "Username"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(710, 178)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(60, 25)
+        Me.Label5.TabIndex = 9
+        Me.Label5.Text = "Email"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(25, 284)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(73, 25)
+        Me.Label4.TabIndex = 8
+        Me.Label4.Text = "Alamat"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(26, 377)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(92, 25)
+        Me.Label3.TabIndex = 7
+        Me.Label3.Text = "Deskripsi"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(25, 178)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(169, 25)
+        Me.Label1.TabIndex = 6
+        Me.Label1.Text = "Nama Peternakan"
         '
         'Ubah_Peternakan
         '

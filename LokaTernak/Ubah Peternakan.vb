@@ -20,19 +20,8 @@ Public Class Ubah_Peternakan
             End Using
         End Using
     End Sub
-    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
-        Dashboard_Peternak.Show()
-        Me.Hide()
-    End Sub
-    Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
-        Data_Katalog.Show()
-        Me.Hide()
-    End Sub
-    Private Sub Ubah_Peternakan_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        tampil_dataPeternakan()
-    End Sub
 
-    Private Sub btnSimpan_Click(sender As Object, e As EventArgs) Handles btnSimpan.Click
+    Private Sub ubah_peternakan()
         Dim query As String = "UPDATE peternakan SET nama_peternakan = @nama_peternakan, deskripsi = @deskripsi, alamat = @alamat, email = @email, username = @username, password = @password WHERE kode_peternakan = @kode_peternakan"
         Using connection As MySqlConnection = Module_Koneksi.GetConnection()
             Using command As New MySqlCommand(query, connection)
@@ -53,5 +42,28 @@ Public Class Ubah_Peternakan
                 End Try
             End Using
         End Using
+    End Sub
+    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
+        Dashboard_Peternak.Show()
+        Me.Hide()
+    End Sub
+    Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
+        Data_Katalog.Show()
+        Me.Hide()
+    End Sub
+    Private Sub Ubah_Peternakan_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        tampil_dataPeternakan()
+    End Sub
+
+    Private Sub btnSimpan_Click(sender As Object, e As EventArgs) Handles btnSimpan.Click
+        If String.IsNullOrEmpty(text_namaPeternakan.Text) Or String.IsNullOrEmpty(text_alamat.Text) Or String.IsNullOrEmpty(text_deskripsi.Text) Or String.IsNullOrEmpty(text_email.Text) Or String.IsNullOrEmpty(text_username.Text) Or String.IsNullOrEmpty(text_password.Text) Then
+            MessageBox.Show("Cek Input Yang Dibutuhkan Sebelum Melakukan Operasi Ini!")
+        Else
+            ubah_peternakan()
+        End If
+    End Sub
+
+    Private Sub Ubah_Peternakan_VisibleChanged(sender As Object, e As EventArgs) Handles MyBase.VisibleChanged
+        tampil_dataPeternakan()
     End Sub
 End Class

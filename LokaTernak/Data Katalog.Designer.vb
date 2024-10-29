@@ -30,6 +30,11 @@ Partial Class Data_Katalog
         Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.kode_produk = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.nama_produk = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.jenis_produk = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.deskripsi = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
@@ -45,11 +50,6 @@ Partial Class Data_Katalog
         Me.Label3 = New System.Windows.Forms.Label()
         Me.text_kodeProduk = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.ListView1 = New System.Windows.Forms.ListView()
-        Me.kode_produk = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.nama_produk = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.jenis_produk = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.deskripsi = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel7.SuspendLayout()
         Me.Guna2Panel6.SuspendLayout()
@@ -156,6 +156,37 @@ Partial Class Data_Katalog
         Me.Guna2Panel3.Name = "Guna2Panel3"
         Me.Guna2Panel3.Size = New System.Drawing.Size(1479, 425)
         Me.Guna2Panel3.TabIndex = 6
+        '
+        'ListView1
+        '
+        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.kode_produk, Me.nama_produk, Me.jenis_produk, Me.deskripsi})
+        Me.ListView1.HideSelection = False
+        Me.ListView1.Location = New System.Drawing.Point(75, 74)
+        Me.ListView1.Name = "ListView1"
+        Me.ListView1.Size = New System.Drawing.Size(1359, 312)
+        Me.ListView1.TabIndex = 4
+        Me.ListView1.UseCompatibleStateImageBehavior = False
+        Me.ListView1.View = System.Windows.Forms.View.Details
+        '
+        'kode_produk
+        '
+        Me.kode_produk.Text = "Kode Produk"
+        Me.kode_produk.Width = 150
+        '
+        'nama_produk
+        '
+        Me.nama_produk.Text = "Nama Produk"
+        Me.nama_produk.Width = 200
+        '
+        'jenis_produk
+        '
+        Me.jenis_produk.Text = "Jenis Produk"
+        Me.jenis_produk.Width = 150
+        '
+        'deskripsi
+        '
+        Me.deskripsi.Text = "Deskripsi"
+        Me.deskripsi.Width = 615
         '
         'Label1
         '
@@ -358,37 +389,6 @@ Partial Class Data_Katalog
         Me.Label2.Size = New System.Drawing.Size(100, 20)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Kode Produk"
-        '
-        'ListView1
-        '
-        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.kode_produk, Me.nama_produk, Me.jenis_produk, Me.deskripsi})
-        Me.ListView1.HideSelection = False
-        Me.ListView1.Location = New System.Drawing.Point(75, 74)
-        Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(1359, 312)
-        Me.ListView1.TabIndex = 4
-        Me.ListView1.UseCompatibleStateImageBehavior = False
-        Me.ListView1.View = System.Windows.Forms.View.Details
-        '
-        'kode_produk
-        '
-        Me.kode_produk.Text = "Kode Produk"
-        Me.kode_produk.Width = 150
-        '
-        'nama_produk
-        '
-        Me.nama_produk.Text = "Nama Produk"
-        Me.nama_produk.Width = 200
-        '
-        'jenis_produk
-        '
-        Me.jenis_produk.Text = "Jenis Produk"
-        Me.jenis_produk.Width = 150
-        '
-        'deskripsi
-        '
-        Me.deskripsi.Text = "Deskripsi"
-        Me.deskripsi.Width = 615
         '
         'Data_Katalog
         '
