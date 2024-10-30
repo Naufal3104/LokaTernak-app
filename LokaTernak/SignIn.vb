@@ -47,9 +47,9 @@ Public Class Sign_In
         Using connection As MySqlConnection = Module_Koneksi.GetConnection()
             If connection IsNot Nothing Then
                 Try
-                    ' Memperbarui query untuk mengambil role
-                    Dim query As String = "SELECT role FROM users WHERE username=@username AND password=@password"
-                    Using command As New MySqlCommand(query, connection)
+                    ' Memperbarui query untuk mengambil role dari tabel user
+                    Dim queryUser As String = "SELECT id_role FROM user WHERE username=@username AND password=@password"
+                    Using command As New MySqlCommand(queryUser, connection)
                         command.Parameters.AddWithValue("@username", username)
                         command.Parameters.AddWithValue("@password", password)
 
@@ -69,7 +69,26 @@ Public Class Sign_In
                                     MessageBox.Show("Role tidak dikenali.")
                             End Select
                         Else
-                            MessageBox.Show("Username atau Password salah.")
+                            ' Jika tidak ada pengguna di tabel user, coba tabel peternakan
+                            Dim queryFarm As String = "SELECT kode_peternakan FROM peternakan WHERE username=@username AND password=@password"
+                            Using farmCommand As New MySqlCommand(queryFarm, connection)
+                                farmCommand.Parameters.AddWithValue("@username", username)
+                                farmCommand.Parameters.AddWithValue("@password", password)
+
+                                Using reader As MySqlDataReader = farmCommand.ExecuteReader()
+                                    If reader.Read() Then
+                                        MessageBox.Show("Login sebagai Peternak berhasil!")
+                                        Dim kodePeternakan As String = reader("kode_peternakan").ToString()
+                                        Module_Koneksi.SetKodePeternakan(kodePeternakan)
+
+                                        ' Arahkan ke form peternakan
+                                        Dashboard_Peternak.Show()
+                                        Me.Hide()
+                                    Else
+                                        MessageBox.Show("Username atau Password salah.")
+                                    End If
+                                End Using
+                            End Using
                         End If
                     End Using
                 Catch ex As MySqlException
