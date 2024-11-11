@@ -47,7 +47,7 @@ Partial Class Dashboard_Admin
         Me.Panel1.Controls.Add(Me.Guna2Panel1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(319, 807)
         Me.Panel1.TabIndex = 0
@@ -64,7 +64,7 @@ Partial Class Dashboard_Admin
         Me.Guna2Button2.Image = CType(resources.GetObject("Guna2Button2.Image"), System.Drawing.Image)
         Me.Guna2Button2.ImageSize = New System.Drawing.Size(50, 50)
         Me.Guna2Button2.Location = New System.Drawing.Point(-4, 574)
-        Me.Guna2Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button2.Name = "Guna2Button2"
         Me.Guna2Button2.Size = New System.Drawing.Size(322, 104)
         Me.Guna2Button2.TabIndex = 3
@@ -74,7 +74,7 @@ Partial Class Dashboard_Admin
         '
         Me.Guna2Panel2.Controls.Add(Me.Guna2Button1)
         Me.Guna2Panel2.Location = New System.Drawing.Point(18, 282)
-        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel2.Name = "Guna2Panel2"
         Me.Guna2Panel2.Size = New System.Drawing.Size(301, 80)
         Me.Guna2Panel2.TabIndex = 6
@@ -93,7 +93,7 @@ Partial Class Dashboard_Admin
         Me.Guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button1.ImageSize = New System.Drawing.Size(50, 50)
         Me.Guna2Button1.Location = New System.Drawing.Point(9, 10)
-        Me.Guna2Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button1.Name = "Guna2Button1"
         Me.Guna2Button1.Size = New System.Drawing.Size(320, 67)
         Me.Guna2Button1.TabIndex = 5
@@ -104,7 +104,7 @@ Partial Class Dashboard_Admin
         Me.Guna2Panel1.BorderColor = System.Drawing.Color.Green
         Me.Guna2Panel1.Controls.Add(Me.Guna2Button4)
         Me.Guna2Panel1.Location = New System.Drawing.Point(18, 190)
-        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.Size = New System.Drawing.Size(301, 80)
         Me.Guna2Panel1.TabIndex = 4
@@ -123,7 +123,7 @@ Partial Class Dashboard_Admin
         Me.Guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button4.ImageSize = New System.Drawing.Size(50, 50)
         Me.Guna2Button4.Location = New System.Drawing.Point(9, 10)
-        Me.Guna2Button4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button4.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button4.Name = "Guna2Button4"
         Me.Guna2Button4.Size = New System.Drawing.Size(320, 67)
         Me.Guna2Button4.TabIndex = 3
@@ -136,7 +136,7 @@ Partial Class Dashboard_Admin
         Me.Panel2.Controls.Add(Me.Guna2HtmlLabel2)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(319, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1101, 80)
         Me.Panel2.TabIndex = 1
@@ -147,7 +147,7 @@ Partial Class Dashboard_Admin
         Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Segoe UI Black", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(39, 20)
-        Me.Guna2HtmlLabel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2HtmlLabel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
         Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(364, 70)
         Me.Guna2HtmlLabel2.TabIndex = 0
@@ -159,7 +159,7 @@ Partial Class Dashboard_Admin
         Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Segoe UI Black", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(358, 190)
-        Me.Guna2HtmlLabel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2HtmlLabel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
         Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(380, 49)
         Me.Guna2HtmlLabel1.TabIndex = 2
@@ -174,7 +174,7 @@ Partial Class Dashboard_Admin
         Me.Controls.Add(Me.Guna2HtmlLabel1)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Dashboard_Admin"
         Me.Text = "Dashboard_Admin"
         Me.Panel1.ResumeLayout(False)

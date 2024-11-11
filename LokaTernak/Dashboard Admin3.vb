@@ -20,6 +20,33 @@ Public Class Dashboard_Admin_3
         End Try
     End Sub
 
+    Private Function GenerateKodeArtikel() As String
+        Dim kodeTerakhir As String = ""
+        Dim query As String = "SELECT kode_artikel FROM artikel ORDER BY kode_artikel DESC LIMIT 1"
+
+        Using connection As MySqlConnection = Module_Koneksi.GetConnection()
+            Using command As New MySqlCommand(query, connection)
+                Try
+                    Dim result = command.ExecuteScalar()
+                    If result IsNot Nothing Then
+                        kodeTerakhir = result.ToString()
+                    End If
+                Catch ex As MySqlException
+                    MessageBox.Show("Terjadi kesalahan: " & ex.Message)
+                End Try
+            End Using
+        End Using
+
+        If String.IsNullOrEmpty(kodeTerakhir) Then
+            Return "ART001"
+        End If
+
+        Dim nomor As Integer = Integer.Parse(kodeTerakhir.Substring(3))
+        nomor += 1
+
+        Return "ART" & nomor.ToString("D3")
+    End Function
+
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
         Me.Hide()
         Dashboard_Admin2.Show()
@@ -27,6 +54,7 @@ Public Class Dashboard_Admin_3
 
     Private Sub Dashboard_Admin_3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         koneksi()
+        kodeArtikel.Text = GenerateKodeArtikel()
 
         ListView1.Items.Clear()
         cmd = New MySqlCommand("select * from artikel", conn)
@@ -46,9 +74,9 @@ Public Class Dashboard_Admin_3
 
     Private Sub button_edit_Click(sender As Object, e As EventArgs) Handles button_edit.Click
         cmd = New MySqlCommand("UPDATE artikel SET " &
-            "judul_artikel='" & judulArtikel.Text & "', " &
-            "deskripsi_artikel='" & deskripsiArtikel.Text & "', " &
-            "tanggal='" & tanggalArtikel.Text & "' " &
+            "judul='" & judulArtikel.Text & "', " &
+            "deskripsi='" & deskripsiArtikel.Text & "', " &
+            "tanggal_terbit='" & tanggalArtikel.Text & "' " &
             "WHERE kode_artikel='" & kodeArtikel.Text & "'", conn)
         cmd.ExecuteNonQuery()
 
@@ -66,12 +94,13 @@ Public Class Dashboard_Admin_3
         End If
         dr.Close()
         cmd.Dispose()
+        kodeArtikel.Text = GenerateKodeArtikel()
     End Sub
 
     Private Sub button_addArticle_Click(sender As Object, e As EventArgs) Handles button_addArticle.Click
         Try
             ' Siapkan command dengan parameter
-            Dim query As String = "INSERT INTO artikel (kode_artikel, judul_artikel, deskripsi_artikel, tanggal) VALUES (@kode, @judul, @deskripsi, @tanggal)"
+            Dim query As String = "INSERT INTO artikel (kode_artikel, judul, deskripsi, tanggal_terbit) VALUES (@kode, @judul, @deskripsi, @tanggal)"
 
             ' Membuat command dan menambahkan parameter
             Using cmd As New MySqlCommand(query, conn)
@@ -104,6 +133,7 @@ Public Class Dashboard_Admin_3
         End If
         dr.Close()
         cmd.Dispose()
+        kodeArtikel.Text = GenerateKodeArtikel()
     End Sub
 
     Private Sub button_delete_Click(sender As Object, e As EventArgs) Handles button_delete.Click
@@ -126,5 +156,11 @@ Public Class Dashboard_Admin_3
         End If
         dr.Close()
         cmd.Dispose()
+        kodeArtikel.Text = GenerateKodeArtikel()
+    End Sub
+
+    Private Sub Guna2Button6_Click(sender As Object, e As EventArgs) Handles Guna2Button6.Click
+        Me.Hide()
+        Sign_In.Show()
     End Sub
 End Class

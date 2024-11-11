@@ -22,6 +22,7 @@ Partial Class Ubah_Peternakan
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Ubah_Peternakan))
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
@@ -45,6 +46,7 @@ Partial Class Ubah_Peternakan
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel6.SuspendLayout()
         Me.Guna2Panel5.SuspendLayout()
         Me.Guna2Panel7.SuspendLayout()
@@ -152,6 +154,7 @@ Partial Class Ubah_Peternakan
         'Guna2Panel1
         '
         Me.Guna2Panel1.BackColor = System.Drawing.Color.YellowGreen
+        Me.Guna2Panel1.Controls.Add(Me.Guna2Button4)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Panel7)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Panel6)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Panel5)
@@ -377,6 +380,24 @@ Partial Class Ubah_Peternakan
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Nama Peternakan"
         '
+        'Guna2Button4
+        '
+        Me.Guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button4.FillColor = System.Drawing.Color.YellowGreen
+        Me.Guna2Button4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2Button4.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button4.Image = CType(resources.GetObject("Guna2Button4.Image"), System.Drawing.Image)
+        Me.Guna2Button4.ImageSize = New System.Drawing.Size(50, 50)
+        Me.Guna2Button4.Location = New System.Drawing.Point(1, 920)
+        Me.Guna2Button4.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Button4.Name = "Guna2Button4"
+        Me.Guna2Button4.Size = New System.Drawing.Size(418, 104)
+        Me.Guna2Button4.TabIndex = 16
+        Me.Guna2Button4.Text = "Keluar"
+        '
         'Ubah_Peternakan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -421,4 +442,5 @@ Partial Class Ubah_Peternakan
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents btnSimpan As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Button4 As Guna.UI2.WinForms.Guna2Button
 End Class

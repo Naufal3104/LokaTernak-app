@@ -60,4 +60,9 @@ Public Class Dashboard_Peternak
         loadPeternakan()
         LoadKatalog()
     End Sub
+
+    Private Sub Guna2Button4_Click(sender As Object, e As EventArgs) Handles Guna2Button4.Click
+        Me.Hide()
+        Sign_In.Show()
+    End Sub
 End Class

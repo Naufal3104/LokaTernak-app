@@ -22,6 +22,7 @@ Partial Class Dashboard_Peternak
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dashboard_Peternak))
         Me.deskripsi = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.nama_produk = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.kode_produk = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -40,6 +41,7 @@ Partial Class Dashboard_Peternak
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
         Me.label_deskripsi = New System.Windows.Forms.Label()
         Me.label_namaPeternakan = New System.Windows.Forms.Label()
+        Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel2.SuspendLayout()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel7.SuspendLayout()
@@ -109,6 +111,7 @@ Partial Class Dashboard_Peternak
         'Guna2Panel1
         '
         Me.Guna2Panel1.BackColor = System.Drawing.Color.YellowGreen
+        Me.Guna2Panel1.Controls.Add(Me.Guna2Button4)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Panel7)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Panel6)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Panel5)
@@ -226,6 +229,24 @@ Partial Class Dashboard_Peternak
         Me.label_namaPeternakan.TabIndex = 5
         Me.label_namaPeternakan.Text = "Sagara Seafood Farm"
         '
+        'Guna2Button4
+        '
+        Me.Guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button4.FillColor = System.Drawing.Color.YellowGreen
+        Me.Guna2Button4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2Button4.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button4.Image = CType(resources.GetObject("Guna2Button4.Image"), System.Drawing.Image)
+        Me.Guna2Button4.ImageSize = New System.Drawing.Size(50, 50)
+        Me.Guna2Button4.Location = New System.Drawing.Point(2, 920)
+        Me.Guna2Button4.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Button4.Name = "Guna2Button4"
+        Me.Guna2Button4.Size = New System.Drawing.Size(418, 104)
+        Me.Guna2Button4.TabIndex = 12
+        Me.Guna2Button4.Text = "Keluar"
+        '
         'Dashboard_Peternak
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -268,4 +289,5 @@ Partial Class Dashboard_Peternak
     Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents label_deskripsi As Label
     Friend WithEvents label_namaPeternakan As Label
+    Friend WithEvents Guna2Button4 As Guna.UI2.WinForms.Guna2Button
 End Class

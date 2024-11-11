@@ -26,6 +26,8 @@ Public Class Dashboard_Admin2
             conn.Close()
         End Try
     End Sub
+
+
     Private Sub Dashboard_Admin2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         koneksi()
 
@@ -92,5 +94,10 @@ Public Class Dashboard_Admin2
         End If
         dr.Close()
         cmd.Dispose()
+    End Sub
+
+    Private Sub Guna2Button5_Click(sender As Object, e As EventArgs) Handles Guna2Button5.Click
+        Me.Hide()
+        Sign_In.Show()
     End Sub
 End Class

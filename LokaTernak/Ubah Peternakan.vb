@@ -66,4 +66,9 @@ Public Class Ubah_Peternakan
     Private Sub Ubah_Peternakan_VisibleChanged(sender As Object, e As EventArgs) Handles MyBase.VisibleChanged
         tampil_dataPeternakan()
     End Sub
+
+    Private Sub Guna2Button4_Click(sender As Object, e As EventArgs) Handles Guna2Button4.Click
+        Me.Hide()
+        Sign_In.Show()
+    End Sub
 End Class
