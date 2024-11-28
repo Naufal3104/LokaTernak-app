@@ -47,13 +47,13 @@ Public Class Dashboard_Peternak
     End Sub
 
     Private Sub Guna2Button3_Click(sender As Object, e As EventArgs) Handles Guna2Button3.Click
-        Ubah_Peternakan.Show()
         Me.Hide()
+        Ubah_Peternakan.Show()
     End Sub
 
     Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
-        Data_Katalog.Show()
         Me.Hide()
+        Data_Katalog.Show()
     End Sub
 
     Private Sub Dashboard_Peternak_VisibleChanged(sender As Object, e As EventArgs) Handles MyBase.VisibleChanged
@@ -64,5 +64,15 @@ Public Class Dashboard_Peternak
     Private Sub Guna2Button4_Click(sender As Object, e As EventArgs) Handles Guna2Button4.Click
         Me.Hide()
         Sign_In.Show()
+    End Sub
+
+    Private Sub Guna2Button5_Click(sender As Object, e As EventArgs) Handles Guna2Button5.Click
+        Me.Hide()
+        Diskusi_Peternak.Show()
+    End Sub
+
+    Private Sub Guna2Button6_Click(sender As Object, e As EventArgs) Handles Guna2Button6.Click
+        Me.Hide()
+        Artikel_Peternak.Show()
     End Sub
 End Class

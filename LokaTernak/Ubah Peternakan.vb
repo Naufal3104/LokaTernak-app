@@ -43,11 +43,11 @@ Public Class Ubah_Peternakan
             End Using
         End Using
     End Sub
-    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
+    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs)
         Dashboard_Peternak.Show()
         Me.Hide()
     End Sub
-    Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
+    Private Sub Guna2Button2_Click(sender As Object, e As EventArgs)
         Data_Katalog.Show()
         Me.Hide()
     End Sub
@@ -67,8 +67,28 @@ Public Class Ubah_Peternakan
         tampil_dataPeternakan()
     End Sub
 
-    Private Sub Guna2Button4_Click(sender As Object, e As EventArgs) Handles Guna2Button4.Click
+    Private Sub Guna2Button4_Click(sender As Object, e As EventArgs)
         Me.Hide()
         Sign_In.Show()
+    End Sub
+
+    Private Sub Guna2Button5_Click(sender As Object, e As EventArgs) Handles Guna2Button5.Click
+        Me.Hide()
+        Diskusi_Peternak.Show()
+    End Sub
+
+    Private Sub Guna2Button6_Click(sender As Object, e As EventArgs) Handles Guna2Button6.Click
+        Me.Hide()
+        Artikel_Peternak.Show()
+    End Sub
+
+    Private Sub Guna2Button1_Click_1(sender As Object, e As EventArgs) Handles Guna2Button1.Click
+        Me.Hide()
+        Dashboard_Peternak.Show()
+    End Sub
+
+    Private Sub Guna2Button2_Click_1(sender As Object, e As EventArgs) Handles Guna2Button2.Click
+        Me.Hide()
+        Data_Katalog.Show()
     End Sub
 End Class

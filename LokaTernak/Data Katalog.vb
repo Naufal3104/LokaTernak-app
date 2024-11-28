@@ -122,12 +122,12 @@ Public Class Data_Katalog
 
         Return "PRD" & nomor.ToString("D3")
     End Function
-    Private Sub Guna2Button1_Click_1(sender As Object, e As EventArgs) Handles Guna2Button1.Click
+    Private Sub Guna2Button1_Click_1(sender As Object, e As EventArgs)
         Dashboard_Peternak.Show()
         Me.Hide()
     End Sub
 
-    Private Sub Guna2Button3_Click(sender As Object, e As EventArgs) Handles Guna2Button3.Click
+    Private Sub Guna2Button3_Click(sender As Object, e As EventArgs)
         Ubah_Peternakan.Show()
         Me.Hide()
     End Sub
@@ -183,8 +183,28 @@ Public Class Data_Katalog
         LoadKatalog()
     End Sub
 
-    Private Sub Guna2Button4_Click(sender As Object, e As EventArgs) Handles Guna2Button4.Click
+    Private Sub Guna2Button4_Click(sender As Object, e As EventArgs)
         Me.Hide()
         Sign_In.Show()
+    End Sub
+
+    Private Sub Guna2Button5_Click(sender As Object, e As EventArgs) Handles Guna2Button5.Click
+        Me.Hide()
+        Diskusi_Peternak.Show()
+    End Sub
+
+    Private Sub Guna2Button6_Click(sender As Object, e As EventArgs) Handles Guna2Button6.Click
+        Me.Hide()
+        Artikel_Peternak.Show()
+    End Sub
+
+    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
+        Me.Hide()
+        Dashboard_Peternak.Show()
+    End Sub
+
+    Private Sub Guna2Button3_Click_1(sender As Object, e As EventArgs) Handles Guna2Button3.Click
+        Me.Hide()
+        Ubah_Peternakan.Show()
     End Sub
 End Class

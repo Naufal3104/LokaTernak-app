@@ -76,7 +76,7 @@ Public Class Dashboard_Admin_3
         cmd = New MySqlCommand("UPDATE artikel SET " &
             "judul='" & judulArtikel.Text & "', " &
             "deskripsi='" & deskripsiArtikel.Text & "', " &
-            "tanggal_terbit='" & tanggalArtikel.Text & "' " &
+            "tanggal_terbit='" & tanggalArtikel.Value & "' " &
             "WHERE kode_artikel='" & kodeArtikel.Text & "'", conn)
         cmd.ExecuteNonQuery()
 
@@ -108,7 +108,7 @@ Public Class Dashboard_Admin_3
                 cmd.Parameters.AddWithValue("@kode", kodeArtikel.Text)
                 cmd.Parameters.AddWithValue("@judul", judulArtikel.Text)
                 cmd.Parameters.AddWithValue("@deskripsi", deskripsiArtikel.Text)
-                cmd.Parameters.AddWithValue("@tanggal", tanggalArtikel.Text)
+                cmd.Parameters.AddWithValue("@tanggal", tanggalArtikel.Value)
 
                 ' Eksekusi perintah
                 cmd.ExecuteNonQuery()

@@ -130,6 +130,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Artikel Peternak.Designer.vb">
+      <DependentUpon>Artikel Peternak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Artikel Peternak.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Dashboard Admin3.Designer.vb">
       <DependentUpon>Dashboard Admin3.vb</DependentUpon>
     </Compile>
@@ -170,6 +176,12 @@
       <DependentUpon>Data Katalog.vb</DependentUpon>
     </Compile>
     <Compile Include="Data Katalog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diskusi Peternak.Designer.vb">
+      <DependentUpon>Diskusi Peternak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Diskusi Peternak.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Main Form.Designer.vb">
@@ -227,6 +239,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Artikel Peternak.resx">
+      <DependentUpon>Artikel Peternak.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard Admin.resx">
       <DependentUpon>Dashboard Admin.vb</DependentUpon>
     </EmbeddedResource>
@@ -241,6 +256,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Data Katalog.resx">
       <DependentUpon>Data Katalog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diskusi Peternak.resx">
+      <DependentUpon>Diskusi Peternak.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main Form.resx">
       <DependentUpon>Main Form.vb</DependentUpon>
@@ -291,6 +309,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\farmer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chat_1195994.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\towels_3009949.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -47,7 +47,7 @@ Partial Class Dashboard_Admin_3
         Me.judul_artikel = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.deskripsi_artikel = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.tanggal_artikel = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.tanggalArtikel = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.tanggalArtikel = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -55,7 +55,7 @@ Partial Class Dashboard_Admin_3
         '
         Me.Guna2Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Guna2Panel2.Location = New System.Drawing.Point(2, 286)
-        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel2.Name = "Guna2Panel2"
         Me.Guna2Panel2.Size = New System.Drawing.Size(14, 81)
         Me.Guna2Panel2.TabIndex = 19
@@ -66,7 +66,7 @@ Partial Class Dashboard_Admin_3
         Me.Guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel5.Font = New System.Drawing.Font("Segoe UI", 10.125!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(369, 406)
-        Me.Guna2HtmlLabel5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2HtmlLabel5.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2HtmlLabel5.Name = "Guna2HtmlLabel5"
         Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(206, 36)
         Me.Guna2HtmlLabel5.TabIndex = 32
@@ -82,7 +82,7 @@ Partial Class Dashboard_Admin_3
         Me.button_delete.Font = New System.Drawing.Font("Segoe UI", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.button_delete.ForeColor = System.Drawing.Color.IndianRed
         Me.button_delete.Location = New System.Drawing.Point(993, 330)
-        Me.button_delete.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.button_delete.Margin = New System.Windows.Forms.Padding(2)
         Me.button_delete.Name = "button_delete"
         Me.button_delete.Size = New System.Drawing.Size(135, 36)
         Me.button_delete.TabIndex = 30
@@ -98,7 +98,7 @@ Partial Class Dashboard_Admin_3
         Me.button_edit.Font = New System.Drawing.Font("Segoe UI", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.button_edit.ForeColor = System.Drawing.Color.White
         Me.button_edit.Location = New System.Drawing.Point(644, 330)
-        Me.button_edit.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.button_edit.Margin = New System.Windows.Forms.Padding(2)
         Me.button_edit.Name = "button_edit"
         Me.button_edit.Size = New System.Drawing.Size(135, 36)
         Me.button_edit.TabIndex = 29
@@ -110,7 +110,7 @@ Partial Class Dashboard_Admin_3
         Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Segoe UI", 10.125!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(1193, 206)
-        Me.Guna2HtmlLabel4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2HtmlLabel4.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
         Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(128, 36)
         Me.Guna2HtmlLabel4.TabIndex = 27
@@ -142,7 +142,7 @@ Partial Class Dashboard_Admin_3
         Me.Guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel3.Font = New System.Drawing.Font("Segoe UI", 10.125!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(922, 206)
-        Me.Guna2HtmlLabel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2HtmlLabel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
         Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(206, 50)
         Me.Guna2HtmlLabel3.TabIndex = 25
@@ -174,7 +174,7 @@ Partial Class Dashboard_Admin_3
         Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Segoe UI", 10.125!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(644, 206)
-        Me.Guna2HtmlLabel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2HtmlLabel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
         Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(206, 50)
         Me.Guna2HtmlLabel2.TabIndex = 23
@@ -186,7 +186,7 @@ Partial Class Dashboard_Admin_3
         Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Segoe UI", 10.125!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(369, 206)
-        Me.Guna2HtmlLabel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2HtmlLabel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
         Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(206, 36)
         Me.Guna2HtmlLabel1.TabIndex = 21
@@ -197,7 +197,7 @@ Partial Class Dashboard_Admin_3
         Me.Guna2Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Guna2Panel1.Location = New System.Drawing.Point(319, 0)
-        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.Size = New System.Drawing.Size(1101, 80)
         Me.Guna2Panel1.TabIndex = 20
@@ -215,7 +215,7 @@ Partial Class Dashboard_Admin_3
         Me.Guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button2.ImageSize = New System.Drawing.Size(50, 50)
         Me.Guna2Button2.Location = New System.Drawing.Point(9, 287)
-        Me.Guna2Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button2.Name = "Guna2Button2"
         Me.Guna2Button2.Padding = New System.Windows.Forms.Padding(38, 0, 0, 0)
         Me.Guna2Button2.Size = New System.Drawing.Size(310, 83)
@@ -235,7 +235,7 @@ Partial Class Dashboard_Admin_3
         Me.Guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button1.ImageSize = New System.Drawing.Size(50, 50)
         Me.Guna2Button1.Location = New System.Drawing.Point(9, 178)
-        Me.Guna2Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button1.Name = "Guna2Button1"
         Me.Guna2Button1.Padding = New System.Windows.Forms.Padding(38, 0, 0, 0)
         Me.Guna2Button1.Size = New System.Drawing.Size(310, 81)
@@ -271,7 +271,7 @@ Partial Class Dashboard_Admin_3
         Me.Panel1.Controls.Add(Me.Guna2Button1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(319, 807)
         Me.Panel1.TabIndex = 19
@@ -288,7 +288,7 @@ Partial Class Dashboard_Admin_3
         Me.Guna2Button6.Image = CType(resources.GetObject("Guna2Button6.Image"), System.Drawing.Image)
         Me.Guna2Button6.ImageSize = New System.Drawing.Size(50, 50)
         Me.Guna2Button6.Location = New System.Drawing.Point(90, 682)
-        Me.Guna2Button6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button6.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button6.Name = "Guna2Button6"
         Me.Guna2Button6.Size = New System.Drawing.Size(136, 59)
         Me.Guna2Button6.TabIndex = 21
@@ -304,7 +304,7 @@ Partial Class Dashboard_Admin_3
         Me.button_addArticle.Font = New System.Drawing.Font("Segoe UI", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.button_addArticle.ForeColor = System.Drawing.Color.White
         Me.button_addArticle.Location = New System.Drawing.Point(820, 330)
-        Me.button_addArticle.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.button_addArticle.Margin = New System.Windows.Forms.Padding(2)
         Me.button_addArticle.Name = "button_addArticle"
         Me.button_addArticle.Size = New System.Drawing.Size(135, 36)
         Me.button_addArticle.TabIndex = 33
@@ -316,7 +316,7 @@ Partial Class Dashboard_Admin_3
         Me.Guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel6.Font = New System.Drawing.Font("Segoe UI Black", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel6.Location = New System.Drawing.Point(369, 118)
-        Me.Guna2HtmlLabel6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2HtmlLabel6.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2HtmlLabel6.Name = "Guna2HtmlLabel6"
         Me.Guna2HtmlLabel6.Size = New System.Drawing.Size(138, 57)
         Me.Guna2HtmlLabel6.TabIndex = 34
@@ -327,7 +327,7 @@ Partial Class Dashboard_Admin_3
         Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.kode_artikel, Me.judul_artikel, Me.deskripsi_artikel, Me.tanggal_artikel})
         Me.ListView1.HideSelection = False
         Me.ListView1.Location = New System.Drawing.Point(369, 454)
-        Me.ListView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ListView1.Margin = New System.Windows.Forms.Padding(2)
         Me.ListView1.Name = "ListView1"
         Me.ListView1.Size = New System.Drawing.Size(1032, 337)
         Me.ListView1.TabIndex = 35
@@ -337,17 +337,17 @@ Partial Class Dashboard_Admin_3
         'kode_artikel
         '
         Me.kode_artikel.Text = "Kode Artikel"
-        Me.kode_artikel.Width = 200
+        Me.kode_artikel.Width = 100
         '
         'judul_artikel
         '
         Me.judul_artikel.Text = "Judul Artikel"
-        Me.judul_artikel.Width = 400
+        Me.judul_artikel.Width = 200
         '
         'deskripsi_artikel
         '
         Me.deskripsi_artikel.Text = "Deskripsi"
-        Me.deskripsi_artikel.Width = 600
+        Me.deskripsi_artikel.Width = 200
         '
         'tanggal_artikel
         '
@@ -356,23 +356,17 @@ Partial Class Dashboard_Admin_3
         '
         'tanggalArtikel
         '
-        Me.tanggalArtikel.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.tanggalArtikel.DefaultText = ""
-        Me.tanggalArtikel.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.tanggalArtikel.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.tanggalArtikel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.tanggalArtikel.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.tanggalArtikel.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.tanggalArtikel.Checked = True
+        Me.tanggalArtikel.FillColor = System.Drawing.Color.White
         Me.tanggalArtikel.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.tanggalArtikel.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.tanggalArtikel.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
         Me.tanggalArtikel.Location = New System.Drawing.Point(1193, 250)
-        Me.tanggalArtikel.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.tanggalArtikel.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
+        Me.tanggalArtikel.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.tanggalArtikel.Name = "tanggalArtikel"
-        Me.tanggalArtikel.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.tanggalArtikel.PlaceholderText = ""
-        Me.tanggalArtikel.SelectedText = ""
-        Me.tanggalArtikel.Size = New System.Drawing.Size(206, 46)
-        Me.tanggalArtikel.TabIndex = 3
+        Me.tanggalArtikel.Size = New System.Drawing.Size(215, 46)
+        Me.tanggalArtikel.TabIndex = 36
+        Me.tanggalArtikel.Value = New Date(2024, 11, 11, 0, 0, 0, 0)
         '
         'Dashboard_Admin_3
         '
@@ -381,13 +375,13 @@ Partial Class Dashboard_Admin_3
         Me.AutoSize = True
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(1420, 807)
+        Me.Controls.Add(Me.tanggalArtikel)
         Me.Controls.Add(Me.ListView1)
         Me.Controls.Add(Me.Guna2HtmlLabel6)
         Me.Controls.Add(Me.button_addArticle)
         Me.Controls.Add(Me.Guna2HtmlLabel5)
         Me.Controls.Add(Me.button_delete)
         Me.Controls.Add(Me.button_edit)
-        Me.Controls.Add(Me.tanggalArtikel)
         Me.Controls.Add(Me.Guna2HtmlLabel4)
         Me.Controls.Add(Me.deskripsiArtikel)
         Me.Controls.Add(Me.Guna2HtmlLabel3)
@@ -397,7 +391,7 @@ Partial Class Dashboard_Admin_3
         Me.Controls.Add(Me.Guna2Panel1)
         Me.Controls.Add(Me.kodeArtikel)
         Me.Controls.Add(Me.Panel1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Dashboard_Admin_3"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Dashboard_Admin_3"
@@ -429,6 +423,6 @@ Partial Class Dashboard_Admin_3
     Friend WithEvents judul_artikel As ColumnHeader
     Friend WithEvents deskripsi_artikel As ColumnHeader
     Friend WithEvents tanggal_artikel As ColumnHeader
-    Friend WithEvents tanggalArtikel As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents button_delete As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents tanggalArtikel As Guna.UI2.WinForms.Guna2DateTimePicker
 End Class
