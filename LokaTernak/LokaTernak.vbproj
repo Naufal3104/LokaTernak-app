@@ -178,6 +178,12 @@
     <Compile Include="Data Katalog.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Diskusi Peternak Rincian.Designer.vb">
+      <DependentUpon>Diskusi Peternak Rincian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Diskusi Peternak Rincian.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Diskusi Peternak.Designer.vb">
       <DependentUpon>Diskusi Peternak.vb</DependentUpon>
     </Compile>
@@ -256,6 +262,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Data Katalog.resx">
       <DependentUpon>Data Katalog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diskusi Peternak Rincian.resx">
+      <DependentUpon>Diskusi Peternak Rincian.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Diskusi Peternak.resx">
       <DependentUpon>Diskusi Peternak.vb</DependentUpon>

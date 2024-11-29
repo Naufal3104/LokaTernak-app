@@ -23,11 +23,10 @@ Public Class Diskusi_Peternak
 
     Private Sub Diskusi_Peternak_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         With ListView1
-            .Columns.Add("Kode Diskusi", 190)
-            .Columns.Add("Pengguna / Peternakan", 200)
-            .Columns.Add("Judul Diskusi", 400)
-            '.Columns.Add("Isi Diskusi", 250)
-            .Columns.Add("Tanggal Dibuat", 120)
+            .Columns.Add("Judul Diskusi", 675)
+            .Columns.Add("Pembuat Diskusi", 200)
+            .Columns.Add("Tanggal Dibuat", 100)
+            .Columns.Add("Kode Diskusi", 0)
             .View = View.Details
         End With
         LoadDataDiskusi()
@@ -36,10 +35,10 @@ Public Class Diskusi_Peternak
     Private Sub LoadDataDiskusi()
         Dim conn As MySqlConnection = Module_Koneksi.GetConnection
         Dim query As String = "
-            SELECT d.kode_diskusi, 
-                   COALESCE(u.kode_user, p.kode_peternakan) AS pengguna_peternakan,
-                   d.judul_diskusi, 
-                   d.tanggal_dibuat 
+            SELECT d.judul_diskusi,
+                   COALESCE(u.username, p.nama_peternakan) AS pengguna_peternakan,
+                   d.tanggal_dibuat,
+                   d.kode_diskusi
             FROM diskusi d
             LEFT JOIN user u ON d.kode_user = u.kode_user
             LEFT JOIN peternakan p ON d.kode_peternakan = p.kode_peternakan
@@ -53,13 +52,12 @@ Public Class Diskusi_Peternak
             ListView1.Items.Clear()
 
             For Each row As DataRow In table.Rows
-                Dim item As New ListViewItem(row("kode_diskusi").ToString())
+                Dim item As New ListViewItem(row("judul_diskusi").ToString())
 
                 ' Menampilkan pengguna atau peternakan
                 item.SubItems.Add(row("pengguna_peternakan").ToString())
-                item.SubItems.Add(row("judul_diskusi").ToString())
-                'item.SubItems.Add(row("isi_diskusi").ToString())
                 item.SubItems.Add(Convert.ToDateTime(row("tanggal_dibuat")).ToString("g"))
+                item.SubItems.Add(row("kode_diskusi").ToString())
 
                 ListView1.Items.Add(item)
             Next
