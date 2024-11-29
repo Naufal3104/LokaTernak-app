@@ -36,11 +36,13 @@ Partial Class Artikel_Peternak
         Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Guna2Panel7.SuspendLayout()
         Me.Guna2Panel6.SuspendLayout()
         Me.Guna2Panel5.SuspendLayout()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel3.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Guna2Panel7
@@ -92,6 +94,7 @@ Partial Class Artikel_Peternak
         '
         'Guna2Panel3
         '
+        Me.Guna2Panel3.Controls.Add(Me.DataGridView1)
         Me.Guna2Panel3.Controls.Add(Me.Label2)
         Me.Guna2Panel3.Location = New System.Drawing.Point(420, 68)
         Me.Guna2Panel3.Name = "Guna2Panel3"
@@ -102,7 +105,7 @@ Partial Class Artikel_Peternak
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(35, 42)
+        Me.Label2.Location = New System.Drawing.Point(8, 26)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(94, 32)
         Me.Label2.TabIndex = 5
@@ -228,6 +231,16 @@ Partial Class Artikel_Peternak
         Me.Guna2Button1.Text = "Dashboard"
         Me.Guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(14, 143)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowHeadersWidth = 62
+        Me.DataGridView1.RowTemplate.Height = 28
+        Me.DataGridView1.Size = New System.Drawing.Size(1465, 811)
+        Me.DataGridView1.TabIndex = 6
+        '
         'Artikel_Peternak
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -245,6 +258,7 @@ Partial Class Artikel_Peternak
         Me.Guna2Panel1.ResumeLayout(False)
         Me.Guna2Panel3.ResumeLayout(False)
         Me.Guna2Panel3.PerformLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -262,4 +276,5 @@ Partial Class Artikel_Peternak
     Friend WithEvents Guna2Panel4 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Label2 As Label
+    Friend WithEvents DataGridView1 As DataGridView
 End Class
