@@ -237,6 +237,12 @@
     <Compile Include="SignIn.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Tambah Diskusi.Designer.vb">
+      <DependentUpon>Tambah Diskusi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tambah Diskusi.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Ubah Peternakan.Designer.vb">
       <DependentUpon>Ubah Peternakan.vb</DependentUpon>
     </Compile>
@@ -289,6 +295,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SignIn.resx">
       <DependentUpon>SignIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tambah Diskusi.resx">
+      <DependentUpon>Tambah Diskusi.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ubah Peternakan.resx">
       <DependentUpon>Ubah Peternakan.vb</DependentUpon>

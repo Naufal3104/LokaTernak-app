@@ -32,7 +32,23 @@ Public Class Diskusi_Peternak
         LoadDataDiskusi()
     End Sub
 
-    Private Sub LoadDataDiskusi()
+    Public Sub cekPengguna()
+        Using connection As MySqlConnection = Module_Koneksi.GetConnection()
+            Dim query As String = "SELECT kode_peternakan FROM diskusi WHERE kode_diskusi = @kode_diskusi"
+            Using command As New MySqlCommand(query, connection)
+                command.Parameters.AddWithValue("@kode_diskusi", Module_Koneksi.GetKodeDiskusi())
+                Using reader As MySqlDataReader = command.ExecuteReader()
+                    If reader.Read() Then
+                        If reader("kode_peternakan").ToString() = Module_Koneksi.GetKodePeternakan() Then
+                            Diskusi_Peternak_Rincian.buttonHapus.Visible = True
+                        End If
+                    End If
+                End Using
+            End Using
+        End Using
+    End Sub
+
+    Public Sub LoadDataDiskusi()
         Dim conn As MySqlConnection = Module_Koneksi.GetConnection
         Dim query As String = "
             SELECT d.judul_diskusi,
@@ -73,10 +89,15 @@ Public Class Diskusi_Peternak
         If item IsNot Nothing Then
             Dim kodeDiskusi As String = item.SubItems(3).Text ' Mengambil dari kolom pertama (kode_diskusi)
             Module_Koneksi.SetKodeDiskusi(kodeDiskusi)
+            cekPengguna()
             Me.Hide()
             Diskusi_Peternak_Rincian.Show()
             Diskusi_Peternak_Rincian.load_diskusi()
             Diskusi_Peternak_Rincian.LoadDataBalasan()
         End If
+    End Sub
+
+    Private Sub Guna2Button7_Click(sender As Object, e As EventArgs) Handles Guna2Button7.Click
+        Tambah_Diskusi.Show()
     End Sub
 End Class

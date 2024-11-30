@@ -1,16 +1,37 @@
-﻿Imports System.Runtime.Remoting.Contexts
+﻿Imports System.IO
+Imports System.Reflection
+Imports System.Runtime.Remoting.Contexts
+Imports Guna.UI2.WinForms
 Imports MySql.Data.MySqlClient
 
 Public Class Diskusi_Peternak_Rincian
     Public Sub load_diskusi()
         Using connection As MySqlConnection = Module_Koneksi.GetConnection()
-            Dim query As String = "SELECT judul_diskusi, isi_diskusi FROM diskusi WHERE kode_diskusi = @kode_diskusi"
+            Dim query As String = "SELECT judul_diskusi, isi_diskusi, gambar_lampiran FROM diskusi WHERE kode_diskusi = @kode_diskusi"
             Using command As New MySqlCommand(query, connection)
                 command.Parameters.AddWithValue("@kode_diskusi", Module_Koneksi.GetKodeDiskusi())
                 Using reader As MySqlDataReader = command.ExecuteReader()
                     If reader.Read() Then
                         label_judul.Text = reader("judul_diskusi").ToString()
                         label_isi.Text = reader("isi_diskusi").ToString()
+
+                        ' Memeriksa apakah kolom gambar_lampiran adalah DBNull
+                        If Not reader.IsDBNull(reader.GetOrdinal("gambar_lampiran")) Then
+                            Dim gambarData As Byte() = CType(reader("gambar_lampiran"), Byte())
+                            If gambarData IsNot Nothing AndAlso gambarData.Length > 0 Then
+                                Using ms As New MemoryStream(gambarData)
+                                    ' Misalkan Anda menggunakan Guna2PictureBox untuk menampilkan gambar
+                                    GambarLampiran.Image = Image.FromStream(ms)
+                                    GambarLampiran.SizeMode = PictureBoxSizeMode.Zoom
+                                End Using
+                            Else
+                                ' Jika tidak ada gambar, Anda bisa mengatur gambar default
+                                GambarLampiran.Image = Nothing ' Atau gambar default lainnya
+                            End If
+                        Else
+                            ' Jika gambar_lampiran adalah DBNull, atur gambar ke null atau default
+                            GambarLampiran.Image = Nothing ' Atau gambar default lainnya
+                        End If
                     End If
                 End Using
             End Using
@@ -25,7 +46,8 @@ Public Class Diskusi_Peternak_Rincian
             .Columns.Add("Kode Balasan", 0)
             .View = View.Details
         End With
-        label_isi.MaximumSize = New Size(950, 1000)
+        label_isi.MaximumSize = New Size(700, 1000)
+        Diskusi_Peternak.cekPengguna()
     End Sub
 
     Public Sub LoadDataBalasan()
@@ -69,32 +91,42 @@ Public Class Diskusi_Peternak_Rincian
     End Sub
 
     Private Sub buttonKembali_Click(sender As Object, e As EventArgs) Handles buttonKembali.Click
+        buttonHapus.Visible = False
         Me.Hide()
         Diskusi_Peternak.Show()
     End Sub
 
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
+        buttonHapus.Visible = False
         Me.Hide()
         Dashboard_Peternak.Show()
     End Sub
 
     Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
+        buttonHapus.Visible = False
         Me.Hide()
         Data_Katalog.Show()
     End Sub
 
     Private Sub Guna2Button3_Click(sender As Object, e As EventArgs) Handles Guna2Button3.Click
+        buttonHapus.Visible = False
         Me.Hide()
         Ubah_Peternakan.Show()
     End Sub
 
     Private Sub Guna2Button6_Click(sender As Object, e As EventArgs) Handles Guna2Button6.Click
+        buttonHapus.Visible = False
         Me.Hide()
         Artikel_Peternak.Show()
     End Sub
 
     Private Sub Guna2Button5_Click(sender As Object, e As EventArgs) Handles Guna2Button5.Click
+        buttonHapus.Visible = False 
         Me.Hide()
         Diskusi_Peternak.Show()
+    End Sub
+
+    Private Sub buttonHapus_Click(sender As Object, e As EventArgs) Handles buttonHapus.Click
+
     End Sub
 End Class
