@@ -34,13 +34,17 @@ Partial Class Diskusi_Peternak_Rincian
         Me.Guna2Button5 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.label_judul = New System.Windows.Forms.Label()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.label_isi = New System.Windows.Forms.Label()
+        Me.buttonKembali = New Guna.UI2.WinForms.Guna2Button()
         Me.ListView1 = New System.Windows.Forms.ListView()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Guna2Panel7.SuspendLayout()
         Me.Guna2Panel6.SuspendLayout()
         Me.Guna2Panel5.SuspendLayout()
         Me.Guna2Panel1.SuspendLayout()
+        Me.Guna2Panel4.SuspendLayout()
         Me.Guna2Panel3.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -206,39 +210,76 @@ Partial Class Diskusi_Peternak_Rincian
         'Guna2Panel4
         '
         Me.Guna2Panel4.BackColor = System.Drawing.Color.Khaki
+        Me.Guna2Panel4.Controls.Add(Me.label_judul)
         Me.Guna2Panel4.Location = New System.Drawing.Point(420, -6)
         Me.Guna2Panel4.Name = "Guna2Panel4"
         Me.Guna2Panel4.Size = New System.Drawing.Size(1574, 73)
         Me.Guna2Panel4.TabIndex = 21
         '
+        'label_judul
+        '
+        Me.label_judul.AutoSize = True
+        Me.label_judul.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.label_judul.Location = New System.Drawing.Point(6, 25)
+        Me.label_judul.Name = "label_judul"
+        Me.label_judul.Size = New System.Drawing.Size(188, 32)
+        Me.label_judul.TabIndex = 5
+        Me.label_judul.Text = "Nama Diskusi"
+        '
         'Guna2Panel3
         '
         Me.Guna2Panel3.AutoScroll = True
+        Me.Guna2Panel3.Controls.Add(Me.Label1)
+        Me.Guna2Panel3.Controls.Add(Me.label_isi)
+        Me.Guna2Panel3.Controls.Add(Me.buttonKembali)
         Me.Guna2Panel3.Controls.Add(Me.ListView1)
-        Me.Guna2Panel3.Controls.Add(Me.Label2)
         Me.Guna2Panel3.Location = New System.Drawing.Point(420, 67)
         Me.Guna2Panel3.Name = "Guna2Panel3"
         Me.Guna2Panel3.Size = New System.Drawing.Size(1479, 962)
         Me.Guna2Panel3.TabIndex = 20
         '
+        'label_isi
+        '
+        Me.label_isi.AutoSize = True
+        Me.label_isi.Location = New System.Drawing.Point(18, 64)
+        Me.label_isi.Name = "label_isi"
+        Me.label_isi.Size = New System.Drawing.Size(80, 20)
+        Me.label_isi.TabIndex = 8
+        Me.label_isi.Text = "Isi Diskusi"
+        '
+        'buttonKembali
+        '
+        Me.buttonKembali.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.buttonKembali.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.buttonKembali.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.buttonKembali.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.buttonKembali.FillColor = System.Drawing.Color.SeaGreen
+        Me.buttonKembali.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.buttonKembali.ForeColor = System.Drawing.Color.White
+        Me.buttonKembali.Location = New System.Drawing.Point(0, -1)
+        Me.buttonKembali.Name = "buttonKembali"
+        Me.buttonKembali.Size = New System.Drawing.Size(131, 39)
+        Me.buttonKembali.TabIndex = 7
+        Me.buttonKembali.Text = "Kembali"
+        '
         'ListView1
         '
         Me.ListView1.HideSelection = False
-        Me.ListView1.Location = New System.Drawing.Point(14, 70)
+        Me.ListView1.Location = New System.Drawing.Point(14, 501)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(1465, 887)
+        Me.ListView1.Size = New System.Drawing.Size(1462, 454)
         Me.ListView1.TabIndex = 6
         Me.ListView1.UseCompatibleStateImageBehavior = False
         '
-        'Label2
+        'Label1
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(8, 6)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(106, 32)
-        Me.Label2.TabIndex = 5
-        Me.Label2.Text = "Diskusi"
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(16, 457)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(118, 32)
+        Me.Label1.TabIndex = 6
+        Me.Label1.Text = "Balasan"
         '
         'Diskusi_Peternak_Rincian
         '
@@ -255,6 +296,8 @@ Partial Class Diskusi_Peternak_Rincian
         Me.Guna2Panel6.ResumeLayout(False)
         Me.Guna2Panel5.ResumeLayout(False)
         Me.Guna2Panel1.ResumeLayout(False)
+        Me.Guna2Panel4.ResumeLayout(False)
+        Me.Guna2Panel4.PerformLayout()
         Me.Guna2Panel3.ResumeLayout(False)
         Me.Guna2Panel3.PerformLayout()
         Me.ResumeLayout(False)
@@ -274,5 +317,8 @@ Partial Class Diskusi_Peternak_Rincian
     Friend WithEvents Guna2Panel4 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents ListView1 As ListView
-    Friend WithEvents Label2 As Label
+    Friend WithEvents label_judul As Label
+    Friend WithEvents buttonKembali As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents label_isi As Label
+    Friend WithEvents Label1 As Label
 End Class

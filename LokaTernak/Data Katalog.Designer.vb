@@ -45,16 +45,17 @@ Partial Class Data_Katalog
         Me.text_kodeProduk = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel7 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Button6 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button5 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Panel7 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel3.SuspendLayout()
+        Me.Guna2Panel4.SuspendLayout()
         Me.Guna2Panel2.SuspendLayout()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel7.SuspendLayout()
@@ -65,7 +66,6 @@ Partial Class Data_Katalog
         'Guna2Panel3
         '
         Me.Guna2Panel3.Controls.Add(Me.ListView1)
-        Me.Guna2Panel3.Controls.Add(Me.Label1)
         Me.Guna2Panel3.Location = New System.Drawing.Point(420, 67)
         Me.Guna2Panel3.Name = "Guna2Panel3"
         Me.Guna2Panel3.Size = New System.Drawing.Size(1479, 425)
@@ -106,7 +106,7 @@ Partial Class Data_Katalog
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(69, 22)
+        Me.Label1.Location = New System.Drawing.Point(5, 24)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(179, 32)
         Me.Label1.TabIndex = 0
@@ -115,6 +115,7 @@ Partial Class Data_Katalog
         'Guna2Panel4
         '
         Me.Guna2Panel4.BackColor = System.Drawing.Color.Khaki
+        Me.Guna2Panel4.Controls.Add(Me.Label1)
         Me.Guna2Panel4.Location = New System.Drawing.Point(420, -6)
         Me.Guna2Panel4.Name = "Guna2Panel4"
         Me.Guna2Panel4.Size = New System.Drawing.Size(1698, 73)
@@ -318,31 +319,6 @@ Partial Class Data_Katalog
         Me.Guna2Panel1.Size = New System.Drawing.Size(420, 1024)
         Me.Guna2Panel1.TabIndex = 9
         '
-        'Guna2Panel7
-        '
-        Me.Guna2Panel7.Controls.Add(Me.Guna2Button3)
-        Me.Guna2Panel7.Location = New System.Drawing.Point(1, 221)
-        Me.Guna2Panel7.Name = "Guna2Panel7"
-        Me.Guna2Panel7.Size = New System.Drawing.Size(419, 75)
-        Me.Guna2Panel7.TabIndex = 5
-        '
-        'Guna2Panel6
-        '
-        Me.Guna2Panel6.Controls.Add(Me.Guna2Button2)
-        Me.Guna2Panel6.Location = New System.Drawing.Point(2, 147)
-        Me.Guna2Panel6.Name = "Guna2Panel6"
-        Me.Guna2Panel6.Size = New System.Drawing.Size(419, 75)
-        Me.Guna2Panel6.TabIndex = 4
-        '
-        'Guna2Panel5
-        '
-        Me.Guna2Panel5.BackColor = System.Drawing.Color.OliveDrab
-        Me.Guna2Panel5.Controls.Add(Me.Guna2Button1)
-        Me.Guna2Panel5.Location = New System.Drawing.Point(2, 73)
-        Me.Guna2Panel5.Name = "Guna2Panel5"
-        Me.Guna2Panel5.Size = New System.Drawing.Size(419, 75)
-        Me.Guna2Panel5.TabIndex = 3
-        '
         'Guna2Button6
         '
         Me.Guna2Button6.BackColor = System.Drawing.Color.Gainsboro
@@ -401,6 +377,14 @@ Partial Class Data_Katalog
         Me.Guna2Button4.TabIndex = 12
         Me.Guna2Button4.Text = "Keluar"
         '
+        'Guna2Panel7
+        '
+        Me.Guna2Panel7.Controls.Add(Me.Guna2Button3)
+        Me.Guna2Panel7.Location = New System.Drawing.Point(1, 221)
+        Me.Guna2Panel7.Name = "Guna2Panel7"
+        Me.Guna2Panel7.Size = New System.Drawing.Size(419, 75)
+        Me.Guna2Panel7.TabIndex = 5
+        '
         'Guna2Button3
         '
         Me.Guna2Button3.BackColor = System.Drawing.Color.Gainsboro
@@ -422,6 +406,14 @@ Partial Class Data_Katalog
         Me.Guna2Button3.Text = "Ubah Data Peternakan"
         Me.Guna2Button3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
+        'Guna2Panel6
+        '
+        Me.Guna2Panel6.Controls.Add(Me.Guna2Button2)
+        Me.Guna2Panel6.Location = New System.Drawing.Point(2, 147)
+        Me.Guna2Panel6.Name = "Guna2Panel6"
+        Me.Guna2Panel6.Size = New System.Drawing.Size(419, 75)
+        Me.Guna2Panel6.TabIndex = 4
+        '
         'Guna2Button2
         '
         Me.Guna2Button2.BackColor = System.Drawing.Color.Gainsboro
@@ -442,6 +434,15 @@ Partial Class Data_Katalog
         Me.Guna2Button2.TabIndex = 1
         Me.Guna2Button2.Text = "Ubah Data Katalog"
         Me.Guna2Button2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
+        'Guna2Panel5
+        '
+        Me.Guna2Panel5.BackColor = System.Drawing.Color.OliveDrab
+        Me.Guna2Panel5.Controls.Add(Me.Guna2Button1)
+        Me.Guna2Panel5.Location = New System.Drawing.Point(2, 73)
+        Me.Guna2Panel5.Name = "Guna2Panel5"
+        Me.Guna2Panel5.Size = New System.Drawing.Size(419, 75)
+        Me.Guna2Panel5.TabIndex = 3
         '
         'Guna2Button1
         '
@@ -476,7 +477,8 @@ Partial Class Data_Katalog
         Me.Text = "Data_Katalog"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Guna2Panel3.ResumeLayout(False)
-        Me.Guna2Panel3.PerformLayout()
+        Me.Guna2Panel4.ResumeLayout(False)
+        Me.Guna2Panel4.PerformLayout()
         Me.Guna2Panel2.ResumeLayout(False)
         Me.Guna2Panel2.PerformLayout()
         Me.Guna2Panel1.ResumeLayout(False)

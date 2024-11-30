@@ -67,4 +67,16 @@ Public Class Diskusi_Peternak
             conn.Close()
         End Try
     End Sub
+
+    Private Sub ListView1_MouseClick(sender As Object, e As MouseEventArgs) Handles ListView1.MouseClick
+        Dim item As ListViewItem = ListView1.GetItemAt(e.X, e.Y)
+        If item IsNot Nothing Then
+            Dim kodeDiskusi As String = item.SubItems(3).Text ' Mengambil dari kolom pertama (kode_diskusi)
+            Module_Koneksi.SetKodeDiskusi(kodeDiskusi)
+            Me.Hide()
+            Diskusi_Peternak_Rincian.Show()
+            Diskusi_Peternak_Rincian.load_diskusi()
+            Diskusi_Peternak_Rincian.LoadDataBalasan()
+        End If
+    End Sub
 End Class
