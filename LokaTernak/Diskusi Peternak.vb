@@ -93,6 +93,7 @@ Public Class Diskusi_Peternak
             Me.Hide()
             Diskusi_Peternak_Rincian.Show()
             Diskusi_Peternak_Rincian.load_diskusi()
+            Diskusi_Peternak_Rincian.load_isiDiskusi()
             Diskusi_Peternak_Rincian.LoadDataBalasan()
         End If
     End Sub

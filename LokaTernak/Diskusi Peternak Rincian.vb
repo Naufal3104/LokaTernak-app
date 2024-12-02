@@ -2,18 +2,19 @@
 Imports System.Reflection
 Imports System.Runtime.Remoting.Contexts
 Imports Guna.UI2.WinForms
+Imports Microsoft.Reporting.WinForms
 Imports MySql.Data.MySqlClient
+Imports Mysqlx.Crud
 
 Public Class Diskusi_Peternak_Rincian
     Public Sub load_diskusi()
         Using connection As MySqlConnection = Module_Koneksi.GetConnection()
-            Dim query As String = "SELECT judul_diskusi, isi_diskusi, gambar_lampiran FROM diskusi WHERE kode_diskusi = @kode_diskusi"
+            Dim query As String = "SELECT judul_diskusi, gambar_lampiran FROM diskusi WHERE kode_diskusi = @kode_diskusi"
             Using command As New MySqlCommand(query, connection)
                 command.Parameters.AddWithValue("@kode_diskusi", Module_Koneksi.GetKodeDiskusi())
                 Using reader As MySqlDataReader = command.ExecuteReader()
                     If reader.Read() Then
                         label_judul.Text = reader("judul_diskusi").ToString()
-                        label_isi.Text = reader("isi_diskusi").ToString()
 
                         ' Memeriksa apakah kolom gambar_lampiran adalah DBNull
                         If Not reader.IsDBNull(reader.GetOrdinal("gambar_lampiran")) Then
@@ -38,6 +39,23 @@ Public Class Diskusi_Peternak_Rincian
         End Using
     End Sub
 
+    Public Sub load_isiDiskusi()
+        Dim dt As New DataTable()
+        Dim conn As MySqlConnection = Module_Koneksi.GetConnection()
+        Dim query As String = "SELECT kode_diskusi, isi_diskusi FROM diskusi WHERE kode_diskusi = @kode_diskusi"
+
+        Using cmd As New MySqlCommand(query, conn)
+            cmd.Parameters.AddWithValue("@kode_diskusi", Module_Koneksi.GetKodeDiskusi)
+            Dim adapter As New MySqlDataAdapter(cmd)
+            adapter.Fill(dt)
+        End Using
+        Dim rds As New ReportDataSource("DataSetDiskusi", dt)
+        ReportViewer1.LocalReport.ReportPath = "C:\Users\naufa\source\repos\LokaTernak-app\LokaTernak\IsiDiskusi.rdlc"
+        ReportViewer1.LocalReport.DataSources.Clear()
+        ReportViewer1.LocalReport.DataSources.Add(rds)
+        ReportViewer1.RefreshReport()
+    End Sub
+
     Private Sub Diskusi_Peternak_Rincian_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         With ListView1
             .Columns.Add("Nama Pengguna", 200)
@@ -46,8 +64,8 @@ Public Class Diskusi_Peternak_Rincian
             .Columns.Add("Kode Balasan", 0)
             .View = View.Details
         End With
-        label_isi.MaximumSize = New Size(700, 1000)
         Diskusi_Peternak.cekPengguna()
+        Me.ReportViewer1.RefreshReport()
     End Sub
 
     Public Sub LoadDataBalasan()
@@ -127,6 +145,34 @@ Public Class Diskusi_Peternak_Rincian
     End Sub
 
     Private Sub buttonHapus_Click(sender As Object, e As EventArgs) Handles buttonHapus.Click
-
+        Using connection As MySqlConnection = Module_Koneksi.GetConnection()
+            Dim query As String = "SELECT kode_peternakan FROM diskusi WHERE kode_diskusi = @kode_diskusi"
+            Using command As New MySqlCommand(query, connection)
+                command.Parameters.AddWithValue("@kode_diskusi", Module_Koneksi.GetKodeDiskusi())
+                Using reader As MySqlDataReader = command.ExecuteReader()
+                    If reader.Read() Then
+                        Dim result As DialogResult = MessageBox.Show("Apakah anda yakin akan menghapus Diskusi ini?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+                        If result = DialogResult.Yes Then
+                            If reader("kode_peternakan").ToString() = Module_Koneksi.GetKodePeternakan() Then
+                                Diskusi_Peternak.Show()
+                                reader.Close()
+                                Dim deleteQuery As String = "DELETE FROM diskusi WHERE kode_diskusi = @kode_diskusi"
+                                Using command1 As New MySqlCommand(deleteQuery, connection)
+                                    command1.Parameters.AddWithValue("@kode_diskusi", Module_Koneksi.GetKodeDiskusi())
+                                    command1.ExecuteNonQuery()
+                                End Using
+                                Diskusi_Peternak.LoadDataDiskusi()
+                                Me.Hide()
+                                MessageBox.Show("Data Artikel Berhasil Dihapus")
+                            End If
+                        ElseIf result = DialogResult.No Then
+                            load_diskusi()
+                            load_isiDiskusi()
+                            LoadDataBalasan()
+                        End If
+                    End If
+                End Using
+            End Using
+        End Using
     End Sub
 End Class

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetDiskusi" targetNamespace="http://tempuri.org/DataSetDiskusi.xsd" xmlns:mstns="http://tempuri.org/DataSetDiskusi.xsd" xmlns="http://tempuri.org/DataSetDiskusi.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetDiskusi" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSetDiskusi" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetDiskusi">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="diskusi" msprop:Generator_RowClassName="diskusiRow" msprop:Generator_RowEvHandlerName="diskusiRowChangeEventHandler" msprop:Generator_RowDeletedName="diskusiRowDeleted" msprop:Generator_RowDeletingName="diskusiRowDeleting" msprop:Generator_RowEvArgName="diskusiRowChangeEvent" msprop:Generator_TablePropName="diskusi" msprop:Generator_RowChangedName="diskusiRowChanged" msprop:Generator_UserTableName="diskusi" msprop:Generator_RowChangingName="diskusiRowChanging" msprop:Generator_TableClassName="diskusiDataTable" msprop:Generator_TableVarName="tablediskusi">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="kode_diskusi" msprop:Generator_UserColumnName="kode_diskusi" msprop:Generator_ColumnPropNameInTable="kode_diskusiColumn" msprop:Generator_ColumnPropNameInRow="kode_diskusi" msprop:Generator_ColumnVarNameInTable="columnkode_diskusi" type="xs:string" minOccurs="0" />
+              <xs:element name="isi_diskusi" msprop:Generator_ColumnPropNameInRow="isi_diskusi" msprop:Generator_ColumnPropNameInTable="isi_diskusiColumn" msprop:Generator_ColumnVarNameInTable="columnisi_diskusi" msprop:Generator_UserColumnName="isi_diskusi" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
