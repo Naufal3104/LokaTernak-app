@@ -36,13 +36,13 @@ Partial Class Diskusi_Peternak_Rincian
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Me.label_judul = New System.Windows.Forms.Label()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.buttonBalas = New Guna.UI2.WinForms.Guna2Button()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.GambarLampiran = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.buttonHapus = New Guna.UI2.WinForms.Guna2Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.buttonKembali = New Guna.UI2.WinForms.Guna2Button()
         Me.ListView1 = New System.Windows.Forms.ListView()
-        Me.buttonBalas = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel7.SuspendLayout()
         Me.Guna2Panel6.SuspendLayout()
         Me.Guna2Panel5.SuspendLayout()
@@ -244,6 +244,20 @@ Partial Class Diskusi_Peternak_Rincian
         Me.Guna2Panel3.Size = New System.Drawing.Size(1479, 962)
         Me.Guna2Panel3.TabIndex = 20
         '
+        'buttonBalas
+        '
+        Me.buttonBalas.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.buttonBalas.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.buttonBalas.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.buttonBalas.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.buttonBalas.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.buttonBalas.ForeColor = System.Drawing.Color.White
+        Me.buttonBalas.Location = New System.Drawing.Point(1341, 473)
+        Me.buttonBalas.Name = "buttonBalas"
+        Me.buttonBalas.Size = New System.Drawing.Size(135, 29)
+        Me.buttonBalas.TabIndex = 12
+        Me.buttonBalas.Text = "Buat Balasan"
+        '
         'ReportViewer1
         '
         Me.ReportViewer1.Location = New System.Drawing.Point(14, 58)
@@ -310,20 +324,6 @@ Partial Class Diskusi_Peternak_Rincian
         Me.ListView1.Size = New System.Drawing.Size(1462, 454)
         Me.ListView1.TabIndex = 6
         Me.ListView1.UseCompatibleStateImageBehavior = False
-        '
-        'buttonBalas
-        '
-        Me.buttonBalas.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.buttonBalas.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.buttonBalas.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.buttonBalas.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.buttonBalas.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.buttonBalas.ForeColor = System.Drawing.Color.White
-        Me.buttonBalas.Location = New System.Drawing.Point(1341, 473)
-        Me.buttonBalas.Name = "buttonBalas"
-        Me.buttonBalas.Size = New System.Drawing.Size(135, 29)
-        Me.buttonBalas.TabIndex = 12
-        Me.buttonBalas.Text = "Buat Balasan"
         '
         'Diskusi_Peternak_Rincian
         '

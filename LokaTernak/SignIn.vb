@@ -63,7 +63,7 @@ Public Class Sign_In
                                     Dashboard_Admin.Show()
                                     Me.Hide() ' Sembunyikan form login
                                 Case 2
-                                    Dashboard_User.Show()
+                                    Dash_User.Show()
                                     Me.Hide() ' Sembunyikan form login
                                 Case Else
                                     MessageBox.Show("Role tidak dikenali.")

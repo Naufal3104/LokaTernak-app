@@ -175,4 +175,8 @@ Public Class Diskusi_Peternak_Rincian
             End Using
         End Using
     End Sub
+
+    Private Sub buttonBalas_Click(sender As Object, e As EventArgs) Handles buttonBalas.Click
+        balas_diskusi.Show()
+    End Sub
 End Class

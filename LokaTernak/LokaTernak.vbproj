@@ -154,6 +154,36 @@
     <Compile Include="Artikel Peternak.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="balas diskusi.Designer.vb">
+      <DependentUpon>balas diskusi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="balas diskusi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dash User 3.Designer.vb">
+      <DependentUpon>Dash User 3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dash User 3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dash User.Designer.vb">
+      <DependentUpon>Dash User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dash User.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dash User1.Designer.vb">
+      <DependentUpon>Dash User1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dash User1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dash User2.Designer.vb">
+      <DependentUpon>Dash User2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dash User2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Dashboard Admin3.Designer.vb">
       <DependentUpon>Dashboard Admin3.vb</DependentUpon>
     </Compile>
@@ -176,12 +206,6 @@
       <DependentUpon>Dashboard Peternak.vb</DependentUpon>
     </Compile>
     <Compile Include="Dashboard Peternak.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dashboard User.Designer.vb">
-      <DependentUpon>Dashboard User.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dashboard User.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Dashboard.Designer.vb">
@@ -257,6 +281,12 @@
     <Compile Include="Register User.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Rincian Artikel.Designer.vb">
+      <DependentUpon>Rincian Artikel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Rincian Artikel.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SignIn.Designer.vb">
       <DependentUpon>SignIn.vb</DependentUpon>
     </Compile>
@@ -279,6 +309,21 @@
   <ItemGroup>
     <EmbeddedResource Include="Artikel Peternak.resx">
       <DependentUpon>Artikel Peternak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="balas diskusi.resx">
+      <DependentUpon>balas diskusi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dash User 3.resx">
+      <DependentUpon>Dash User 3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dash User.resx">
+      <DependentUpon>Dash User.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dash User1.resx">
+      <DependentUpon>Dash User1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dash User2.resx">
+      <DependentUpon>Dash User2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard Admin.resx">
       <DependentUpon>Dashboard Admin.vb</DependentUpon>
@@ -319,6 +364,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Register User.resx">
       <DependentUpon>Register User.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rincian Artikel.resx">
+      <DependentUpon>Rincian Artikel.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignIn.resx">
       <DependentUpon>SignIn.vb</DependentUpon>

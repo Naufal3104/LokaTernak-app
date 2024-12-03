@@ -32,18 +32,18 @@ Partial Class Dashboard_Peternak
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel7 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.label_deskripsi = New System.Windows.Forms.Label()
-        Me.label_namaPeternakan = New System.Windows.Forms.Label()
         Me.Guna2Button6 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button5 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Panel7 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.label_deskripsi = New System.Windows.Forms.Label()
+        Me.label_namaPeternakan = New System.Windows.Forms.Label()
         Me.Guna2Panel2.SuspendLayout()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel7.SuspendLayout()
@@ -124,61 +124,6 @@ Partial Class Dashboard_Peternak
         Me.Guna2Panel1.Size = New System.Drawing.Size(420, 1024)
         Me.Guna2Panel1.TabIndex = 8
         '
-        'Guna2Panel7
-        '
-        Me.Guna2Panel7.Controls.Add(Me.Guna2Button3)
-        Me.Guna2Panel7.Location = New System.Drawing.Point(1, 221)
-        Me.Guna2Panel7.Name = "Guna2Panel7"
-        Me.Guna2Panel7.Size = New System.Drawing.Size(419, 75)
-        Me.Guna2Panel7.TabIndex = 5
-        '
-        'Guna2Panel6
-        '
-        Me.Guna2Panel6.Controls.Add(Me.Guna2Button2)
-        Me.Guna2Panel6.Location = New System.Drawing.Point(2, 147)
-        Me.Guna2Panel6.Name = "Guna2Panel6"
-        Me.Guna2Panel6.Size = New System.Drawing.Size(419, 75)
-        Me.Guna2Panel6.TabIndex = 4
-        '
-        'Guna2Panel5
-        '
-        Me.Guna2Panel5.BackColor = System.Drawing.Color.OliveDrab
-        Me.Guna2Panel5.Controls.Add(Me.Guna2Button1)
-        Me.Guna2Panel5.Location = New System.Drawing.Point(2, 73)
-        Me.Guna2Panel5.Name = "Guna2Panel5"
-        Me.Guna2Panel5.Size = New System.Drawing.Size(419, 75)
-        Me.Guna2Panel5.TabIndex = 3
-        '
-        'Guna2Panel3
-        '
-        Me.Guna2Panel3.Controls.Add(Me.label_deskripsi)
-        Me.Guna2Panel3.Controls.Add(Me.label_namaPeternakan)
-        Me.Guna2Panel3.Location = New System.Drawing.Point(420, 67)
-        Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.Size = New System.Drawing.Size(1479, 567)
-        Me.Guna2Panel3.TabIndex = 10
-        '
-        'label_deskripsi
-        '
-        Me.label_deskripsi.AutoSize = True
-        Me.label_deskripsi.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label_deskripsi.Location = New System.Drawing.Point(69, 386)
-        Me.label_deskripsi.Name = "label_deskripsi"
-        Me.label_deskripsi.Size = New System.Drawing.Size(775, 42)
-        Me.label_deskripsi.TabIndex = 6
-        Me.label_deskripsi.Text = "Whether you're celebrating over a seafood platter or unwinding with your favourit" &
-    "e glass of wine," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "our curated menu has something for every occasion."
-        '
-        'label_namaPeternakan
-        '
-        Me.label_namaPeternakan.AutoSize = True
-        Me.label_namaPeternakan.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label_namaPeternakan.Location = New System.Drawing.Point(69, 309)
-        Me.label_namaPeternakan.Name = "label_namaPeternakan"
-        Me.label_namaPeternakan.Size = New System.Drawing.Size(292, 32)
-        Me.label_namaPeternakan.TabIndex = 5
-        Me.label_namaPeternakan.Text = "Sagara Seafood Farm"
-        '
         'Guna2Button6
         '
         Me.Guna2Button6.BackColor = System.Drawing.Color.Gainsboro
@@ -237,6 +182,14 @@ Partial Class Dashboard_Peternak
         Me.Guna2Button4.TabIndex = 12
         Me.Guna2Button4.Text = "Keluar"
         '
+        'Guna2Panel7
+        '
+        Me.Guna2Panel7.Controls.Add(Me.Guna2Button3)
+        Me.Guna2Panel7.Location = New System.Drawing.Point(1, 221)
+        Me.Guna2Panel7.Name = "Guna2Panel7"
+        Me.Guna2Panel7.Size = New System.Drawing.Size(419, 75)
+        Me.Guna2Panel7.TabIndex = 5
+        '
         'Guna2Button3
         '
         Me.Guna2Button3.BackColor = System.Drawing.Color.Gainsboro
@@ -258,6 +211,14 @@ Partial Class Dashboard_Peternak
         Me.Guna2Button3.Text = "Ubah Data Peternakan"
         Me.Guna2Button3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
+        'Guna2Panel6
+        '
+        Me.Guna2Panel6.Controls.Add(Me.Guna2Button2)
+        Me.Guna2Panel6.Location = New System.Drawing.Point(2, 147)
+        Me.Guna2Panel6.Name = "Guna2Panel6"
+        Me.Guna2Panel6.Size = New System.Drawing.Size(419, 75)
+        Me.Guna2Panel6.TabIndex = 4
+        '
         'Guna2Button2
         '
         Me.Guna2Button2.BackColor = System.Drawing.Color.Gainsboro
@@ -272,12 +233,21 @@ Partial Class Dashboard_Peternak
         Me.Guna2Button2.Image = Global.LokaTernak.My.Resources.Resources.catalog
         Me.Guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button2.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Guna2Button2.Location = New System.Drawing.Point(-1, 0)
+        Me.Guna2Button2.Location = New System.Drawing.Point(0, 0)
         Me.Guna2Button2.Name = "Guna2Button2"
         Me.Guna2Button2.Size = New System.Drawing.Size(419, 75)
         Me.Guna2Button2.TabIndex = 1
         Me.Guna2Button2.Text = "Ubah Data Katalog"
         Me.Guna2Button2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
+        'Guna2Panel5
+        '
+        Me.Guna2Panel5.BackColor = System.Drawing.Color.OliveDrab
+        Me.Guna2Panel5.Controls.Add(Me.Guna2Button1)
+        Me.Guna2Panel5.Location = New System.Drawing.Point(2, 73)
+        Me.Guna2Panel5.Name = "Guna2Panel5"
+        Me.Guna2Panel5.Size = New System.Drawing.Size(419, 75)
+        Me.Guna2Panel5.TabIndex = 3
         '
         'Guna2Button1
         '
@@ -298,6 +268,36 @@ Partial Class Dashboard_Peternak
         Me.Guna2Button1.TabIndex = 0
         Me.Guna2Button1.Text = "Dashboard"
         Me.Guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
+        'Guna2Panel3
+        '
+        Me.Guna2Panel3.Controls.Add(Me.label_deskripsi)
+        Me.Guna2Panel3.Controls.Add(Me.label_namaPeternakan)
+        Me.Guna2Panel3.Location = New System.Drawing.Point(420, 67)
+        Me.Guna2Panel3.Name = "Guna2Panel3"
+        Me.Guna2Panel3.Size = New System.Drawing.Size(1479, 567)
+        Me.Guna2Panel3.TabIndex = 10
+        '
+        'label_deskripsi
+        '
+        Me.label_deskripsi.AutoSize = True
+        Me.label_deskripsi.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.label_deskripsi.Location = New System.Drawing.Point(69, 386)
+        Me.label_deskripsi.Name = "label_deskripsi"
+        Me.label_deskripsi.Size = New System.Drawing.Size(775, 42)
+        Me.label_deskripsi.TabIndex = 6
+        Me.label_deskripsi.Text = "Whether you're celebrating over a seafood platter or unwinding with your favourit" &
+    "e glass of wine," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "our curated menu has something for every occasion."
+        '
+        'label_namaPeternakan
+        '
+        Me.label_namaPeternakan.AutoSize = True
+        Me.label_namaPeternakan.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.label_namaPeternakan.Location = New System.Drawing.Point(69, 309)
+        Me.label_namaPeternakan.Name = "label_namaPeternakan"
+        Me.label_namaPeternakan.Size = New System.Drawing.Size(292, 32)
+        Me.label_namaPeternakan.TabIndex = 5
+        Me.label_namaPeternakan.Text = "Sagara Seafood Farm"
         '
         'Dashboard_Peternak
         '
