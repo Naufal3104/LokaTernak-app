@@ -3,6 +3,8 @@ Imports System.IO
 Imports MySql.Data.MySqlClient
 
 Public Class balas_diskusi
+    Private kodePeternakan As String
+    Private kodePengguna As String
     Private Sub buttonSimpan_Click(sender As Object, e As EventArgs) Handles buttonSimpan.Click
         Dim kodePeternakan As String = Module_Koneksi.GetKodePeternakan()
         Dim tanggalBalasan As DateTime = DateTime.Now
@@ -22,22 +24,47 @@ Public Class balas_diskusi
             Catch ex As MySqlException
                 MessageBox.Show("Terjadi kesalahan: " & ex.Message)
             Finally
-                Me.Hide()
+                reset()
                 Diskusi_Peternak_Rincian.LoadDataBalasan()
+                Me.Hide()
             End Try
         End Using
     End Sub
 
-    Private Sub buttonBatal_Click(sender As Object, e As EventArgs) Handles buttonBatal.Click
+    Private Sub reset()
         textIsiBalasan.Text = ""
         textKodeDiskusi.Text = ""
+    End Sub
+
+    Private Sub buttonBatal_Click(sender As Object, e As EventArgs) Handles buttonBatal.Click
+        reset()
         Me.Hide()
     End Sub
 
-    Public Sub balas_diskusi_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim kodePeternakan As String = Module_Koneksi.GetKodePeternakan()
-        textKodeDiskusi.Text = kodePeternakan
+    Public Sub SetKodePembuat()
+        Using connection As MySqlConnection = Module_Koneksi.GetConnection()
+            Dim query As String = "SELECT kode_user, kode_peternakan
+                                FROM diskusi 
+                                WHERE kode_diskusi = @kode_diskusi LIMIT 1"
+            Using command As New MySqlCommand(query, connection)
+                command.Parameters.AddWithValue("@kode_diskusi", Module_Koneksi.GetKodeDiskusi())
+                Using reader As MySqlDataReader = command.ExecuteReader()
+                    If reader.Read() Then
+                        If Not IsDBNull(reader("kode_peternakan")) Then
+                            textKodeDiskusi.Text = reader("kode_peternakan").ToString()
+                        ElseIf Not IsDBNull(reader("kode_user")) Then
+                            textKodeDiskusi.Text = reader("kode_user").ToString()
+                        End If
+                    End If
+                End Using
+            End Using
+        End Using
         textKodeDiskusi.ReadOnly = True
+    End Sub
+
+    Private Sub balas_diskusi_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        textKodeDiskusi.ReadOnly = True
+        SetKodePembuat()
     End Sub
 
     Private Function GenerateKodeBalasan() As String

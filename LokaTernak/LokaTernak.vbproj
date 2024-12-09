@@ -148,16 +148,22 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Artikel Peternak Rincian.Designer.vb">
+      <DependentUpon>Artikel Peternak Rincian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Artikel Peternak Rincian.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Artikel Peternak.Designer.vb">
       <DependentUpon>Artikel Peternak.vb</DependentUpon>
     </Compile>
     <Compile Include="Artikel Peternak.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="balas diskusi.Designer.vb">
-      <DependentUpon>balas diskusi.vb</DependentUpon>
+    <Compile Include="Balas Diskusi.Designer.vb">
+      <DependentUpon>Balas Diskusi.vb</DependentUpon>
     </Compile>
-    <Compile Include="balas diskusi.vb">
+    <Compile Include="Balas Diskusi.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Dash User 3.Designer.vb">
@@ -219,6 +225,11 @@
     </Compile>
     <Compile Include="Data Katalog.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSetArtikel.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetArtikel.xsd</DependentUpon>
     </Compile>
     <Compile Include="DataSetDiskusi.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -307,11 +318,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Artikel Peternak Rincian.resx">
+      <DependentUpon>Artikel Peternak Rincian.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Artikel Peternak.resx">
       <DependentUpon>Artikel Peternak.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="balas diskusi.resx">
-      <DependentUpon>balas diskusi.vb</DependentUpon>
+    <EmbeddedResource Include="Balas Diskusi.resx">
+      <DependentUpon>Balas Diskusi.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dash User 3.resx">
       <DependentUpon>Dash User 3.vb</DependentUpon>
@@ -365,6 +379,7 @@
     <EmbeddedResource Include="Register User.resx">
       <DependentUpon>Register User.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="IsiArtikel.rdlc" />
     <EmbeddedResource Include="Rincian Artikel.resx">
       <DependentUpon>Rincian Artikel.vb</DependentUpon>
     </EmbeddedResource>
@@ -379,6 +394,17 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="DataSetArtikel.xsc">
+      <DependentUpon>DataSetArtikel.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetArtikel.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetArtikel.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetArtikel.xss">
+      <DependentUpon>DataSetArtikel.xsd</DependentUpon>
+    </None>
     <None Include="DataSetDiskusi.xsc">
       <DependentUpon>DataSetDiskusi.xsd</DependentUpon>
     </None>

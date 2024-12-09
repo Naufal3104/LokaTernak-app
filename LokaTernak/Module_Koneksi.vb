@@ -3,6 +3,7 @@
 Module Module_Koneksi
     Private _kodePeternakan As String
     Private _kodeDiskusi As String
+    Private _kodeArtikel As String
     Public Function GetKodePeternakan() As String
         Return _kodePeternakan
     End Function
@@ -17,6 +18,14 @@ Module Module_Koneksi
 
     Public Sub SetKodeDiskusi(value As String)
         _kodeDiskusi = value
+    End Sub
+
+    Public Function GetKodeArtikel() As String
+        Return _kodeArtikel
+    End Function
+
+    Public Sub SetKodeArtikel(value As String)
+        _kodeArtikel = value
     End Sub
 
     Private connectionString As String = "server=localhost;user id=root;" & "password=;database=peternakan;"
