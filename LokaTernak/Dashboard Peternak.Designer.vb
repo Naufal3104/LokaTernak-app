@@ -44,6 +44,7 @@ Partial Class Dashboard_Peternak
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
         Me.label_deskripsi = New System.Windows.Forms.Label()
         Me.label_namaPeternakan = New System.Windows.Forms.Label()
+        Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel2.SuspendLayout()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel7.SuspendLayout()
@@ -113,6 +114,7 @@ Partial Class Dashboard_Peternak
         'Guna2Panel1
         '
         Me.Guna2Panel1.BackColor = System.Drawing.Color.YellowGreen
+        Me.Guna2Panel1.Controls.Add(Me.Guna2Button7)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Button6)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Button5)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Button4)
@@ -299,6 +301,26 @@ Partial Class Dashboard_Peternak
         Me.label_namaPeternakan.TabIndex = 5
         Me.label_namaPeternakan.Text = "Sagara Seafood Farm"
         '
+        'Guna2Button7
+        '
+        Me.Guna2Button7.BackColor = System.Drawing.Color.Gainsboro
+        Me.Guna2Button7.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button7.FillColor = System.Drawing.Color.YellowGreen
+        Me.Guna2Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2Button7.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button7.Image = CType(resources.GetObject("Guna2Button7.Image"), System.Drawing.Image)
+        Me.Guna2Button7.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.Guna2Button7.ImageSize = New System.Drawing.Size(40, 40)
+        Me.Guna2Button7.Location = New System.Drawing.Point(0, 450)
+        Me.Guna2Button7.Name = "Guna2Button7"
+        Me.Guna2Button7.Size = New System.Drawing.Size(420, 75)
+        Me.Guna2Button7.TabIndex = 14
+        Me.Guna2Button7.Text = "Form Order"
+        Me.Guna2Button7.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
         'Dashboard_Peternak
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -344,4 +366,5 @@ Partial Class Dashboard_Peternak
     Friend WithEvents Guna2Button4 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button5 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button6 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Button7 As Guna.UI2.WinForms.Guna2Button
 End Class

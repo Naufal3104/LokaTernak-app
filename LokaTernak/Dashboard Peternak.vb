@@ -123,4 +123,8 @@ Public Class Dashboard_Peternak
     Private Sub label_namaPeternakan_Click(sender As Object, e As EventArgs) Handles label_namaPeternakan.Click
 
     End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs)
+
+    End Sub
 End Class
