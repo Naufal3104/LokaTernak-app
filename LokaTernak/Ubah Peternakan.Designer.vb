@@ -49,6 +49,7 @@ Partial Class Ubah_Peternakan
         Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Button8 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel4.SuspendLayout()
         Me.Guna2Panel3.SuspendLayout()
         Me.Guna2Panel1.SuspendLayout()
@@ -295,6 +296,7 @@ Partial Class Ubah_Peternakan
         'Guna2Panel1
         '
         Me.Guna2Panel1.BackColor = System.Drawing.Color.YellowGreen
+        Me.Guna2Panel1.Controls.Add(Me.Guna2Button8)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Button6)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Button5)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Button4)
@@ -451,6 +453,26 @@ Partial Class Ubah_Peternakan
         Me.Guna2Button1.Text = "Dashboard"
         Me.Guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
+        'Guna2Button8
+        '
+        Me.Guna2Button8.BackColor = System.Drawing.Color.Gainsboro
+        Me.Guna2Button8.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button8.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button8.FillColor = System.Drawing.Color.YellowGreen
+        Me.Guna2Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2Button8.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button8.Image = CType(resources.GetObject("Guna2Button8.Image"), System.Drawing.Image)
+        Me.Guna2Button8.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.Guna2Button8.ImageSize = New System.Drawing.Size(40, 40)
+        Me.Guna2Button8.Location = New System.Drawing.Point(0, 450)
+        Me.Guna2Button8.Name = "Guna2Button8"
+        Me.Guna2Button8.Size = New System.Drawing.Size(420, 75)
+        Me.Guna2Button8.TabIndex = 24
+        Me.Guna2Button8.Text = "Form Order"
+        Me.Guna2Button8.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
         'Ubah_Peternakan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -500,4 +522,5 @@ Partial Class Ubah_Peternakan
     Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Panel5 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Button8 As Guna.UI2.WinForms.Guna2Button
 End Class

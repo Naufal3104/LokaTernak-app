@@ -180,4 +180,9 @@ Public Class Diskusi_Peternak_Rincian
         balas_diskusi.SetKodePembuat()
         balas_diskusi.Show()
     End Sub
+
+    Private Sub Guna2Button8_Click(sender As Object, e As EventArgs) Handles Guna2Button8.Click
+        Me.Hide()
+        Order_Peternak.Show()
+    End Sub
 End Class

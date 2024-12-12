@@ -9,4 +9,8 @@
         Pilih_Register.Show()
         Me.Hide()
     End Sub
+
+    Private Sub Main_Form_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Panel3.Width = 1400
+    End Sub
 End Class

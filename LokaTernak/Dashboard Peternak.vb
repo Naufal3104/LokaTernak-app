@@ -127,4 +127,9 @@ Public Class Dashboard_Peternak
     Private Sub Label2_Click(sender As Object, e As EventArgs)
 
     End Sub
+
+    Private Sub Guna2Button7_Click(sender As Object, e As EventArgs) Handles Guna2Button7.Click
+        Me.Hide()
+        Order_Peternak.Show()
+    End Sub
 End Class

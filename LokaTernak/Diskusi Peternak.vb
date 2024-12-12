@@ -101,4 +101,9 @@ Public Class Diskusi_Peternak
     Private Sub Guna2Button7_Click(sender As Object, e As EventArgs) Handles Guna2Button7.Click
         Tambah_Diskusi.Show()
     End Sub
+
+    Private Sub Guna2Button8_Click(sender As Object, e As EventArgs) Handles Guna2Button8.Click
+        Me.Hide()
+        Order_Peternak.Show()
+    End Sub
 End Class

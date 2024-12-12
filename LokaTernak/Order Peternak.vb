@@ -121,4 +121,28 @@ Public Class Order_Peternak
         LoadData()
     End Sub
 
+    Private Sub Guna2Button14_Click(sender As Object, e As EventArgs) Handles Guna2Button14.Click
+        Me.Hide()
+        Dashboard_Peternak.Show()
+    End Sub
+
+    Private Sub Guna2Button13_Click(sender As Object, e As EventArgs) Handles Guna2Button13.Click
+        Me.Hide()
+        Data_Katalog.Show()
+    End Sub
+
+    Private Sub Guna2Button12_Click(sender As Object, e As EventArgs) Handles Guna2Button12.Click
+        Me.Hide()
+        Ubah_Peternakan.Show()
+    End Sub
+
+    Private Sub Guna2Button10_Click(sender As Object, e As EventArgs) Handles Guna2Button10.Click
+        Me.Hide()
+        Diskusi_Peternak.Show()
+    End Sub
+
+    Private Sub Guna2Button9_Click(sender As Object, e As EventArgs) Handles Guna2Button9.Click
+        Me.Hide()
+        Artikel_Peternak.Show()
+    End Sub
 End Class

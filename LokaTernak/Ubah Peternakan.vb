@@ -91,4 +91,9 @@ Public Class Ubah_Peternakan
         Me.Hide()
         Data_Katalog.Show()
     End Sub
+
+    Private Sub Guna2Button8_Click(sender As Object, e As EventArgs) Handles Guna2Button8.Click
+        Me.Hide()
+        Order_Peternak.Show()
+    End Sub
 End Class
