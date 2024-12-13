@@ -43,11 +43,9 @@ Public Class Sign_In
         Dim username As String = text_username.Text
         Dim password As String = text_password.Text
 
-        ' Menggunakan koneksi dari Module_Koneksi
         Using connection As MySqlConnection = Module_Koneksi.GetConnection()
             If connection IsNot Nothing Then
                 Try
-                    ' Memperbarui query untuk mengambil role dari tabel user
                     Dim queryUser As String = "SELECT id_role FROM user WHERE username=@username AND password=@password"
                     Using command As New MySqlCommand(queryUser, connection)
                         command.Parameters.AddWithValue("@username", username)
@@ -56,20 +54,17 @@ Public Class Sign_In
                         Dim role As String = Convert.ToString(command.ExecuteScalar())
                         If Not String.IsNullOrEmpty(role) Then
                             MessageBox.Show("Login Berhasil! Role: " & role)
-
-                            ' Arahkan ke form berdasarkan role
                             Select Case role
                                 Case 1
                                     Dashboard_Admin.Show()
-                                    Me.Hide() ' Sembunyikan form login
+                                    Me.Hide()
                                 Case 2
                                     Dash_User.Show()
-                                    Me.Hide() ' Sembunyikan form login
+                                    Me.Hide()
                                 Case Else
                                     MessageBox.Show("Role tidak dikenali.")
                             End Select
                         Else
-                            ' Jika tidak ada pengguna di tabel user, coba tabel peternakan
                             Dim queryFarm As String = "SELECT kode_peternakan FROM peternakan WHERE username=@username AND password=@password"
                             Using farmCommand As New MySqlCommand(queryFarm, connection)
                                 farmCommand.Parameters.AddWithValue("@username", username)
@@ -80,8 +75,6 @@ Public Class Sign_In
                                         MessageBox.Show("Login sebagai Peternak berhasil!")
                                         Dim kodePeternakan As String = reader("kode_peternakan").ToString()
                                         Module_Koneksi.SetKodePeternakan(kodePeternakan)
-
-                                        ' Arahkan ke form peternakan
                                         Dashboard_Peternak.Show()
                                         Me.Hide()
                                     Else
@@ -97,7 +90,16 @@ Public Class Sign_In
                     connection.Close()
                 End Try
             End If
+            text_username.Text = ""
+            text_password.Text = ""
         End Using
+    End Sub
+
+    Private Sub button_cancel_Click(sender As Object, e As EventArgs) Handles button_cancel.Click
+        text_username.Text = ""
+        text_password.Text = ""
+        Me.Hide()
+        Main_Form.Show()
     End Sub
 End Class
 

@@ -72,28 +72,67 @@ Public Class Ubah_Peternakan
         Sign_In.Show()
     End Sub
 
-    Private Sub Guna2Button5_Click(sender As Object, e As EventArgs) Handles Guna2Button5.Click
+    Private Sub Guna2Button5_Click(sender As Object, e As EventArgs)
         Me.Hide()
         Diskusi_Peternak.Show()
     End Sub
 
-    Private Sub Guna2Button6_Click(sender As Object, e As EventArgs) Handles Guna2Button6.Click
+    Private Sub Guna2Button6_Click(sender As Object, e As EventArgs)
         Me.Hide()
         Artikel_Peternak.Show()
     End Sub
 
-    Private Sub Guna2Button1_Click_1(sender As Object, e As EventArgs) Handles Guna2Button1.Click
+    Private Sub Guna2Button1_Click_1(sender As Object, e As EventArgs)
         Me.Hide()
         Dashboard_Peternak.Show()
     End Sub
 
-    Private Sub Guna2Button2_Click_1(sender As Object, e As EventArgs) Handles Guna2Button2.Click
+    Private Sub Guna2Button2_Click_1(sender As Object, e As EventArgs)
         Me.Hide()
         Data_Katalog.Show()
     End Sub
 
-    Private Sub Guna2Button8_Click(sender As Object, e As EventArgs) Handles Guna2Button8.Click
+    Private Sub Guna2Button8_Click(sender As Object, e As EventArgs)
         Me.Hide()
         Order_Peternak.Show()
+    End Sub
+
+    Private Sub Guna2Button3_Click(sender As Object, e As EventArgs) Handles Guna2Button3.Click
+
+    End Sub
+
+    Private Sub Guna2Button1_Click_2(sender As Object, e As EventArgs) Handles Guna2Button1.Click
+        Me.Hide()
+        Dashboard_Peternak.Show()
+    End Sub
+
+    Private Sub Guna2Button2_Click_2(sender As Object, e As EventArgs) Handles Guna2Button2.Click
+        Me.Hide()
+        Data_Katalog.Show()
+    End Sub
+
+    Private Sub Guna2Button5_Click_1(sender As Object, e As EventArgs) Handles Guna2Button5.Click
+        Me.Hide()
+        Diskusi_Peternak.Show()
+    End Sub
+
+    Private Sub Guna2Button6_Click_1(sender As Object, e As EventArgs) Handles Guna2Button6.Click
+        Me.Hide()
+        Artikel_Peternak.Show()
+    End Sub
+
+    Private Sub Guna2Button7_Click(sender As Object, e As EventArgs) Handles Guna2Button7.Click
+        Me.Hide()
+        Order_Peternak.Show()
+    End Sub
+
+    Private Sub Guna2Button8_Click_1(sender As Object, e As EventArgs) Handles Guna2Button8.Click
+        Me.Hide()
+        Laporan_Peternak.Show()
+    End Sub
+
+    Private Sub Guna2Button4_Click_1(sender As Object, e As EventArgs) Handles Guna2Button4.Click
+        Me.Hide()
+        Main_Form.Show()
     End Sub
 End Class

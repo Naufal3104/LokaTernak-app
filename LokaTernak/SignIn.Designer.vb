@@ -46,7 +46,7 @@ Partial Class Sign_In
         Me.Panel1.Controls.Add(Me.text_username)
         Me.Panel1.Controls.Add(Me.PictureBox2)
         Me.Panel1.Location = New System.Drawing.Point(59, 237)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(242, 46)
         Me.Panel1.TabIndex = 9
@@ -57,7 +57,7 @@ Partial Class Sign_In
         Me.text_username.Font = New System.Drawing.Font("Segoe UI", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.text_username.ForeColor = System.Drawing.Color.Black
         Me.text_username.Location = New System.Drawing.Point(49, 9)
-        Me.text_username.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.text_username.Margin = New System.Windows.Forms.Padding(2)
         Me.text_username.Name = "text_username"
         Me.text_username.Size = New System.Drawing.Size(180, 27)
         Me.text_username.TabIndex = 3
@@ -66,7 +66,7 @@ Partial Class Sign_In
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(5, 7)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(30, 32)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -89,7 +89,7 @@ Partial Class Sign_In
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(124, 28)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(117, 125)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -102,7 +102,7 @@ Partial Class Sign_In
         Me.Panel2.Controls.Add(Me.text_password)
         Me.Panel2.Controls.Add(Me.PictureBox3)
         Me.Panel2.Location = New System.Drawing.Point(59, 296)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(242, 46)
         Me.Panel2.TabIndex = 10
@@ -113,7 +113,7 @@ Partial Class Sign_In
         Me.text_password.Font = New System.Drawing.Font("Segoe UI", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.text_password.ForeColor = System.Drawing.Color.Black
         Me.text_password.Location = New System.Drawing.Point(49, 9)
-        Me.text_password.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.text_password.Margin = New System.Windows.Forms.Padding(2)
         Me.text_password.Name = "text_password"
         Me.text_password.Size = New System.Drawing.Size(180, 27)
         Me.text_password.TabIndex = 3
@@ -122,7 +122,7 @@ Partial Class Sign_In
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
         Me.PictureBox3.Location = New System.Drawing.Point(5, 7)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(30, 32)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -135,7 +135,7 @@ Partial Class Sign_In
         Me.button_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.button_cancel.Font = New System.Drawing.Font("Segoe UI", 7.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.button_cancel.Location = New System.Drawing.Point(59, 426)
-        Me.button_cancel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.button_cancel.Margin = New System.Windows.Forms.Padding(2)
         Me.button_cancel.Name = "button_cancel"
         Me.button_cancel.Size = New System.Drawing.Size(242, 46)
         Me.button_cancel.TabIndex = 12
@@ -150,7 +150,7 @@ Partial Class Sign_In
         Me.button_login.Font = New System.Drawing.Font("Segoe UI", 7.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.button_login.ForeColor = System.Drawing.Color.White
         Me.button_login.Location = New System.Drawing.Point(59, 375)
-        Me.button_login.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.button_login.Margin = New System.Windows.Forms.Padding(2)
         Me.button_login.Name = "button_login"
         Me.button_login.Size = New System.Drawing.Size(242, 46)
         Me.button_login.TabIndex = 11

@@ -23,13 +23,12 @@ Partial Class Diskusi_Peternak_Rincian
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Diskusi_Peternak_Rincian))
-        Me.Guna2Panel7 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Button8 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button6 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button5 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
@@ -43,52 +42,47 @@ Partial Class Diskusi_Peternak_Rincian
         Me.Label1 = New System.Windows.Forms.Label()
         Me.buttonKembali = New Guna.UI2.WinForms.Guna2Button()
         Me.ListView1 = New System.Windows.Forms.ListView()
-        Me.Guna2Button8 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Panel7.SuspendLayout()
-        Me.Guna2Panel6.SuspendLayout()
-        Me.Guna2Panel5.SuspendLayout()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel4.SuspendLayout()
         Me.Guna2Panel3.SuspendLayout()
         CType(Me.GambarLampiran, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Guna2Panel7
+        'Guna2Panel1
         '
-        Me.Guna2Panel7.Controls.Add(Me.Guna2Button3)
-        Me.Guna2Panel7.Location = New System.Drawing.Point(1, 221)
-        Me.Guna2Panel7.Name = "Guna2Panel7"
-        Me.Guna2Panel7.Size = New System.Drawing.Size(419, 75)
-        Me.Guna2Panel7.TabIndex = 5
+        Me.Guna2Panel1.BackColor = System.Drawing.Color.YellowGreen
+        Me.Guna2Panel1.Controls.Add(Me.Guna2Button1)
+        Me.Guna2Panel1.Controls.Add(Me.Guna2Button2)
+        Me.Guna2Panel1.Controls.Add(Me.Guna2Button3)
+        Me.Guna2Panel1.Controls.Add(Me.Guna2Button8)
+        Me.Guna2Panel1.Controls.Add(Me.Guna2Button7)
+        Me.Guna2Panel1.Controls.Add(Me.Guna2Button6)
+        Me.Guna2Panel1.Controls.Add(Me.Guna2Button5)
+        Me.Guna2Panel1.Controls.Add(Me.Guna2Button4)
+        Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2Panel1.Name = "Guna2Panel1"
+        Me.Guna2Panel1.Size = New System.Drawing.Size(420, 1024)
+        Me.Guna2Panel1.TabIndex = 22
         '
-        'Guna2Button3
+        'Guna2Button1
         '
-        Me.Guna2Button3.BackColor = System.Drawing.Color.Gainsboro
-        Me.Guna2Button3.BorderColor = System.Drawing.Color.Transparent
-        Me.Guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button3.FillColor = System.Drawing.Color.YellowGreen
-        Me.Guna2Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Button3.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button3.Image = Global.LokaTernak.My.Resources.Resources.farm
-        Me.Guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Guna2Button3.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Guna2Button3.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2Button3.Name = "Guna2Button3"
-        Me.Guna2Button3.Size = New System.Drawing.Size(420, 75)
-        Me.Guna2Button3.TabIndex = 2
-        Me.Guna2Button3.Text = "Ubah Data Peternakan"
-        Me.Guna2Button3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
-        'Guna2Panel6
-        '
-        Me.Guna2Panel6.Controls.Add(Me.Guna2Button2)
-        Me.Guna2Panel6.Location = New System.Drawing.Point(2, 147)
-        Me.Guna2Panel6.Name = "Guna2Panel6"
-        Me.Guna2Panel6.Size = New System.Drawing.Size(419, 75)
-        Me.Guna2Panel6.TabIndex = 4
+        Me.Guna2Button1.BackColor = System.Drawing.Color.Gainsboro
+        Me.Guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button1.FillColor = System.Drawing.Color.YellowGreen
+        Me.Guna2Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button1.Image = Global.LokaTernak.My.Resources.Resources.house
+        Me.Guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.Guna2Button1.ImageSize = New System.Drawing.Size(40, 40)
+        Me.Guna2Button1.Location = New System.Drawing.Point(0, 67)
+        Me.Guna2Button1.Name = "Guna2Button1"
+        Me.Guna2Button1.Size = New System.Drawing.Size(421, 74)
+        Me.Guna2Button1.TabIndex = 16
+        Me.Guna2Button1.Text = "Dashboard"
+        Me.Guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'Guna2Button2
         '
@@ -104,56 +98,73 @@ Partial Class Diskusi_Peternak_Rincian
         Me.Guna2Button2.Image = Global.LokaTernak.My.Resources.Resources.catalog
         Me.Guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button2.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Guna2Button2.Location = New System.Drawing.Point(-1, 0)
+        Me.Guna2Button2.Location = New System.Drawing.Point(0, 143)
         Me.Guna2Button2.Name = "Guna2Button2"
         Me.Guna2Button2.Size = New System.Drawing.Size(419, 75)
-        Me.Guna2Button2.TabIndex = 1
+        Me.Guna2Button2.TabIndex = 17
         Me.Guna2Button2.Text = "Ubah Data Katalog"
         Me.Guna2Button2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
-        'Guna2Panel5
+        'Guna2Button3
         '
-        Me.Guna2Panel5.BackColor = System.Drawing.Color.OliveDrab
-        Me.Guna2Panel5.Controls.Add(Me.Guna2Button1)
-        Me.Guna2Panel5.Location = New System.Drawing.Point(2, 73)
-        Me.Guna2Panel5.Name = "Guna2Panel5"
-        Me.Guna2Panel5.Size = New System.Drawing.Size(419, 75)
-        Me.Guna2Panel5.TabIndex = 3
+        Me.Guna2Button3.BackColor = System.Drawing.Color.Gainsboro
+        Me.Guna2Button3.BorderColor = System.Drawing.Color.Transparent
+        Me.Guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button3.FillColor = System.Drawing.Color.YellowGreen
+        Me.Guna2Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2Button3.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button3.Image = Global.LokaTernak.My.Resources.Resources.farm
+        Me.Guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.Guna2Button3.ImageSize = New System.Drawing.Size(40, 40)
+        Me.Guna2Button3.Location = New System.Drawing.Point(0, 211)
+        Me.Guna2Button3.Name = "Guna2Button3"
+        Me.Guna2Button3.Size = New System.Drawing.Size(420, 75)
+        Me.Guna2Button3.TabIndex = 18
+        Me.Guna2Button3.Text = "Ubah Data Peternakan"
+        Me.Guna2Button3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
-        'Guna2Button1
+        'Guna2Button8
         '
-        Me.Guna2Button1.BackColor = System.Drawing.Color.Gainsboro
-        Me.Guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button1.FillColor = System.Drawing.Color.YellowGreen
-        Me.Guna2Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button1.Image = Global.LokaTernak.My.Resources.Resources.house
-        Me.Guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Guna2Button1.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Guna2Button1.Location = New System.Drawing.Point(-1, 0)
-        Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.Size = New System.Drawing.Size(421, 74)
-        Me.Guna2Button1.TabIndex = 0
-        Me.Guna2Button1.Text = "Dashboard"
-        Me.Guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.Guna2Button8.BackColor = System.Drawing.Color.Gainsboro
+        Me.Guna2Button8.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button8.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button8.FillColor = System.Drawing.Color.YellowGreen
+        Me.Guna2Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2Button8.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button8.Image = CType(resources.GetObject("Guna2Button8.Image"), System.Drawing.Image)
+        Me.Guna2Button8.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.Guna2Button8.ImageSize = New System.Drawing.Size(40, 40)
+        Me.Guna2Button8.Location = New System.Drawing.Point(0, 515)
+        Me.Guna2Button8.Name = "Guna2Button8"
+        Me.Guna2Button8.Size = New System.Drawing.Size(420, 75)
+        Me.Guna2Button8.TabIndex = 22
+        Me.Guna2Button8.Text = "Laporan"
+        Me.Guna2Button8.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
-        'Guna2Panel1
+        'Guna2Button7
         '
-        Me.Guna2Panel1.BackColor = System.Drawing.Color.YellowGreen
-        Me.Guna2Panel1.Controls.Add(Me.Guna2Button8)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2Button6)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2Button5)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2Button4)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2Panel7)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2Panel6)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2Panel5)
-        Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.Size = New System.Drawing.Size(420, 1024)
-        Me.Guna2Panel1.TabIndex = 22
+        Me.Guna2Button7.BackColor = System.Drawing.Color.Gainsboro
+        Me.Guna2Button7.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button7.FillColor = System.Drawing.Color.YellowGreen
+        Me.Guna2Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2Button7.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button7.Image = CType(resources.GetObject("Guna2Button7.Image"), System.Drawing.Image)
+        Me.Guna2Button7.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.Guna2Button7.ImageSize = New System.Drawing.Size(40, 40)
+        Me.Guna2Button7.Location = New System.Drawing.Point(0, 439)
+        Me.Guna2Button7.Name = "Guna2Button7"
+        Me.Guna2Button7.Size = New System.Drawing.Size(420, 75)
+        Me.Guna2Button7.TabIndex = 21
+        Me.Guna2Button7.Text = "Form Order"
+        Me.Guna2Button7.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'Guna2Button6
         '
@@ -168,10 +179,10 @@ Partial Class Diskusi_Peternak_Rincian
         Me.Guna2Button6.Image = Global.LokaTernak.My.Resources.Resources.towels_3009949
         Me.Guna2Button6.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button6.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Guna2Button6.Location = New System.Drawing.Point(0, 378)
+        Me.Guna2Button6.Location = New System.Drawing.Point(0, 364)
         Me.Guna2Button6.Name = "Guna2Button6"
         Me.Guna2Button6.Size = New System.Drawing.Size(420, 75)
-        Me.Guna2Button6.TabIndex = 13
+        Me.Guna2Button6.TabIndex = 20
         Me.Guna2Button6.Text = "Artikel"
         Me.Guna2Button6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
@@ -188,10 +199,10 @@ Partial Class Diskusi_Peternak_Rincian
         Me.Guna2Button5.Image = Global.LokaTernak.My.Resources.Resources.chat_1195994
         Me.Guna2Button5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button5.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Guna2Button5.Location = New System.Drawing.Point(0, 300)
+        Me.Guna2Button5.Location = New System.Drawing.Point(0, 287)
         Me.Guna2Button5.Name = "Guna2Button5"
         Me.Guna2Button5.Size = New System.Drawing.Size(420, 75)
-        Me.Guna2Button5.TabIndex = 3
+        Me.Guna2Button5.TabIndex = 19
         Me.Guna2Button5.Text = "Diskusi"
         Me.Guna2Button5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
@@ -327,26 +338,6 @@ Partial Class Diskusi_Peternak_Rincian
         Me.ListView1.TabIndex = 6
         Me.ListView1.UseCompatibleStateImageBehavior = False
         '
-        'Guna2Button8
-        '
-        Me.Guna2Button8.BackColor = System.Drawing.Color.Gainsboro
-        Me.Guna2Button8.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button8.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button8.FillColor = System.Drawing.Color.YellowGreen
-        Me.Guna2Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Button8.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button8.Image = CType(resources.GetObject("Guna2Button8.Image"), System.Drawing.Image)
-        Me.Guna2Button8.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Guna2Button8.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Guna2Button8.Location = New System.Drawing.Point(0, 450)
-        Me.Guna2Button8.Name = "Guna2Button8"
-        Me.Guna2Button8.Size = New System.Drawing.Size(420, 75)
-        Me.Guna2Button8.TabIndex = 24
-        Me.Guna2Button8.Text = "Form Order"
-        Me.Guna2Button8.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
         'Diskusi_Peternak_Rincian
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -358,9 +349,6 @@ Partial Class Diskusi_Peternak_Rincian
         Me.Name = "Diskusi_Peternak_Rincian"
         Me.Text = "Diskusi_Peternak_Rincian"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        Me.Guna2Panel7.ResumeLayout(False)
-        Me.Guna2Panel6.ResumeLayout(False)
-        Me.Guna2Panel5.ResumeLayout(False)
         Me.Guna2Panel1.ResumeLayout(False)
         Me.Guna2Panel4.ResumeLayout(False)
         Me.Guna2Panel4.PerformLayout()
@@ -370,16 +358,7 @@ Partial Class Diskusi_Peternak_Rincian
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents Guna2Panel7 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Panel6 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Panel5 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Button6 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button5 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button4 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Panel4 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
@@ -391,5 +370,11 @@ Partial Class Diskusi_Peternak_Rincian
     Friend WithEvents GambarLampiran As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
     Friend WithEvents buttonBalas As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button8 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Button7 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Button6 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Button5 As Guna.UI2.WinForms.Guna2Button
 End Class

@@ -251,6 +251,12 @@
     <Compile Include="Diskusi Peternak.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Laporan Peternak.Designer.vb">
+      <DependentUpon>Laporan Peternak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan Peternak.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Main Form.Designer.vb">
       <DependentUpon>Main Form.vb</DependentUpon>
     </Compile>

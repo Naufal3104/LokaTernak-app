@@ -32,6 +32,7 @@ Partial Class Dashboard_Peternak
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Button8 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button6 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button5 = New Guna.UI2.WinForms.Guna2Button()
@@ -114,6 +115,7 @@ Partial Class Dashboard_Peternak
         'Guna2Panel1
         '
         Me.Guna2Panel1.BackColor = System.Drawing.Color.YellowGreen
+        Me.Guna2Panel1.Controls.Add(Me.Guna2Button8)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Button7)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Button6)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Button5)
@@ -125,6 +127,26 @@ Partial Class Dashboard_Peternak
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.Size = New System.Drawing.Size(420, 1024)
         Me.Guna2Panel1.TabIndex = 8
+        '
+        'Guna2Button8
+        '
+        Me.Guna2Button8.BackColor = System.Drawing.Color.Gainsboro
+        Me.Guna2Button8.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button8.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button8.FillColor = System.Drawing.Color.YellowGreen
+        Me.Guna2Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2Button8.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button8.Image = CType(resources.GetObject("Guna2Button8.Image"), System.Drawing.Image)
+        Me.Guna2Button8.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.Guna2Button8.ImageSize = New System.Drawing.Size(40, 40)
+        Me.Guna2Button8.Location = New System.Drawing.Point(0, 527)
+        Me.Guna2Button8.Name = "Guna2Button8"
+        Me.Guna2Button8.Size = New System.Drawing.Size(420, 75)
+        Me.Guna2Button8.TabIndex = 15
+        Me.Guna2Button8.Text = "Laporan"
+        Me.Guna2Button8.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'Guna2Button7
         '
@@ -139,7 +161,7 @@ Partial Class Dashboard_Peternak
         Me.Guna2Button7.Image = CType(resources.GetObject("Guna2Button7.Image"), System.Drawing.Image)
         Me.Guna2Button7.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button7.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Guna2Button7.Location = New System.Drawing.Point(0, 450)
+        Me.Guna2Button7.Location = New System.Drawing.Point(0, 451)
         Me.Guna2Button7.Name = "Guna2Button7"
         Me.Guna2Button7.Size = New System.Drawing.Size(420, 75)
         Me.Guna2Button7.TabIndex = 14
@@ -159,7 +181,7 @@ Partial Class Dashboard_Peternak
         Me.Guna2Button6.Image = Global.LokaTernak.My.Resources.Resources.towels_3009949
         Me.Guna2Button6.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button6.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Guna2Button6.Location = New System.Drawing.Point(0, 378)
+        Me.Guna2Button6.Location = New System.Drawing.Point(0, 376)
         Me.Guna2Button6.Name = "Guna2Button6"
         Me.Guna2Button6.Size = New System.Drawing.Size(420, 75)
         Me.Guna2Button6.TabIndex = 13
@@ -179,7 +201,7 @@ Partial Class Dashboard_Peternak
         Me.Guna2Button5.Image = Global.LokaTernak.My.Resources.Resources.chat_1195994
         Me.Guna2Button5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button5.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Guna2Button5.Location = New System.Drawing.Point(0, 300)
+        Me.Guna2Button5.Location = New System.Drawing.Point(0, 299)
         Me.Guna2Button5.Name = "Guna2Button5"
         Me.Guna2Button5.Size = New System.Drawing.Size(420, 75)
         Me.Guna2Button5.TabIndex = 3
@@ -284,7 +306,7 @@ Partial Class Dashboard_Peternak
         Me.Guna2Button1.Image = Global.LokaTernak.My.Resources.Resources.house
         Me.Guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button1.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Guna2Button1.Location = New System.Drawing.Point(-1, 0)
+        Me.Guna2Button1.Location = New System.Drawing.Point(0, 0)
         Me.Guna2Button1.Name = "Guna2Button1"
         Me.Guna2Button1.Size = New System.Drawing.Size(421, 74)
         Me.Guna2Button1.TabIndex = 0
@@ -367,4 +389,5 @@ Partial Class Dashboard_Peternak
     Friend WithEvents Guna2Button5 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button6 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button7 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Button8 As Guna.UI2.WinForms.Guna2Button
 End Class
