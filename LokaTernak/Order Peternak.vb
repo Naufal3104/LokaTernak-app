@@ -65,7 +65,7 @@ Public Class Order_Peternak
     End Sub
 
     Sub LoadData()
-        Dim selectQuery As String = "SELECT Pelanggan, kode_produk AS 'Kode Produk', Jumlah, TotalHarga AS 'Total Harga', TanggalOrder AS 'Tanggal Order' FROM transaksi"
+        Dim selectQuery As String = "SELECT pelanggan AS Pelanggan, kode_produk AS 'Kode Produk', jumlah AS 'Jumlah', total_harga AS 'Total Harga', tanggal_order AS 'Tanggal Order' FROM transaksi"
         Dim conn As MySqlConnection = GetConnection()
         dataAdapter = New MySqlDataAdapter(selectQuery, conn)
         dataSet = New DataSet()
@@ -179,5 +179,9 @@ Public Class Order_Peternak
     Private Sub Guna2Button16_Click(sender As Object, e As EventArgs) Handles Guna2Button16.Click
         Me.Hide()
         Main_Form.Show()
+    End Sub
+
+    Private Sub Guna2DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellContentClick
+
     End Sub
 End Class

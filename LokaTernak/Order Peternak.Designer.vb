@@ -40,6 +40,7 @@ Partial Class Order_Peternak
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Button16 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button8 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button9 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button10 = New Guna.UI2.WinForms.Guna2Button()
@@ -64,7 +65,6 @@ Partial Class Order_Peternak
         Me.tbPesan = New Guna.UI2.WinForms.Guna2Button()
         Me.tbInvoice = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
-        Me.Guna2Button16 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel7.SuspendLayout()
         Me.Guna2Panel6.SuspendLayout()
@@ -287,6 +287,24 @@ Partial Class Order_Peternak
         Me.Guna2Panel3.Size = New System.Drawing.Size(420, 1024)
         Me.Guna2Panel3.TabIndex = 14
         '
+        'Guna2Button16
+        '
+        Me.Guna2Button16.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button16.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button16.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button16.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button16.FillColor = System.Drawing.Color.YellowGreen
+        Me.Guna2Button16.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2Button16.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button16.Image = CType(resources.GetObject("Guna2Button16.Image"), System.Drawing.Image)
+        Me.Guna2Button16.ImageSize = New System.Drawing.Size(50, 50)
+        Me.Guna2Button16.Location = New System.Drawing.Point(2, 724)
+        Me.Guna2Button16.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Button16.Name = "Guna2Button16"
+        Me.Guna2Button16.Size = New System.Drawing.Size(418, 104)
+        Me.Guna2Button16.TabIndex = 23
+        Me.Guna2Button16.Text = "Keluar"
+        '
         'Guna2Button8
         '
         Me.Guna2Button8.BackColor = System.Drawing.Color.Gainsboro
@@ -481,7 +499,7 @@ Partial Class Order_Peternak
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(450, 303)
+        Me.Label4.Location = New System.Drawing.Point(450, 305)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(154, 29)
         Me.Label4.TabIndex = 19
@@ -491,7 +509,7 @@ Partial Class Order_Peternak
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(450, 242)
+        Me.Label5.Location = New System.Drawing.Point(450, 240)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(90, 29)
         Me.Label5.TabIndex = 20
@@ -696,24 +714,6 @@ Partial Class Order_Peternak
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Height = 28
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        '
-        'Guna2Button16
-        '
-        Me.Guna2Button16.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button16.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button16.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button16.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button16.FillColor = System.Drawing.Color.YellowGreen
-        Me.Guna2Button16.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button16.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button16.Image = CType(resources.GetObject("Guna2Button16.Image"), System.Drawing.Image)
-        Me.Guna2Button16.ImageSize = New System.Drawing.Size(50, 50)
-        Me.Guna2Button16.Location = New System.Drawing.Point(2, 724)
-        Me.Guna2Button16.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Button16.Name = "Guna2Button16"
-        Me.Guna2Button16.Size = New System.Drawing.Size(418, 104)
-        Me.Guna2Button16.TabIndex = 23
-        Me.Guna2Button16.Text = "Keluar"
         '
         'Order_Peternak
         '

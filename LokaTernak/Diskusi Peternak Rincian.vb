@@ -50,7 +50,7 @@ Public Class Diskusi_Peternak_Rincian
             adapter.Fill(dt)
         End Using
         Dim rds As New ReportDataSource("DataSetDiskusi", dt)
-        ReportViewer1.LocalReport.ReportPath = "C:\Users\naufa\source\repos\LokaTernak-app\LokaTernak\IsiDiskusi.rdlc"
+        ReportViewer1.LocalReport.ReportPath = "..\..\IsiDiskusi.rdlc"
         ReportViewer1.LocalReport.DataSources.Clear()
         ReportViewer1.LocalReport.DataSources.Add(rds)
         ReportViewer1.RefreshReport()
