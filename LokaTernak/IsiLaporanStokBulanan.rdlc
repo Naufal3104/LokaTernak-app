@@ -7,37 +7,45 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>faa6b51c-5254-45f3-813d-7570a238a83d</rd:DataSourceID>
+      <rd:DataSourceID>11e44e30-9a61-4526-b598-e4e7e80c6cdf</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DataSetPenjualan">
+    <DataSet Name="DataSetStokBulanan">
       <Query>
         <DataSourceName>DataSetLaporan</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="order_id">
-          <DataField>order_id</DataField>
+        <Field Name="kode_produk">
+          <DataField>kode_produk</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="nama_produk">
           <DataField>nama_produk</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="jumlah">
-          <DataField>jumlah</DataField>
+        <Field Name="Total_Penambahan">
+          <DataField>Total_Penambahan</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="tanggal_order">
-          <DataField>tanggal_order</DataField>
+        <Field Name="Total_Pengurangan">
+          <DataField>Total_Pengurangan</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="tanggal_riwayat">
+          <DataField>tanggal_riwayat</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Bulan">
+          <DataField>Bulan</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>DataSetLaporan</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\naufa\source\repos\LokaTernak-app\LokaTernak\DataSetLaporan.xsd</rd:SchemaPath>
-        <rd:TableName>penjualan</rd:TableName>
+        <rd:SchemaPath>C:\Users\naufa\Source\Repos\LokaTernak-app\LokaTernak\DataSetLaporan.xsd</rd:SchemaPath>
+        <rd:TableName>peternakan</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
         <rd:TableAdapterName />
@@ -48,11 +56,28 @@
     <ReportSection>
       <Body>
         <ReportItems>
-          <Chart Name="Chart1">
+          <Chart Name="Chart2">
             <ChartCategoryHierarchy>
               <ChartMembers>
                 <ChartMember>
-                  <Group Name="Chart1_CategoryGroup">
+                  <Group Name="Chart2_CategoryGroup1">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!Bulan.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!Bulan.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
+                  <Label>=Fields!Bulan.Value</Label>
+                </ChartMember>
+              </ChartMembers>
+            </ChartCategoryHierarchy>
+            <ChartSeriesHierarchy>
+              <ChartMembers>
+                <ChartMember>
+                  <Group Name="Chart2_SeriesGroup">
                     <GroupExpressions>
                       <GroupExpression>=Fields!nama_produk.Value</GroupExpression>
                     </GroupExpressions>
@@ -62,31 +87,63 @@
                       <Value>=Fields!nama_produk.Value</Value>
                     </SortExpression>
                   </SortExpressions>
+                  <ChartMembers>
+                    <ChartMember>
+                      <Label>Total Penambahan</Label>
+                    </ChartMember>
+                    <ChartMember>
+                      <Label>Total Pengurangan</Label>
+                    </ChartMember>
+                  </ChartMembers>
                   <Label>=Fields!nama_produk.Value</Label>
-                </ChartMember>
-              </ChartMembers>
-            </ChartCategoryHierarchy>
-            <ChartSeriesHierarchy>
-              <ChartMembers>
-                <ChartMember>
-                  <Label>jumlah</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartSeriesHierarchy>
             <ChartData>
               <ChartSeriesCollection>
-                <ChartSeries Name="jumlah">
+                <ChartSeries Name="Total_Penambahan">
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=Sum(Fields!jumlah.Value)</Y>
+                        <Y>=Sum(Fields!Total_Penambahan.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
                       </ChartDataLabel>
-                      <Style>
-                        <Color>LimeGreen</Color>
-                      </Style>
+                      <Style />
+                      <ChartMarker>
+                        <Style />
+                      </ChartMarker>
+                      <DataElementOutput>Output</DataElementOutput>
+                    </ChartDataPoint>
+                  </ChartDataPoints>
+                  <Style />
+                  <ChartEmptyPoints>
+                    <Style />
+                    <ChartMarker>
+                      <Style />
+                    </ChartMarker>
+                    <ChartDataLabel>
+                      <Style />
+                    </ChartDataLabel>
+                  </ChartEmptyPoints>
+                  <ValueAxisName>Primary</ValueAxisName>
+                  <CategoryAxisName>Primary</CategoryAxisName>
+                  <ChartSmartLabel>
+                    <CalloutLineColor>Black</CalloutLineColor>
+                    <MinMovingDistance>0pt</MinMovingDistance>
+                  </ChartSmartLabel>
+                </ChartSeries>
+                <ChartSeries Name="Total_Pengurangan">
+                  <ChartDataPoints>
+                    <ChartDataPoint>
+                      <ChartDataPointValues>
+                        <Y>=Sum(Fields!Total_Pengurangan.Value)</Y>
+                      </ChartDataPointValues>
+                      <ChartDataLabel>
+                        <Style />
+                      </ChartDataLabel>
+                      <Style />
                       <ChartMarker>
                         <Style />
                       </ChartMarker>
@@ -365,7 +422,7 @@
             </ChartLegends>
             <ChartTitles>
               <ChartTitle Name="Default">
-                <Caption>Penjualan Hasil Ternak</Caption>
+                <Caption>Perubahan Stok Bulanan</Caption>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
                   <FontSize>9pt</FontSize>
@@ -394,10 +451,9 @@
                 <VerticalAlign>Top</VerticalAlign>
               </Style>
             </ChartNoDataMessage>
-            <DataSetName>DataSetPenjualan</DataSetName>
-            <Left>2.73967cm</Left>
-            <Height>5cm</Height>
-            <Width>7.5cm</Width>
+            <DataSetName>DataSetStokBulanan</DataSetName>
+            <Height>5.74083cm</Height>
+            <Width>12.00356cm</Width>
             <Style>
               <Border>
                 <Color>LightGrey</Color>
@@ -408,7 +464,7 @@
             </Style>
           </Chart>
         </ReportItems>
-        <Height>3.27628in</Height>
+        <Height>2.86656in</Height>
         <Style />
       </Body>
       <Width>6.5in</Width>
@@ -431,5 +487,5 @@
     </GridLayoutDefinition>
   </ReportParametersLayout>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>3eddea0f-c925-4392-8af6-688f8703b125</rd:ReportID>
+  <rd:ReportID>681948e6-634d-4df1-8702-3e609dba350c</rd:ReportID>
 </Report>

@@ -239,6 +239,11 @@
     <Compile Include="DataSetDiskusi.vb">
       <DependentUpon>DataSetDiskusi.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSetInvoice.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetInvoice.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataSetLaporan.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -257,6 +262,12 @@
       <DependentUpon>Diskusi Peternak.vb</DependentUpon>
     </Compile>
     <Compile Include="Diskusi Peternak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice.Designer.vb">
+      <DependentUpon>Invoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Laporan Peternak.Designer.vb">
@@ -380,8 +391,14 @@
     <EmbeddedResource Include="Diskusi Peternak.resx">
       <DependentUpon>Diskusi Peternak.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Invoice.resx">
+      <DependentUpon>Invoice.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IsiDiskusi.rdlc" />
+    <EmbeddedResource Include="IsiLaporanPendapatan.rdlc" />
     <EmbeddedResource Include="IsiLaporanPenjualan.rdlc" />
+    <EmbeddedResource Include="IsiLaporanPenjualanBulanan.rdlc" />
+    <EmbeddedResource Include="IsiLaporanStokBulanan.rdlc" />
     <EmbeddedResource Include="Laporan Peternak.resx">
       <DependentUpon>Laporan Peternak.vb</DependentUpon>
     </EmbeddedResource>
@@ -407,6 +424,7 @@
       <DependentUpon>Register User.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IsiArtikel.rdlc" />
+    <EmbeddedResource Include="ReportInvoice.rdlc" />
     <EmbeddedResource Include="Rincian Artikel.resx">
       <DependentUpon>Rincian Artikel.vb</DependentUpon>
     </EmbeddedResource>
@@ -442,6 +460,17 @@
     </None>
     <None Include="DataSetDiskusi.xss">
       <DependentUpon>DataSetDiskusi.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetInvoice.xsc">
+      <DependentUpon>DataSetInvoice.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetInvoice.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetInvoice.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetInvoice.xss">
+      <DependentUpon>DataSetInvoice.xsd</DependentUpon>
     </None>
     <None Include="DataSetLaporan.xsc">
       <DependentUpon>DataSetLaporan.xsd</DependentUpon>

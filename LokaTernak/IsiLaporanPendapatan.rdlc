@@ -7,11 +7,11 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>faa6b51c-5254-45f3-813d-7570a238a83d</rd:DataSourceID>
+      <rd:DataSourceID>45cd72cc-6aad-4d39-81d3-7006b6b968e1</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DataSetPenjualan">
+    <DataSet Name="DataSetPendapatan">
       <Query>
         <DataSourceName>DataSetLaporan</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
@@ -25,19 +25,23 @@
           <DataField>nama_produk</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="jumlah">
-          <DataField>jumlah</DataField>
+        <Field Name="Total_Pendapatan">
+          <DataField>Total_Pendapatan</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="tanggal_order">
           <DataField>tanggal_order</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="Bulan">
+          <DataField>Bulan</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>DataSetLaporan</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\naufa\source\repos\LokaTernak-app\LokaTernak\DataSetLaporan.xsd</rd:SchemaPath>
-        <rd:TableName>penjualan</rd:TableName>
+        <rd:SchemaPath>C:\Users\naufa\Source\Repos\LokaTernak-app\LokaTernak\DataSetLaporan.xsd</rd:SchemaPath>
+        <rd:TableName>pendapatan</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
         <rd:TableAdapterName />
@@ -69,24 +73,22 @@
             <ChartSeriesHierarchy>
               <ChartMembers>
                 <ChartMember>
-                  <Label>jumlah</Label>
+                  <Label>Total Pendapatan</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartSeriesHierarchy>
             <ChartData>
               <ChartSeriesCollection>
-                <ChartSeries Name="jumlah">
+                <ChartSeries Name="Total_Pendapatan">
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=Sum(Fields!jumlah.Value)</Y>
+                        <Y>=Sum(Fields!Total_Pendapatan.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
                       </ChartDataLabel>
-                      <Style>
-                        <Color>LimeGreen</Color>
-                      </Style>
+                      <Style />
                       <ChartMarker>
                         <Style />
                       </ChartMarker>
@@ -365,7 +367,7 @@
             </ChartLegends>
             <ChartTitles>
               <ChartTitle Name="Default">
-                <Caption>Penjualan Hasil Ternak</Caption>
+                <Caption>Pendapatan Hasil Ternak</Caption>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
                   <FontSize>9pt</FontSize>
@@ -394,8 +396,8 @@
                 <VerticalAlign>Top</VerticalAlign>
               </Style>
             </ChartNoDataMessage>
-            <DataSetName>DataSetPenjualan</DataSetName>
-            <Left>2.73967cm</Left>
+            <DataSetName>DataSetPendapatan</DataSetName>
+            <Left>2.2987cm</Left>
             <Height>5cm</Height>
             <Width>7.5cm</Width>
             <Style>
@@ -408,7 +410,7 @@
             </Style>
           </Chart>
         </ReportItems>
-        <Height>3.27628in</Height>
+        <Height>2.70684in</Height>
         <Style />
       </Body>
       <Width>6.5in</Width>
@@ -431,5 +433,5 @@
     </GridLayoutDefinition>
   </ReportParametersLayout>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>3eddea0f-c925-4392-8af6-688f8703b125</rd:ReportID>
+  <rd:ReportID>aef247ca-5bb4-4f42-84b1-409ede08f6a2</rd:ReportID>
 </Report>

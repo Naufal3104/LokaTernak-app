@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Laporan_Peternak
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Laporan_Peternak
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Laporan_Peternak))
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
@@ -42,6 +42,8 @@ Partial Class Laporan_Peternak
         Me.Label2 = New System.Windows.Forms.Label()
         Me.ReportViewer2 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
+        Me.ReportViewer3 = New Microsoft.Reporting.WinForms.ReportViewer()
+        Me.ReportViewer4 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel4.SuspendLayout()
         Me.Guna2Panel3.SuspendLayout()
@@ -266,6 +268,8 @@ Partial Class Laporan_Peternak
         '
         'Guna2Panel3
         '
+        Me.Guna2Panel3.Controls.Add(Me.ReportViewer4)
+        Me.Guna2Panel3.Controls.Add(Me.ReportViewer3)
         Me.Guna2Panel3.Controls.Add(Me.NumericTahun)
         Me.Guna2Panel3.Controls.Add(Me.ComboBoxBulan)
         Me.Guna2Panel3.Controls.Add(Me.Label3)
@@ -279,7 +283,7 @@ Partial Class Laporan_Peternak
         '
         'NumericTahun
         '
-        Me.NumericTahun.Location = New System.Drawing.Point(604, 25)
+        Me.NumericTahun.Location = New System.Drawing.Point(1346, 25)
         Me.NumericTahun.Maximum = New Decimal(New Integer() {9999, 0, 0, 0})
         Me.NumericTahun.Minimum = New Decimal(New Integer() {1000, 0, 0, 0})
         Me.NumericTahun.MinimumSize = New System.Drawing.Size(120, 0)
@@ -292,7 +296,7 @@ Partial Class Laporan_Peternak
         '
         Me.ComboBoxBulan.FormattingEnabled = True
         Me.ComboBoxBulan.Items.AddRange(New Object() {"Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"})
-        Me.ComboBoxBulan.Location = New System.Drawing.Point(80, 24)
+        Me.ComboBoxBulan.Location = New System.Drawing.Point(1074, 24)
         Me.ComboBoxBulan.Name = "ComboBoxBulan"
         Me.ComboBoxBulan.Size = New System.Drawing.Size(182, 28)
         Me.ComboBoxBulan.TabIndex = 6
@@ -301,7 +305,7 @@ Partial Class Laporan_Peternak
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(500, 27)
+        Me.Label3.Location = New System.Drawing.Point(1272, 27)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(69, 25)
         Me.Label3.TabIndex = 3
@@ -311,7 +315,7 @@ Partial Class Laporan_Peternak
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(12, 27)
+        Me.Label2.Location = New System.Drawing.Point(1008, 27)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(62, 25)
         Me.Label2.TabIndex = 2
@@ -322,7 +326,7 @@ Partial Class Laporan_Peternak
         Me.ReportViewer2.Location = New System.Drawing.Point(758, 62)
         Me.ReportViewer2.Name = "ReportViewer2"
         Me.ReportViewer2.ServerReport.BearerToken = Nothing
-        Me.ReportViewer2.Size = New System.Drawing.Size(708, 310)
+        Me.ReportViewer2.Size = New System.Drawing.Size(708, 399)
         Me.ReportViewer2.TabIndex = 1
         '
         'ReportViewer1
@@ -330,8 +334,24 @@ Partial Class Laporan_Peternak
         Me.ReportViewer1.Location = New System.Drawing.Point(16, 62)
         Me.ReportViewer1.Name = "ReportViewer1"
         Me.ReportViewer1.ServerReport.BearerToken = Nothing
-        Me.ReportViewer1.Size = New System.Drawing.Size(708, 310)
+        Me.ReportViewer1.Size = New System.Drawing.Size(708, 399)
         Me.ReportViewer1.TabIndex = 0
+        '
+        'ReportViewer3
+        '
+        Me.ReportViewer3.Location = New System.Drawing.Point(16, 498)
+        Me.ReportViewer3.Name = "ReportViewer3"
+        Me.ReportViewer3.ServerReport.BearerToken = Nothing
+        Me.ReportViewer3.Size = New System.Drawing.Size(708, 399)
+        Me.ReportViewer3.TabIndex = 8
+        '
+        'ReportViewer4
+        '
+        Me.ReportViewer4.Location = New System.Drawing.Point(758, 498)
+        Me.ReportViewer4.Name = "ReportViewer4"
+        Me.ReportViewer4.ServerReport.BearerToken = Nothing
+        Me.ReportViewer4.Size = New System.Drawing.Size(708, 399)
+        Me.ReportViewer4.TabIndex = 9
         '
         'Laporan_Peternak
         '
@@ -373,4 +393,6 @@ Partial Class Laporan_Peternak
     Friend WithEvents ReportViewer2 As Microsoft.Reporting.WinForms.ReportViewer
     Friend WithEvents NumericTahun As NumericUpDown
     Friend WithEvents ComboBoxBulan As ComboBox
+    Friend WithEvents ReportViewer4 As Microsoft.Reporting.WinForms.ReportViewer
+    Friend WithEvents ReportViewer3 As Microsoft.Reporting.WinForms.ReportViewer
 End Class
