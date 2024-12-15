@@ -89,4 +89,14 @@ Public Class Artikel_Peternak_Rincian
         Me.Hide()
         Main_Form.Show()
     End Sub
+
+    Private Sub Guna2Button9_Click(sender As Object, e As EventArgs) Handles Guna2Button9.Click
+        Me.Hide()
+        Diskusi_Peternak.Show()
+
+    End Sub
+
+    Private Sub ReportViewer1_Load(sender As Object, e As EventArgs) Handles ReportViewer1.Load
+
+    End Sub
 End Class

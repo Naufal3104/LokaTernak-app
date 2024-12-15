@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Dash_User2
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class Dash_User_4
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()>
+    <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,9 +20,12 @@ Partial Class Dash_User2
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()>
+    <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dash_User2))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dash_User_4))
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.label_judul = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Panel4 = New System.Windows.Forms.Panel()
@@ -31,21 +34,63 @@ Partial Class Dash_User2
         Me.Guna2Button8 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button9 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button10 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button5 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.ListView1 = New System.Windows.Forms.ListView()
-        Me.Panel3.SuspendLayout()
-        Me.Panel4.SuspendLayout()
+        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
+        Me.buttonHapus = New Guna.UI2.WinForms.Guna2Button()
+        Me.buttonKembali = New Guna.UI2.WinForms.Guna2Button()
+        Me.GambarLampiran = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.buttonBalas = New Guna.UI2.WinForms.Guna2Button()
         Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        Me.Panel4.SuspendLayout()
+        CType(Me.GambarLampiran, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Panel2.Controls.Add(Me.label_judul)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel2.Location = New System.Drawing.Point(319, 0)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(1579, 80)
+        Me.Panel2.TabIndex = 10
+        '
+        'label_judul
+        '
+        Me.label_judul.AutoSize = False
+        Me.label_judul.BackColor = System.Drawing.Color.Transparent
+        Me.label_judul.Font = New System.Drawing.Font("Segoe UI Black", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.label_judul.Location = New System.Drawing.Point(39, 20)
+        Me.label_judul.Margin = New System.Windows.Forms.Padding(2)
+        Me.label_judul.Name = "label_judul"
+        Me.label_judul.Size = New System.Drawing.Size(1529, 54)
+        Me.label_judul.TabIndex = 0
+        Me.label_judul.Text = "LOKATERNAK"
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.Green
+        Me.Panel1.Controls.Add(Me.Panel3)
+        Me.Panel1.Controls.Add(Me.Panel4)
+        Me.Panel1.Controls.Add(Me.Guna2Button4)
+        Me.Panel1.Controls.Add(Me.Guna2Button5)
+        Me.Panel1.Controls.Add(Me.Guna2Button3)
+        Me.Panel1.Controls.Add(Me.Guna2Button1)
+        Me.Panel1.Controls.Add(Me.Guna2Button2)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(319, 1024)
+        Me.Panel1.TabIndex = 9
         '
         'Panel3
         '
@@ -112,15 +157,15 @@ Partial Class Dash_User2
         Me.Guna2Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.Guna2Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.Guna2Button7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button7.FillColor = System.Drawing.Color.Green
+        Me.Guna2Button7.FillColor = System.Drawing.Color.OliveDrab
         Me.Guna2Button7.Font = New System.Drawing.Font("Segoe UI Black", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button7.ForeColor = System.Drawing.Color.White
         Me.Guna2Button7.Image = Global.LokaTernak.My.Resources.Resources.chat_1195994
         Me.Guna2Button7.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button7.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Guna2Button7.Location = New System.Drawing.Point(32, 379)
+        Me.Guna2Button7.Location = New System.Drawing.Point(22, 379)
         Me.Guna2Button7.Name = "Guna2Button7"
-        Me.Guna2Button7.Size = New System.Drawing.Size(420, 75)
+        Me.Guna2Button7.Size = New System.Drawing.Size(284, 80)
         Me.Guna2Button7.TabIndex = 4
         Me.Guna2Button7.Text = "       Diskusi"
         Me.Guna2Button7.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -148,12 +193,12 @@ Partial Class Dash_User2
         '
         'Guna2Button9
         '
-        Me.Guna2Button9.BackColor = System.Drawing.Color.OliveDrab
+        Me.Guna2Button9.BackColor = System.Drawing.Color.Green
         Me.Guna2Button9.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.Guna2Button9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.Guna2Button9.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.Guna2Button9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button9.FillColor = System.Drawing.Color.OliveDrab
+        Me.Guna2Button9.FillColor = System.Drawing.Color.Green
         Me.Guna2Button9.Font = New System.Drawing.Font("Segoe UI Black", 10.125!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button9.ForeColor = System.Drawing.Color.White
         Me.Guna2Button9.Image = CType(resources.GetObject("Guna2Button9.Image"), System.Drawing.Image)
@@ -183,46 +228,6 @@ Partial Class Dash_User2
         Me.Guna2Button10.Size = New System.Drawing.Size(322, 104)
         Me.Guna2Button10.TabIndex = 3
         Me.Guna2Button10.Text = "Keluar"
-        '
-        'Guna2HtmlLabel2
-        '
-        Me.Guna2HtmlLabel2.AutoSize = False
-        Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Segoe UI Black", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(39, 20)
-        Me.Guna2HtmlLabel2.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
-        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(364, 70)
-        Me.Guna2HtmlLabel2.TabIndex = 0
-        Me.Guna2HtmlLabel2.Text = "LOKATERNAK"
-        '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Panel2.Controls.Add(Me.Guna2HtmlLabel2)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel2.Location = New System.Drawing.Point(319, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1579, 80)
-        Me.Panel2.TabIndex = 5
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.Green
-        Me.Panel1.Controls.Add(Me.Panel3)
-        Me.Panel1.Controls.Add(Me.Panel4)
-        Me.Panel1.Controls.Add(Me.Guna2Button4)
-        Me.Panel1.Controls.Add(Me.Guna2Button5)
-        Me.Panel1.Controls.Add(Me.Guna2Button3)
-        Me.Panel1.Controls.Add(Me.Guna2Button1)
-        Me.Panel1.Controls.Add(Me.Guna2Button2)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(319, 1024)
-        Me.Panel1.TabIndex = 4
         '
         'Guna2Button4
         '
@@ -323,61 +328,120 @@ Partial Class Dash_User2
         Me.Guna2Button2.TabIndex = 3
         Me.Guna2Button2.Text = "Keluar"
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI Black", 26.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(480, 92)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(688, 70)
-        Me.Label1.TabIndex = 7
-        Me.Label1.Text = "Artikel Edukatif Untukmu"
-        '
         'ListView1
         '
         Me.ListView1.HideSelection = False
-        Me.ListView1.Location = New System.Drawing.Point(349, 206)
+        Me.ListView1.Location = New System.Drawing.Point(339, 508)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(1455, 931)
-        Me.ListView1.TabIndex = 8
+        Me.ListView1.Size = New System.Drawing.Size(1547, 504)
+        Me.ListView1.TabIndex = 11
         Me.ListView1.UseCompatibleStateImageBehavior = False
         '
-        'Dash_User2
+        'ReportViewer1
+        '
+        Me.ReportViewer1.Location = New System.Drawing.Point(339, 117)
+        Me.ReportViewer1.Name = "ReportViewer1"
+        Me.ReportViewer1.ServerReport.BearerToken = Nothing
+        Me.ReportViewer1.Size = New System.Drawing.Size(1064, 392)
+        Me.ReportViewer1.TabIndex = 13
+        '
+        'buttonHapus
+        '
+        Me.buttonHapus.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.buttonHapus.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.buttonHapus.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.buttonHapus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.buttonHapus.FillColor = System.Drawing.Color.IndianRed
+        Me.buttonHapus.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.buttonHapus.ForeColor = System.Drawing.Color.White
+        Me.buttonHapus.Location = New System.Drawing.Point(586, 79)
+        Me.buttonHapus.Name = "buttonHapus"
+        Me.buttonHapus.Size = New System.Drawing.Size(171, 39)
+        Me.buttonHapus.TabIndex = 15
+        Me.buttonHapus.Text = "Hapus Artikel"
+        Me.buttonHapus.Visible = False
+        '
+        'buttonKembali
+        '
+        Me.buttonKembali.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.buttonKembali.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.buttonKembali.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.buttonKembali.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.buttonKembali.FillColor = System.Drawing.Color.SeaGreen
+        Me.buttonKembali.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.buttonKembali.ForeColor = System.Drawing.Color.White
+        Me.buttonKembali.Location = New System.Drawing.Point(318, 79)
+        Me.buttonKembali.Name = "buttonKembali"
+        Me.buttonKembali.Size = New System.Drawing.Size(131, 39)
+        Me.buttonKembali.TabIndex = 14
+        Me.buttonKembali.Text = "Kembali"
+        '
+        'GambarLampiran
+        '
+        Me.GambarLampiran.ImageRotate = 0!
+        Me.GambarLampiran.Location = New System.Drawing.Point(1404, 117)
+        Me.GambarLampiran.Name = "GambarLampiran"
+        Me.GambarLampiran.Size = New System.Drawing.Size(482, 392)
+        Me.GambarLampiran.TabIndex = 16
+        Me.GambarLampiran.TabStop = False
+        '
+        'buttonBalas
+        '
+        Me.buttonBalas.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.buttonBalas.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.buttonBalas.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.buttonBalas.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.buttonBalas.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.buttonBalas.ForeColor = System.Drawing.Color.White
+        Me.buttonBalas.Location = New System.Drawing.Point(449, 79)
+        Me.buttonBalas.Name = "buttonBalas"
+        Me.buttonBalas.Size = New System.Drawing.Size(140, 39)
+        Me.buttonBalas.TabIndex = 17
+        Me.buttonBalas.Text = "Buat Balasan"
+        '
+        'Dash_User_4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1898, 1024)
-        Me.Controls.Add(Me.ListView1)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.buttonBalas)
+        Me.Controls.Add(Me.GambarLampiran)
+        Me.Controls.Add(Me.buttonHapus)
+        Me.Controls.Add(Me.buttonKembali)
+        Me.Controls.Add(Me.ReportViewer1)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
-        Me.Name = "Dash_User2"
-        Me.Text = "Dash_User2"
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel4.ResumeLayout(False)
+        Me.Controls.Add(Me.ListView1)
+        Me.Name = "Dash_User_4"
+        Me.Text = "Dash_User_4"
         Me.Panel2.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel4.ResumeLayout(False)
+        CType(Me.GambarLampiran, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Guna2Button6 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button7 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button8 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button10 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Panel3 As Panel
-    Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Panel4 As Panel
-    Friend WithEvents Guna2Button9 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button4 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button5 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Panel2 As Panel
+    Friend WithEvents label_judul As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Label1 As Label
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Panel4 As Panel
+    Friend WithEvents Guna2Button6 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Button7 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Button8 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Button9 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Button10 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents ListView1 As ListView
+    Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
+    Friend WithEvents buttonHapus As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents buttonKembali As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents GambarLampiran As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents buttonBalas As Guna.UI2.WinForms.Guna2Button
 End Class

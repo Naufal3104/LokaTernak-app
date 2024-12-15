@@ -9,8 +9,8 @@ Public Class Order_Peternak
         Dim pelanggan As String = tbNama.Text
         Dim kodeProduk As String = tbKodeProduk.Text
         Dim jumlah As Integer = tbJumlah.Value
-        Dim totalHarga As Decimal = tbTotal.Text
-        Dim tanggalOrder As DateTime = tbTanggal.Value
+        Dim total_harga As Decimal = tbTotal.Text
+        Dim tanggal_order As DateTime = tbTanggal.Value
 
         'Validasi nama pelanggan
         If String.IsNullOrWhiteSpace(pelanggan) Then
@@ -30,14 +30,14 @@ Public Class Order_Peternak
             Return
         End If
         Dim conn As MySqlConnection = GetConnection()
-        Dim query As String = "INSERT INTO transaksi (Pelanggan, kode_produk, Jumlah, TotalHarga, TanggalOrder) VALUES (@Pelanggan, @kode_produk, @Jumlah, @TotalHarga, @TanggalOrder)"
+        Dim query As String = "INSERT INTO transaksi (Pelanggan, kode_produk, Jumlah, total_harga, tanggal_order) VALUES (@Pelanggan, @kode_produk, @Jumlah, @total_harga, @tanggal_order)"
         Using cmd As New MySqlCommand(query, conn)
             Try
                 cmd.Parameters.AddWithValue("@Pelanggan", pelanggan)
                 cmd.Parameters.AddWithValue("@kode_produk", kodeProduk)
                 cmd.Parameters.AddWithValue("@Jumlah", jumlah)
-                cmd.Parameters.AddWithValue("@TotalHarga", totalHarga)
-                cmd.Parameters.AddWithValue("@TanggalOrder", tanggalOrder)
+                cmd.Parameters.AddWithValue("@total_harga", total_harga)
+                cmd.Parameters.AddWithValue("@tanggal_order", tanggal_order)
                 cmd.ExecuteNonQuery()
                 conn.Close()
 
@@ -119,6 +119,7 @@ Public Class Order_Peternak
         tbKodeProduk.ReadOnly = True
         LoadBarangList()
         LoadData()
+        tbTanggal.Value = DateTime.Now
     End Sub
 
     Private Sub Guna2Button14_Click(sender As Object, e As EventArgs)
@@ -176,7 +177,7 @@ Public Class Order_Peternak
         Laporan_Peternak.Show()
     End Sub
 
-    Private Sub Guna2Button16_Click(sender As Object, e As EventArgs) Handles Guna2Button16.Click
+    Private Sub Guna2Button16_Click(sender As Object, e As EventArgs)
         Me.Hide()
         Main_Form.Show()
     End Sub
@@ -185,8 +186,25 @@ Public Class Order_Peternak
 
     End Sub
 
-    Private Sub tbInvoice_Click(sender As Object, e As EventArgs) Handles tbInvoice.Click
+    Private Sub tbInvoice_Click(sender As Object, e As EventArgs)
         Me.Hide()
         Invoice.Show()
+    End Sub
+
+    Private Sub Guna2Button11_Click(sender As Object, e As EventArgs) Handles Guna2Button11.Click
+        Me.Hide()
+        Main_Form.Show()
+
+    End Sub
+
+    Private Sub tbInvoice_Click_1(sender As Object, e As EventArgs) Handles tbInvoice.Click
+        Me.Hide()
+        Invoice.Show()
+
+
+    End Sub
+
+    Private Sub tbTanggal_ValueChanged(sender As Object, e As EventArgs) Handles tbTanggal.ValueChanged
+
     End Sub
 End Class

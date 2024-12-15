@@ -172,6 +172,12 @@
     <Compile Include="Dash User 3.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Dash User 4.Designer.vb">
+      <DependentUpon>Dash User 4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dash User 4.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Dash User.Designer.vb">
       <DependentUpon>Dash User.vb</DependentUpon>
     </Compile>
@@ -323,6 +329,12 @@
     <Compile Include="Register User.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Rincian Artikel User.Designer.vb">
+      <DependentUpon>Rincian Artikel User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Rincian Artikel User.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Rincian Artikel.Designer.vb">
       <DependentUpon>Rincian Artikel.vb</DependentUpon>
     </Compile>
@@ -360,6 +372,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dash User 3.resx">
       <DependentUpon>Dash User 3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dash User 4.resx">
+      <DependentUpon>Dash User 4.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dash User.resx">
       <DependentUpon>Dash User.vb</DependentUpon>
@@ -425,6 +440,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IsiArtikel.rdlc" />
     <EmbeddedResource Include="ReportInvoice.rdlc" />
+    <EmbeddedResource Include="Rincian Artikel User.resx">
+      <DependentUpon>Rincian Artikel User.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Rincian Artikel.resx">
       <DependentUpon>Rincian Artikel.vb</DependentUpon>
     </EmbeddedResource>

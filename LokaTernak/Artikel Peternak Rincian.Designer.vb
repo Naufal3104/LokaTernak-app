@@ -24,6 +24,11 @@ Partial Class Artikel_Peternak_Rincian
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Artikel_Peternak_Rincian))
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.label_judul = New System.Windows.Forms.Label()
+        Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
+        Me.Guna2Button9 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
@@ -32,10 +37,6 @@ Partial Class Artikel_Peternak_Rincian
         Me.Guna2Button6 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button5 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.label_judul = New System.Windows.Forms.Label()
-        Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel4.SuspendLayout()
         Me.Guna2Panel3.SuspendLayout()
@@ -44,6 +45,7 @@ Partial Class Artikel_Peternak_Rincian
         'Guna2Panel1
         '
         Me.Guna2Panel1.BackColor = System.Drawing.Color.YellowGreen
+        Me.Guna2Panel1.Controls.Add(Me.Guna2Button9)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Button1)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Button2)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Button3)
@@ -56,6 +58,61 @@ Partial Class Artikel_Peternak_Rincian
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.Size = New System.Drawing.Size(420, 1024)
         Me.Guna2Panel1.TabIndex = 22
+        '
+        'Guna2Panel4
+        '
+        Me.Guna2Panel4.BackColor = System.Drawing.Color.Khaki
+        Me.Guna2Panel4.Controls.Add(Me.label_judul)
+        Me.Guna2Panel4.Location = New System.Drawing.Point(420, -6)
+        Me.Guna2Panel4.Name = "Guna2Panel4"
+        Me.Guna2Panel4.Size = New System.Drawing.Size(1596, 73)
+        Me.Guna2Panel4.TabIndex = 21
+        '
+        'label_judul
+        '
+        Me.label_judul.AutoSize = True
+        Me.label_judul.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.label_judul.Location = New System.Drawing.Point(5, 22)
+        Me.label_judul.Name = "label_judul"
+        Me.label_judul.Size = New System.Drawing.Size(94, 32)
+        Me.label_judul.TabIndex = 5
+        Me.label_judul.Text = "Artikel"
+        '
+        'Guna2Panel3
+        '
+        Me.Guna2Panel3.Controls.Add(Me.ReportViewer1)
+        Me.Guna2Panel3.Location = New System.Drawing.Point(420, 67)
+        Me.Guna2Panel3.Name = "Guna2Panel3"
+        Me.Guna2Panel3.Size = New System.Drawing.Size(1479, 962)
+        Me.Guna2Panel3.TabIndex = 20
+        '
+        'ReportViewer1
+        '
+        Me.ReportViewer1.Location = New System.Drawing.Point(13, 31)
+        Me.ReportViewer1.Name = "ReportViewer1"
+        Me.ReportViewer1.ServerReport.BearerToken = Nothing
+        Me.ReportViewer1.Size = New System.Drawing.Size(1453, 914)
+        Me.ReportViewer1.TabIndex = 1
+        '
+        'Guna2Button9
+        '
+        Me.Guna2Button9.BackColor = System.Drawing.Color.Gainsboro
+        Me.Guna2Button9.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button9.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button9.FillColor = System.Drawing.Color.YellowGreen
+        Me.Guna2Button9.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2Button9.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button9.Image = Global.LokaTernak.My.Resources.Resources.chat_1195994
+        Me.Guna2Button9.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.Guna2Button9.ImageSize = New System.Drawing.Size(40, 40)
+        Me.Guna2Button9.Location = New System.Drawing.Point(0, 272)
+        Me.Guna2Button9.Name = "Guna2Button9"
+        Me.Guna2Button9.Size = New System.Drawing.Size(420, 75)
+        Me.Guna2Button9.TabIndex = 23
+        Me.Guna2Button9.Text = "Diskusi"
+        Me.Guna2Button9.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'Guna2Button1
         '
@@ -132,7 +189,7 @@ Partial Class Artikel_Peternak_Rincian
         Me.Guna2Button8.Image = CType(resources.GetObject("Guna2Button8.Image"), System.Drawing.Image)
         Me.Guna2Button8.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button8.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Guna2Button8.Location = New System.Drawing.Point(0, 441)
+        Me.Guna2Button8.Location = New System.Drawing.Point(0, 504)
         Me.Guna2Button8.Name = "Guna2Button8"
         Me.Guna2Button8.Size = New System.Drawing.Size(420, 75)
         Me.Guna2Button8.TabIndex = 22
@@ -152,7 +209,7 @@ Partial Class Artikel_Peternak_Rincian
         Me.Guna2Button7.Image = CType(resources.GetObject("Guna2Button7.Image"), System.Drawing.Image)
         Me.Guna2Button7.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button7.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Guna2Button7.Location = New System.Drawing.Point(0, 365)
+        Me.Guna2Button7.Location = New System.Drawing.Point(0, 428)
         Me.Guna2Button7.Name = "Guna2Button7"
         Me.Guna2Button7.Size = New System.Drawing.Size(420, 75)
         Me.Guna2Button7.TabIndex = 21
@@ -172,7 +229,7 @@ Partial Class Artikel_Peternak_Rincian
         Me.Guna2Button6.Image = Global.LokaTernak.My.Resources.Resources.towels_3009949
         Me.Guna2Button6.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button6.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Guna2Button6.Location = New System.Drawing.Point(0, 290)
+        Me.Guna2Button6.Location = New System.Drawing.Point(0, 353)
         Me.Guna2Button6.Name = "Guna2Button6"
         Me.Guna2Button6.Size = New System.Drawing.Size(420, 75)
         Me.Guna2Button6.TabIndex = 20
@@ -217,41 +274,6 @@ Partial Class Artikel_Peternak_Rincian
         Me.Guna2Button4.TabIndex = 12
         Me.Guna2Button4.Text = "Keluar"
         '
-        'Guna2Panel4
-        '
-        Me.Guna2Panel4.BackColor = System.Drawing.Color.Khaki
-        Me.Guna2Panel4.Controls.Add(Me.label_judul)
-        Me.Guna2Panel4.Location = New System.Drawing.Point(420, -6)
-        Me.Guna2Panel4.Name = "Guna2Panel4"
-        Me.Guna2Panel4.Size = New System.Drawing.Size(1596, 73)
-        Me.Guna2Panel4.TabIndex = 21
-        '
-        'label_judul
-        '
-        Me.label_judul.AutoSize = True
-        Me.label_judul.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label_judul.Location = New System.Drawing.Point(5, 22)
-        Me.label_judul.Name = "label_judul"
-        Me.label_judul.Size = New System.Drawing.Size(94, 32)
-        Me.label_judul.TabIndex = 5
-        Me.label_judul.Text = "Artikel"
-        '
-        'Guna2Panel3
-        '
-        Me.Guna2Panel3.Controls.Add(Me.ReportViewer1)
-        Me.Guna2Panel3.Location = New System.Drawing.Point(420, 67)
-        Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.Size = New System.Drawing.Size(1479, 962)
-        Me.Guna2Panel3.TabIndex = 20
-        '
-        'ReportViewer1
-        '
-        Me.ReportViewer1.Location = New System.Drawing.Point(13, 31)
-        Me.ReportViewer1.Name = "ReportViewer1"
-        Me.ReportViewer1.ServerReport.BearerToken = Nothing
-        Me.ReportViewer1.Size = New System.Drawing.Size(1453, 914)
-        Me.ReportViewer1.TabIndex = 1
-        '
         'Artikel_Peternak_Rincian
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -283,4 +305,5 @@ Partial Class Artikel_Peternak_Rincian
     Friend WithEvents Guna2Button7 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button6 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button5 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Button9 As Guna.UI2.WinForms.Guna2Button
 End Class

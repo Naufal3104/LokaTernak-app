@@ -4,6 +4,15 @@ Module Module_Koneksi
     Private _kodePeternakan As String
     Private _kodeDiskusi As String
     Private _kodeArtikel As String
+    Private _kodeUser As String
+    Public Function GetKodeUser() As String
+        Return _kodeUser
+    End Function
+
+    Public Sub SetKodeUser(value As String)
+        _kodeUser = value
+    End Sub
+
     Public Function GetKodePeternakan() As String
         Return _kodePeternakan
     End Function

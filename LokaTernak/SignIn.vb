@@ -46,43 +46,51 @@ Public Class Sign_In
         Using connection As MySqlConnection = Module_Koneksi.GetConnection()
             If connection IsNot Nothing Then
                 Try
-                    Dim queryUser As String = "SELECT id_role FROM user WHERE username=@username AND password=@password"
+                    Dim queryUser As String = "SELECT id_role, kode_user FROM user WHERE username=@username AND password=@password"
                     Using command As New MySqlCommand(queryUser, connection)
                         command.Parameters.AddWithValue("@username", username)
                         command.Parameters.AddWithValue("@password", password)
 
-                        Dim role As String = Convert.ToString(command.ExecuteScalar())
-                        If Not String.IsNullOrEmpty(role) Then
-                            MessageBox.Show("Login Berhasil! Role: " & role)
-                            Select Case role
-                                Case 1
-                                    Dashboard_Admin.Show()
-                                    Me.Hide()
-                                Case 2
-                                    Dash_User.Show()
-                                    Me.Hide()
-                                Case Else
-                                    MessageBox.Show("Role tidak dikenali.")
-                            End Select
-                        Else
-                            Dim queryFarm As String = "SELECT kode_peternakan FROM peternakan WHERE username=@username AND password=@password"
-                            Using farmCommand As New MySqlCommand(queryFarm, connection)
-                                farmCommand.Parameters.AddWithValue("@username", username)
-                                farmCommand.Parameters.AddWithValue("@password", password)
+                        Using reader As MySqlDataReader = command.ExecuteReader()
+                            If reader.Read() Then
+                                Dim role As Integer = Convert.ToInt32(reader("id_role"))
+                                Dim kodeUser As String = reader("kode_user").ToString()
 
-                                Using reader As MySqlDataReader = farmCommand.ExecuteReader()
-                                    If reader.Read() Then
-                                        MessageBox.Show("Login sebagai Peternak berhasil!")
-                                        Dim kodePeternakan As String = reader("kode_peternakan").ToString()
-                                        Module_Koneksi.SetKodePeternakan(kodePeternakan)
-                                        Dashboard_Peternak.Show()
+                                ' Assign kode_user ke Module_Koneksi
+                                Module_Koneksi.SetKodeUser(kodeUser)
+
+                                Select Case role
+                                    Case 1
+                                        MessageBox.Show("Login Berhasil! Role: Admin")
+                                        Dashboard_Admin.Show()
                                         Me.Hide()
-                                    Else
-                                        MessageBox.Show("Username atau Password salah.")
-                                    End If
+                                    Case 2
+                                        MessageBox.Show("Login Berhasil! Role: Guest")
+                                        Dash_User.Show()
+                                        Me.Hide()
+                                    Case Else
+                                        MessageBox.Show("Role tidak dikenali.")
+                                End Select
+                            Else
+                                Dim queryFarm As String = "SELECT kode_peternakan FROM peternakan WHERE username=@username AND password=@password"
+                                Using farmCommand As New MySqlCommand(queryFarm, connection)
+                                    farmCommand.Parameters.AddWithValue("@username", username)
+                                    farmCommand.Parameters.AddWithValue("@password", password)
+
+                                    Using farmReader As MySqlDataReader = farmCommand.ExecuteReader()
+                                        If farmReader.Read() Then
+                                            MessageBox.Show("Login sebagai Peternak berhasil!")
+                                            Dim kodePeternakan As String = farmReader("kode_peternakan").ToString()
+                                            Module_Koneksi.SetKodePeternakan(kodePeternakan)
+                                            Dashboard_Peternak.Show()
+                                            Me.Hide()
+                                        Else
+                                            MessageBox.Show("Username atau Password salah.")
+                                        End If
+                                    End Using
                                 End Using
-                            End Using
-                        End If
+                            End If
+                        End Using
                     End Using
                 Catch ex As MySqlException
                     MessageBox.Show("Terjadi kesalahan: " & ex.Message)

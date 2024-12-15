@@ -7,15 +7,17 @@ Public Class balas_diskusi
     Private kodePengguna As String
     Private Sub buttonSimpan_Click(sender As Object, e As EventArgs) Handles buttonSimpan.Click
         Dim kodePeternakan As String = Module_Koneksi.GetKodePeternakan()
+        Dim kodeUser As String = Module_Koneksi.GetKodeUser()
         Dim tanggalBalasan As DateTime = DateTime.Now
         Dim isiBalasan As String = textIsiBalasan.Text
         Dim kodeDiskusi As String = Module_Koneksi.GetKodeDiskusi()
         Dim connectionString As String = "server=localhost;user id=root;" & "password=;database=peternakan;"
         Using connection As MySqlConnection = Module_Koneksi.GetConnection()
-            Dim command As New MySqlCommand("INSERT INTO balasan_diskusi (kode_balasan, kode_diskusi, kode_peternakan, isi_balasan, tanggal_balasan) VALUES (@kodeBalasan, @kodeDiskusi, @kodePeternakan, @isiBalasan, @tanggalBalasan)", connection)
+            Dim command As New MySqlCommand("INSERT INTO balasan_diskusi (kode_balasan, kode_diskusi, kode_peternakan, kode_user, isi_balasan, tanggal_balasan) VALUES (@kodeBalasan, @kodeDiskusi, @kodePeternakan, @kodeUser, @isiBalasan, @tanggalBalasan)", connection)
             command.Parameters.AddWithValue("@kodeBalasan", GenerateKodeBalasan)
             command.Parameters.AddWithValue("@kodeDiskusi", kodeDiskusi)
             command.Parameters.AddWithValue("@kodePeternakan", kodePeternakan)
+            command.Parameters.AddWithValue("@kodeUser", kodeUser)
             command.Parameters.AddWithValue("@isiBalasan", isiBalasan)
             command.Parameters.AddWithValue("@tanggalBalasan", tanggalBalasan)
             Try

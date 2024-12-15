@@ -23,9 +23,9 @@ Partial Class Order_Peternak
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Order_Peternak))
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
@@ -40,7 +40,6 @@ Partial Class Order_Peternak
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Button16 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button8 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button9 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button10 = New Guna.UI2.WinForms.Guna2Button()
@@ -61,10 +60,10 @@ Partial Class Order_Peternak
         Me.tbKodeProduk = New Guna.UI2.WinForms.Guna2TextBox()
         Me.tbProduk = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.tbJumlah = New Guna.UI2.WinForms.Guna2NumericUpDown()
-        Me.tbTanggal = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.tbPesan = New Guna.UI2.WinForms.Guna2Button()
         Me.tbInvoice = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.tbTanggal = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel7.SuspendLayout()
         Me.Guna2Panel6.SuspendLayout()
@@ -273,7 +272,6 @@ Partial Class Order_Peternak
         'Guna2Panel3
         '
         Me.Guna2Panel3.BackColor = System.Drawing.Color.YellowGreen
-        Me.Guna2Panel3.Controls.Add(Me.Guna2Button16)
         Me.Guna2Panel3.Controls.Add(Me.Guna2Button8)
         Me.Guna2Panel3.Controls.Add(Me.Guna2Button9)
         Me.Guna2Panel3.Controls.Add(Me.Guna2Button10)
@@ -286,24 +284,6 @@ Partial Class Order_Peternak
         Me.Guna2Panel3.Name = "Guna2Panel3"
         Me.Guna2Panel3.Size = New System.Drawing.Size(420, 1024)
         Me.Guna2Panel3.TabIndex = 14
-        '
-        'Guna2Button16
-        '
-        Me.Guna2Button16.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button16.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button16.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button16.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button16.FillColor = System.Drawing.Color.YellowGreen
-        Me.Guna2Button16.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button16.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button16.Image = CType(resources.GetObject("Guna2Button16.Image"), System.Drawing.Image)
-        Me.Guna2Button16.ImageSize = New System.Drawing.Size(50, 50)
-        Me.Guna2Button16.Location = New System.Drawing.Point(2, 724)
-        Me.Guna2Button16.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Button16.Name = "Guna2Button16"
-        Me.Guna2Button16.Size = New System.Drawing.Size(418, 104)
-        Me.Guna2Button16.TabIndex = 23
-        Me.Guna2Button16.Text = "Keluar"
         '
         'Guna2Button8
         '
@@ -622,19 +602,6 @@ Partial Class Order_Peternak
         Me.tbJumlah.Size = New System.Drawing.Size(116, 42)
         Me.tbJumlah.TabIndex = 27
         '
-        'tbTanggal
-        '
-        Me.tbTanggal.Checked = True
-        Me.tbTanggal.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.tbTanggal.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
-        Me.tbTanggal.Location = New System.Drawing.Point(1148, 235)
-        Me.tbTanggal.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
-        Me.tbTanggal.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
-        Me.tbTanggal.Name = "tbTanggal"
-        Me.tbTanggal.Size = New System.Drawing.Size(262, 36)
-        Me.tbTanggal.TabIndex = 28
-        Me.tbTanggal.Value = New Date(2024, 12, 9, 12, 11, 42, 340)
-        '
         'tbPesan
         '
         Me.tbPesan.DisabledState.BorderColor = System.Drawing.Color.DarkGray
@@ -665,26 +632,26 @@ Partial Class Order_Peternak
         '
         'Guna2DataGridView1
         '
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.Guna2DataGridView1.ColumnHeadersHeight = 22
         Me.Guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle6
         Me.Guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2DataGridView1.Location = New System.Drawing.Point(455, 405)
         Me.Guna2DataGridView1.Name = "Guna2DataGridView1"
@@ -715,11 +682,24 @@ Partial Class Order_Peternak
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         '
+        'tbTanggal
+        '
+        Me.tbTanggal.Checked = True
+        Me.tbTanggal.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.tbTanggal.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
+        Me.tbTanggal.Location = New System.Drawing.Point(1148, 235)
+        Me.tbTanggal.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
+        Me.tbTanggal.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
+        Me.tbTanggal.Name = "tbTanggal"
+        Me.tbTanggal.Size = New System.Drawing.Size(262, 36)
+        Me.tbTanggal.TabIndex = 28
+        Me.tbTanggal.Value = New Date(2024, 12, 15, 0, 0, 0, 0)
+        '
         'Order_Peternak
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1443, 831)
+        Me.ClientSize = New System.Drawing.Size(1443, 1017)
         Me.Controls.Add(Me.Guna2DataGridView1)
         Me.Controls.Add(Me.tbInvoice)
         Me.Controls.Add(Me.tbPesan)
@@ -782,7 +762,6 @@ Partial Class Order_Peternak
     Friend WithEvents tbKodeProduk As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents tbProduk As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents tbJumlah As Guna.UI2.WinForms.Guna2NumericUpDown
-    Friend WithEvents tbTanggal As Guna.UI2.WinForms.Guna2DateTimePicker
     Friend WithEvents tbPesan As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents tbInvoice As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2DataGridView1 As Guna.UI2.WinForms.Guna2DataGridView
@@ -793,5 +772,5 @@ Partial Class Order_Peternak
     Friend WithEvents Guna2Button13 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button14 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button15 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button16 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents tbTanggal As Guna.UI2.WinForms.Guna2DateTimePicker
 End Class

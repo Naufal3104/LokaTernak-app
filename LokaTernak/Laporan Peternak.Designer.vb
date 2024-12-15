@@ -24,6 +24,17 @@ Partial Class Laporan_Peternak
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Laporan_Peternak))
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.ReportViewer4 = New Microsoft.Reporting.WinForms.ReportViewer()
+        Me.ReportViewer3 = New Microsoft.Reporting.WinForms.ReportViewer()
+        Me.NumericTahun = New System.Windows.Forms.NumericUpDown()
+        Me.ComboBoxBulan = New System.Windows.Forms.ComboBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.ReportViewer2 = New Microsoft.Reporting.WinForms.ReportViewer()
+        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.Guna2Button9 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
@@ -33,17 +44,6 @@ Partial Class Laporan_Peternak
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button8 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.NumericTahun = New System.Windows.Forms.NumericUpDown()
-        Me.ComboBoxBulan = New System.Windows.Forms.ComboBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.ReportViewer2 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.ReportViewer3 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.ReportViewer4 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel4.SuspendLayout()
         Me.Guna2Panel3.SuspendLayout()
@@ -66,6 +66,112 @@ Partial Class Laporan_Peternak
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.Size = New System.Drawing.Size(420, 1024)
         Me.Guna2Panel1.TabIndex = 13
+        '
+        'Guna2Panel4
+        '
+        Me.Guna2Panel4.BackColor = System.Drawing.Color.Khaki
+        Me.Guna2Panel4.Controls.Add(Me.Label1)
+        Me.Guna2Panel4.Location = New System.Drawing.Point(420, -6)
+        Me.Guna2Panel4.Name = "Guna2Panel4"
+        Me.Guna2Panel4.Size = New System.Drawing.Size(1698, 73)
+        Me.Guna2Panel4.TabIndex = 12
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(5, 24)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(272, 32)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Laporan Peternakan"
+        '
+        'Guna2Panel3
+        '
+        Me.Guna2Panel3.Controls.Add(Me.ReportViewer4)
+        Me.Guna2Panel3.Controls.Add(Me.ReportViewer3)
+        Me.Guna2Panel3.Controls.Add(Me.NumericTahun)
+        Me.Guna2Panel3.Controls.Add(Me.ComboBoxBulan)
+        Me.Guna2Panel3.Controls.Add(Me.Label3)
+        Me.Guna2Panel3.Controls.Add(Me.Label2)
+        Me.Guna2Panel3.Controls.Add(Me.ReportViewer2)
+        Me.Guna2Panel3.Controls.Add(Me.ReportViewer1)
+        Me.Guna2Panel3.Location = New System.Drawing.Point(420, 67)
+        Me.Guna2Panel3.Name = "Guna2Panel3"
+        Me.Guna2Panel3.Size = New System.Drawing.Size(1479, 957)
+        Me.Guna2Panel3.TabIndex = 11
+        '
+        'ReportViewer4
+        '
+        Me.ReportViewer4.Location = New System.Drawing.Point(758, 498)
+        Me.ReportViewer4.Name = "ReportViewer4"
+        Me.ReportViewer4.ServerReport.BearerToken = Nothing
+        Me.ReportViewer4.Size = New System.Drawing.Size(708, 399)
+        Me.ReportViewer4.TabIndex = 9
+        '
+        'ReportViewer3
+        '
+        Me.ReportViewer3.Location = New System.Drawing.Point(16, 498)
+        Me.ReportViewer3.Name = "ReportViewer3"
+        Me.ReportViewer3.ServerReport.BearerToken = Nothing
+        Me.ReportViewer3.Size = New System.Drawing.Size(708, 399)
+        Me.ReportViewer3.TabIndex = 8
+        '
+        'NumericTahun
+        '
+        Me.NumericTahun.Location = New System.Drawing.Point(1346, 25)
+        Me.NumericTahun.Maximum = New Decimal(New Integer() {9999, 0, 0, 0})
+        Me.NumericTahun.Minimum = New Decimal(New Integer() {1000, 0, 0, 0})
+        Me.NumericTahun.MinimumSize = New System.Drawing.Size(120, 0)
+        Me.NumericTahun.Name = "NumericTahun"
+        Me.NumericTahun.Size = New System.Drawing.Size(120, 26)
+        Me.NumericTahun.TabIndex = 7
+        Me.NumericTahun.Value = New Decimal(New Integer() {1000, 0, 0, 0})
+        '
+        'ComboBoxBulan
+        '
+        Me.ComboBoxBulan.FormattingEnabled = True
+        Me.ComboBoxBulan.Items.AddRange(New Object() {"Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"})
+        Me.ComboBoxBulan.Location = New System.Drawing.Point(1074, 24)
+        Me.ComboBoxBulan.Name = "ComboBoxBulan"
+        Me.ComboBoxBulan.Size = New System.Drawing.Size(182, 28)
+        Me.ComboBoxBulan.TabIndex = 6
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(1272, 27)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(69, 25)
+        Me.Label3.TabIndex = 3
+        Me.Label3.Text = "Tahun"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(1008, 27)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(62, 25)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "Bulan"
+        '
+        'ReportViewer2
+        '
+        Me.ReportViewer2.Location = New System.Drawing.Point(758, 62)
+        Me.ReportViewer2.Name = "ReportViewer2"
+        Me.ReportViewer2.ServerReport.BearerToken = Nothing
+        Me.ReportViewer2.Size = New System.Drawing.Size(708, 399)
+        Me.ReportViewer2.TabIndex = 1
+        '
+        'ReportViewer1
+        '
+        Me.ReportViewer1.Location = New System.Drawing.Point(16, 62)
+        Me.ReportViewer1.Name = "ReportViewer1"
+        Me.ReportViewer1.ServerReport.BearerToken = Nothing
+        Me.ReportViewer1.Size = New System.Drawing.Size(708, 399)
+        Me.ReportViewer1.TabIndex = 0
         '
         'Guna2Button9
         '
@@ -115,7 +221,7 @@ Partial Class Laporan_Peternak
         Me.Guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.Guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.Guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button2.FillColor = System.Drawing.Color.OliveDrab
+        Me.Guna2Button2.FillColor = System.Drawing.Color.YellowGreen
         Me.Guna2Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button2.ForeColor = System.Drawing.Color.White
         Me.Guna2Button2.Image = Global.LokaTernak.My.Resources.Resources.catalog
@@ -216,7 +322,7 @@ Partial Class Laporan_Peternak
         Me.Guna2Button8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.Guna2Button8.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.Guna2Button8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button8.FillColor = System.Drawing.Color.YellowGreen
+        Me.Guna2Button8.FillColor = System.Drawing.Color.OliveDrab
         Me.Guna2Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button8.ForeColor = System.Drawing.Color.White
         Me.Guna2Button8.Image = CType(resources.GetObject("Guna2Button8.Image"), System.Drawing.Image)
@@ -246,112 +352,6 @@ Partial Class Laporan_Peternak
         Me.Guna2Button4.Size = New System.Drawing.Size(418, 104)
         Me.Guna2Button4.TabIndex = 12
         Me.Guna2Button4.Text = "Keluar"
-        '
-        'Guna2Panel4
-        '
-        Me.Guna2Panel4.BackColor = System.Drawing.Color.Khaki
-        Me.Guna2Panel4.Controls.Add(Me.Label1)
-        Me.Guna2Panel4.Location = New System.Drawing.Point(420, -6)
-        Me.Guna2Panel4.Name = "Guna2Panel4"
-        Me.Guna2Panel4.Size = New System.Drawing.Size(1698, 73)
-        Me.Guna2Panel4.TabIndex = 12
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(5, 24)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(272, 32)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Laporan Peternakan"
-        '
-        'Guna2Panel3
-        '
-        Me.Guna2Panel3.Controls.Add(Me.ReportViewer4)
-        Me.Guna2Panel3.Controls.Add(Me.ReportViewer3)
-        Me.Guna2Panel3.Controls.Add(Me.NumericTahun)
-        Me.Guna2Panel3.Controls.Add(Me.ComboBoxBulan)
-        Me.Guna2Panel3.Controls.Add(Me.Label3)
-        Me.Guna2Panel3.Controls.Add(Me.Label2)
-        Me.Guna2Panel3.Controls.Add(Me.ReportViewer2)
-        Me.Guna2Panel3.Controls.Add(Me.ReportViewer1)
-        Me.Guna2Panel3.Location = New System.Drawing.Point(420, 67)
-        Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.Size = New System.Drawing.Size(1479, 957)
-        Me.Guna2Panel3.TabIndex = 11
-        '
-        'NumericTahun
-        '
-        Me.NumericTahun.Location = New System.Drawing.Point(1346, 25)
-        Me.NumericTahun.Maximum = New Decimal(New Integer() {9999, 0, 0, 0})
-        Me.NumericTahun.Minimum = New Decimal(New Integer() {1000, 0, 0, 0})
-        Me.NumericTahun.MinimumSize = New System.Drawing.Size(120, 0)
-        Me.NumericTahun.Name = "NumericTahun"
-        Me.NumericTahun.Size = New System.Drawing.Size(120, 26)
-        Me.NumericTahun.TabIndex = 7
-        Me.NumericTahun.Value = New Decimal(New Integer() {1000, 0, 0, 0})
-        '
-        'ComboBoxBulan
-        '
-        Me.ComboBoxBulan.FormattingEnabled = True
-        Me.ComboBoxBulan.Items.AddRange(New Object() {"Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"})
-        Me.ComboBoxBulan.Location = New System.Drawing.Point(1074, 24)
-        Me.ComboBoxBulan.Name = "ComboBoxBulan"
-        Me.ComboBoxBulan.Size = New System.Drawing.Size(182, 28)
-        Me.ComboBoxBulan.TabIndex = 6
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(1272, 27)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(69, 25)
-        Me.Label3.TabIndex = 3
-        Me.Label3.Text = "Tahun"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(1008, 27)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(62, 25)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Bulan"
-        '
-        'ReportViewer2
-        '
-        Me.ReportViewer2.Location = New System.Drawing.Point(758, 62)
-        Me.ReportViewer2.Name = "ReportViewer2"
-        Me.ReportViewer2.ServerReport.BearerToken = Nothing
-        Me.ReportViewer2.Size = New System.Drawing.Size(708, 399)
-        Me.ReportViewer2.TabIndex = 1
-        '
-        'ReportViewer1
-        '
-        Me.ReportViewer1.Location = New System.Drawing.Point(16, 62)
-        Me.ReportViewer1.Name = "ReportViewer1"
-        Me.ReportViewer1.ServerReport.BearerToken = Nothing
-        Me.ReportViewer1.Size = New System.Drawing.Size(708, 399)
-        Me.ReportViewer1.TabIndex = 0
-        '
-        'ReportViewer3
-        '
-        Me.ReportViewer3.Location = New System.Drawing.Point(16, 498)
-        Me.ReportViewer3.Name = "ReportViewer3"
-        Me.ReportViewer3.ServerReport.BearerToken = Nothing
-        Me.ReportViewer3.Size = New System.Drawing.Size(708, 399)
-        Me.ReportViewer3.TabIndex = 8
-        '
-        'ReportViewer4
-        '
-        Me.ReportViewer4.Location = New System.Drawing.Point(758, 498)
-        Me.ReportViewer4.Name = "ReportViewer4"
-        Me.ReportViewer4.ServerReport.BearerToken = Nothing
-        Me.ReportViewer4.Size = New System.Drawing.Size(708, 399)
-        Me.ReportViewer4.TabIndex = 9
         '
         'Laporan_Peternak
         '

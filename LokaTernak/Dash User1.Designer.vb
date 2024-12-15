@@ -32,11 +32,10 @@ Partial Class Dash_User1
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
         Me.ListView1 = New System.Windows.Forms.ListView()
-        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.nama_produk = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.jenis_produk = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.nama_peternakan = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.deskripsi = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -181,7 +180,7 @@ Partial Class Dash_User1
         '
         'ListView1
         '
-        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader1, Me.ColumnHeader5})
+        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.nama_produk, Me.jenis_produk, Me.nama_peternakan, Me.deskripsi})
         Me.ListView1.HideSelection = False
         Me.ListView1.Location = New System.Drawing.Point(376, 236)
         Me.ListView1.Name = "ListView1"
@@ -190,30 +189,25 @@ Partial Class Dash_User1
         Me.ListView1.UseCompatibleStateImageBehavior = False
         Me.ListView1.View = System.Windows.Forms.View.Details
         '
-        'ColumnHeader2
+        'nama_produk
         '
-        Me.ColumnHeader2.Text = "Nama Produk"
-        Me.ColumnHeader2.Width = 186
+        Me.nama_produk.Text = "Nama Produk"
+        Me.nama_produk.Width = 186
         '
-        'ColumnHeader3
+        'jenis_produk
         '
-        Me.ColumnHeader3.Text = "Jenis Produk"
-        Me.ColumnHeader3.Width = 178
+        Me.jenis_produk.Text = "Jenis Produk"
+        Me.jenis_produk.Width = 178
         '
-        'ColumnHeader4
+        'nama_peternakan
         '
-        Me.ColumnHeader4.Text = "Harga"
-        Me.ColumnHeader4.Width = 135
+        Me.nama_peternakan.Text = "Peternakan"
+        Me.nama_peternakan.Width = 271
         '
-        'ColumnHeader1
+        'deskripsi
         '
-        Me.ColumnHeader1.Text = "Peternakan"
-        Me.ColumnHeader1.Width = 271
-        '
-        'ColumnHeader5
-        '
-        Me.ColumnHeader5.Text = "Deskripsi"
-        Me.ColumnHeader5.Width = 257
+        Me.deskripsi.Text = "Deskripsi"
+        Me.deskripsi.Width = 257
         '
         'Label1
         '
@@ -252,10 +246,9 @@ Partial Class Dash_User1
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents ListView1 As ListView
-    Friend WithEvents ColumnHeader2 As ColumnHeader
-    Friend WithEvents ColumnHeader3 As ColumnHeader
-    Friend WithEvents ColumnHeader4 As ColumnHeader
-    Friend WithEvents ColumnHeader1 As ColumnHeader
-    Friend WithEvents ColumnHeader5 As ColumnHeader
+    Friend WithEvents nama_produk As ColumnHeader
+    Friend WithEvents jenis_produk As ColumnHeader
+    Friend WithEvents nama_peternakan As ColumnHeader
+    Friend WithEvents deskripsi As ColumnHeader
     Friend WithEvents Label1 As Label
 End Class

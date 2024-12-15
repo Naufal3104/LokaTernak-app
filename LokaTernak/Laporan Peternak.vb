@@ -196,4 +196,45 @@ Public Class Laporan_Peternak
         loadLaporanPendapatanBulanan()
     End Sub
 
+    Private Sub Guna2Button4_Click(sender As Object, e As EventArgs) Handles Guna2Button4.Click
+        Me.Hide()
+        Main_Form.Show()
+
+    End Sub
+
+    Private Sub Guna2Button9_Click(sender As Object, e As EventArgs) Handles Guna2Button9.Click
+        Me.Hide()
+        Dashboard_Peternak.Show()
+
+    End Sub
+
+    Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
+        Me.Hide()
+        Data_Katalog.Show()
+
+    End Sub
+
+    Private Sub Guna2Button3_Click(sender As Object, e As EventArgs) Handles Guna2Button3.Click
+        Me.Hide()
+        Ubah_Peternakan.Show()
+
+    End Sub
+
+    Private Sub Guna2Button5_Click(sender As Object, e As EventArgs) Handles Guna2Button5.Click
+        Me.Hide()
+        Diskusi_Peternak.Show()
+
+    End Sub
+
+    Private Sub Guna2Button6_Click(sender As Object, e As EventArgs) Handles Guna2Button6.Click
+        Me.Hide()
+        Artikel_Peternak.Show()
+
+    End Sub
+
+    Private Sub Guna2Button7_Click(sender As Object, e As EventArgs) Handles Guna2Button7.Click
+        Me.Hide()
+        Order_Peternak.Show()
+
+    End Sub
 End Class
