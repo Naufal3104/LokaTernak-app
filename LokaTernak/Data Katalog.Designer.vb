@@ -54,6 +54,7 @@ Partial Class Data_Katalog
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button8 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Button10 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel3.SuspendLayout()
         Me.Guna2Panel4.SuspendLayout()
         Me.Guna2Panel2.SuspendLayout()
@@ -62,6 +63,7 @@ Partial Class Data_Katalog
         '
         'Guna2Panel3
         '
+        Me.Guna2Panel3.Controls.Add(Me.Guna2Button10)
         Me.Guna2Panel3.Controls.Add(Me.ListView1)
         Me.Guna2Panel3.Location = New System.Drawing.Point(420, 67)
         Me.Guna2Panel3.Name = "Guna2Panel3"
@@ -499,6 +501,20 @@ Partial Class Data_Katalog
         Me.Guna2Button4.TabIndex = 12
         Me.Guna2Button4.Text = "Keluar"
         '
+        'Guna2Button10
+        '
+        Me.Guna2Button10.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button10.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button10.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button10.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button10.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2Button10.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button10.Location = New System.Drawing.Point(1254, 29)
+        Me.Guna2Button10.Name = "Guna2Button10"
+        Me.Guna2Button10.Size = New System.Drawing.Size(180, 45)
+        Me.Guna2Button10.TabIndex = 5
+        Me.Guna2Button10.Text = "Ubah Stok"
+        '
         'Data_Katalog
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -551,4 +567,5 @@ Partial Class Data_Katalog
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button8 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button9 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Button10 As Guna.UI2.WinForms.Guna2Button
 End Class

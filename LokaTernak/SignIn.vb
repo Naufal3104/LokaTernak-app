@@ -55,10 +55,7 @@ Public Class Sign_In
                             If reader.Read() Then
                                 Dim role As Integer = Convert.ToInt32(reader("id_role"))
                                 Dim kodeUser As String = reader("kode_user").ToString()
-
-                                ' Assign kode_user ke Module_Koneksi
                                 Module_Koneksi.SetKodeUser(kodeUser)
-
                                 Select Case role
                                     Case 1
                                         MessageBox.Show("Login Berhasil! Role: Admin")
@@ -72,6 +69,7 @@ Public Class Sign_In
                                         MessageBox.Show("Role tidak dikenali.")
                                 End Select
                             Else
+                                reader.Close() ' Menutup reader sebelum membuka yang baru
                                 Dim queryFarm As String = "SELECT kode_peternakan FROM peternakan WHERE username=@username AND password=@password"
                                 Using farmCommand As New MySqlCommand(queryFarm, connection)
                                     farmCommand.Parameters.AddWithValue("@username", username)

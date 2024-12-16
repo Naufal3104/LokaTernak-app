@@ -359,6 +359,12 @@
     <Compile Include="Ubah Peternakan.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="UbahStok.Designer.vb">
+      <DependentUpon>UbahStok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UbahStok.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Artikel Peternak Rincian.resx">
@@ -454,6 +460,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ubah Peternakan.resx">
       <DependentUpon>Ubah Peternakan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UbahStok.resx">
+      <DependentUpon>UbahStok.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

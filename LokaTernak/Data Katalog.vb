@@ -90,13 +90,13 @@ Public Class Data_Katalog
     End Sub
 
     Private Sub reset()
-        text_kodeProduk.Text = GenerateKodePeternakan()
+        text_kodeProduk.Text = GenerateKodeKatalog()
         text_namaProduk.Text = ""
         combo_jenisProduk.SelectedIndex = 0
         text_deskripsi.Text = ""
     End Sub
 
-    Private Function GenerateKodePeternakan() As String
+    Private Function GenerateKodeKatalog() As String
         Dim kodeTerakhir As String = ""
         Dim query As String = "SELECT kode_produk FROM katalog ORDER BY kode_produk DESC LIMIT 1"
 
@@ -134,7 +134,7 @@ Public Class Data_Katalog
 
     Private Sub Data_Katalog_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadKatalog()
-        text_kodeProduk.Text = GenerateKodePeternakan()
+        text_kodeProduk.Text = GenerateKodeKatalog()
     End Sub
 
     Private Sub ListView1_ItemSelectionChanged(sender As Object, e As ListViewItemSelectionChangedEventArgs) Handles ListView1.ItemSelectionChanged
@@ -168,7 +168,7 @@ Public Class Data_Katalog
 
     Private Sub btnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click
         reset()
-        text_kodeProduk.Text = GenerateKodePeternakan()
+        text_kodeProduk.Text = GenerateKodeKatalog()
     End Sub
 
     Private Sub btnHapus_Click(sender As Object, e As EventArgs) Handles btnHapus.Click
@@ -250,5 +250,11 @@ Public Class Data_Katalog
 
     Private Sub ListView1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListView1.SelectedIndexChanged
 
+    End Sub
+
+    Private Sub Guna2Button10_Click(sender As Object, e As EventArgs) Handles Guna2Button10.Click
+        UbahStok.Show()
+        UbahStok.LoadBarangList()
+        UbahStok.defaultDate()
     End Sub
 End Class
